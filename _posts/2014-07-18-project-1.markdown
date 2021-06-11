@@ -4,8 +4,8 @@ subtitle: A Web Application for Job Seekers
 layout: default
 modal-id: 1
 date: 2021-06-11
-img: dreams.png
-thumbnail: dreams-thumbnail.png
+img: jhm_dashboard2.jpg
+thumbnail: jhm_intro_screen.jpg
 alt: image-alt
 project-date: April 2021
 client: Start Bootstrap
