@@ -1,15 +1,15 @@
 ---
-title: Dreams
-subtitle: Website Design
+title: Job Hunt Manager
+subtitle: A Web Application for Job Seekers
 layout: default
 modal-id: 1
-date: 2014-07-18
+date: 2021-06-11
 img: dreams.png
 thumbnail: dreams-thumbnail.png
 alt: image-alt
-project-date: April 2014
+project-date: April 2021
 client: Start Bootstrap
 category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+description: Designed to help fellow job hunters manage all aspects of the job hunt process, all in 1 place. Store all your job applications, upcoming interviews, interview preparation, notes, and your professional contacts (individual & business). 
 
 ---
