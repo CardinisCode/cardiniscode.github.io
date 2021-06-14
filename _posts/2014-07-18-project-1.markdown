@@ -8,8 +8,12 @@ img: jhm_dashboard2.jpg
 thumbnail: jhm_intro_screen.jpg
 alt: image-alt
 project-date: April 2021
-client: Start Bootstrap
+client: Harvard University - CS50
 category: Web Development
 description: Designed to help fellow job hunters manage all aspects of the job hunt process, all in 1 place. Store all your job applications, upcoming interviews, interview preparation, notes, and your professional contacts (individual & business). 
-
+github-link: "https://github.com/CardinisCode/jobhuntmanager"
+closing-message: "Feel free to check out The Job Hunt Manager project on: "
 ---
+
+
+<p> Feel free to check out my project on <a href="" alt="GitHub Link"> GitHub!</a></p>
