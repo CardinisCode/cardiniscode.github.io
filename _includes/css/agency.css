@@ -47,6 +47,10 @@ a.active {
     text-decoration: none;
 }
 
+ol {
+    color: #{{ site.data.template.color.primary }};
+}
+
 h1,
 h2,
 h3,
