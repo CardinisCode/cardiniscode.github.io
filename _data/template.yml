@@ -10,6 +10,7 @@ color:
   # secondary-dark: A634FE #dark purple
   
   primary: FF00FF #purple
+  primary-dark: A634FE #dark purple
   secondary: FFA500 #orange
   secondary-dark: C8500  #dark orange
   muted: 777
