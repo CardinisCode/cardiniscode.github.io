@@ -1,21 +1,13 @@
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  # primary: fed136 / a736fe / 
-  # secondary: 36a7fe / ff8c00 / a736fe
-  # seondary-dark: 4736fe
-
-  # primary: FFA500 #orange
-  # primary-dark: CC8500  #dark orange
-  # secondary: FF00FF #purple
-  # secondary-dark: A634FE #dark purple
-  
-  primary: FF00FF #purple
-  primary-dark: A634FE #dark purple
-  secondary: FFA500 #orange
-  secondary-dark: C8500  #dark orange
-  muted: 777
+  # Minima theme default colors
+  primary: 007acc # Blue
+  primary-dark: 005a99 # Darker blue
+  secondary: 404040 # Gray
+  secondary-dark: 202020 # Dark gray
+  muted: 6c757d # Bootstrap muted gray
 
 # Font Families
 font:
-  primary: 'Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif'
-  secondary: '"Droid Serif", "Helvetica Neue", Helvetica,Arial,sans-serif'
+  primary: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
+  secondary: 'Georgia, "Times New Roman", serif'
