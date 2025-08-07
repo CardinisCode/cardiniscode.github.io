@@ -29,7 +29,6 @@ github_username:  CardinisCode
 linkedin_username: acfolgado
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
 
