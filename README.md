@@ -144,7 +144,7 @@ gem install jekyll bundler
 bundle install
 
 # Start local server
-bundle exec jekyll serve
+bundle exec jekyll serve --host 0.0.0.0 --port 4000
 
 # Visit http://localhost:4000
 ```
