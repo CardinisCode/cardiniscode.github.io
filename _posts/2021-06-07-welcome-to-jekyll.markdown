@@ -1,8 +1,19 @@
 ---
-layout: post
-title:  "Welcome to Jekyll!"
-date:   2021-06-07 16:52:49 +0100
-categories: jekyll update
+title: Welcome to Jekyll!
+subtitle: Blog Platform
+layout: default
+modal-id: 5
+date: 2021-06-07
+img: startup-framework-thumbnail.png
+thumbnail: startup-framework-thumbnail.png
+alt: Jekyll Blog Platform
+project-date: June 2021
+client: Personal Project
+category: Web Development
+description: A demonstration of Jekyll blog functionality with proper portfolio integration. This showcases the blog platform's capabilities for content management and static site generation.
+github-link: "https://github.com/jekyll/jekyll"
+demo-link: "https://jekyllrb.com"
+closing-message: "Learn more about Jekyll at: "
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
