@@ -13,21 +13,25 @@
     max-width: 1200px;
 }
 
-/* Force 3-column layout for portfolio and skills */
+/* Fix 3-column layout for portfolio and skills */
 @media (min-width: 768px) {
-    #portfolio .row > .col-md-4,
-    #skills .row > .col-md-4 {
+    /* Ensure Bootstrap grid works properly */
+    .row::after {
+        content: "" !important;
+        display: table !important;
+        clear: both !important;
+    }
+    
+    /* Force proper column widths */
+    .col-md-4 {
         float: left !important;
         width: 33.33333333% !important;
         padding: 0 15px !important;
-        display: block !important;
     }
     
-    #portfolio .portfolio-item,
-    #skills .col-md-4 {
-        width: 33.33333333% !important;
-        float: left !important;
-        margin-bottom: 30px !important;
+    /* Remove any conflicting positioning */
+    #portfolio .portfolio-item {
+        right: auto !important;
     }
 }
 
