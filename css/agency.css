@@ -247,6 +247,16 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-nav.navbar-right > li > a {
     padding: 15px 10px !important;
+    line-height: 1.2 !important;
+    vertical-align: middle !important;
+}
+
+.navbar-default .navbar-brand {
+    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 1.2 !important;
+    vertical-align: middle !important;
 }
 
 .navbar-default .nav li a:hover,
