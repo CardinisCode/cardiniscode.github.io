@@ -13,6 +13,24 @@
     max-width: 1200px;
 }
 
+/* Force 3-column layout for portfolio and skills */
+@media (min-width: 768px) {
+    #portfolio .row > .col-md-4,
+    #skills .row > .col-md-4 {
+        float: left !important;
+        width: 33.33333333% !important;
+        padding: 0 15px !important;
+        display: block !important;
+    }
+    
+    #portfolio .portfolio-item,
+    #skills .col-md-4 {
+        width: 33.33333333% !important;
+        float: left !important;
+        margin-bottom: 30px !important;
+    }
+}
+
 .container-fluid {
     padding-left: 15px;
     padding-right: 15px;
