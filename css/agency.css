@@ -374,6 +374,7 @@ section h3.section-subheading {
 
 #portfolio .portfolio-item {
     margin: 0 0 15px;
+    right: auto;
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -437,6 +438,24 @@ section h3.section-subheading {
 
 #portfolio * {
     z-index: 2;
+}
+
+/* Force 3-column layout with maximum specificity */
+@media (min-width: 768px) {
+    #portfolio .row > .col-md-4,
+    #skills .row > .col-md-4 {
+        float: left !important;
+        width: 33.33333333% !important;
+        padding: 0 15px !important;
+        display: block !important;
+    }
+    
+    #portfolio .row::after,
+    #skills .row::after {
+        content: "" !important;
+        display: table !important;
+        clear: both !important;
+    }
 }
 
 
