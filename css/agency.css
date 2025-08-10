@@ -439,31 +439,7 @@ section h3.section-subheading {
     z-index: 2;
 }
 
-/* Fix grid distribution for portfolio and skills */
-@media (min-width: 768px) {
-    #portfolio .row > .col-md-4,
-    #skills .row > .col-md-4 {
-        float: left !important;
-        width: 33.33333333% !important;
-        padding: 0 15px !important;
-        display: block !important;
-    }
-    
-    #portfolio .row::after,
-    #skills .row::after {
-        content: "" !important;
-        display: table !important;
-        clear: both !important;
-    }
-    
-    /* Force 3-column layout */
-    #portfolio .portfolio-item,
-    #skills .col-md-4 {
-        width: 33.33333333% !important;
-        float: left !important;
-        margin-bottom: 30px !important;
-    }
-}
+
 
 
 
