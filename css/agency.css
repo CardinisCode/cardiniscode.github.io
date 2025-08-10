@@ -439,6 +439,23 @@ section h3.section-subheading {
     z-index: 2;
 }
 
+/* Fix grid distribution for portfolio and skills */
+@media (min-width: 768px) {
+    #portfolio .row > .col-md-4,
+    #skills .row > .col-md-4 {
+        float: left;
+        width: 33.33333333%;
+        padding: 0 15px;
+    }
+    
+    #portfolio .row::after,
+    #skills .row::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
 
 
 /* ===================================
