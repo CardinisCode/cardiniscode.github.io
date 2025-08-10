@@ -439,21 +439,7 @@ section h3.section-subheading {
     z-index: 2;
 }
 
-/* Ensure proper grid distribution */
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
 
-.col-md-4 {
-    display: flex;
-    flex-direction: column;
-}
-
-#portfolio .row,
-#skills .row {
-    justify-content: space-between;
-}
 
 /* ===================================
    TIMELINE
