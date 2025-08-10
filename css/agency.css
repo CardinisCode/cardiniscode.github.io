@@ -243,20 +243,9 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-nav.navbar-right {
     float: right !important;
-    display: flex !important;
-    align-items: center !important;
-    height: 100% !important;
-}
-
-.navbar-nav.navbar-right > li {
-    display: flex !important;
-    align-items: center !important;
 }
 
 .navbar-nav.navbar-right > li > a {
-    display: flex !important;
-    align-items: center !important;
-    height: 100% !important;
     padding: 15px 10px !important;
 }
 
