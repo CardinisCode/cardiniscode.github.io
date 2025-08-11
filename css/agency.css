@@ -138,32 +138,36 @@ fieldset[disabled] .btn-primary.active {
     background-color: #fff;
 }
 
-.btn-xl {
-    padding: 3px 20px;
-    border: 1px solid #522787;
+/* ===================================
+   BUTTON STYLES - HIGH SPECIFICITY
+   =================================== */
+
+.btn.btn-xl {
+    padding: 12px 30px !important;
+    border: 1px solid #522787 !important;
     border-radius: 50px !important;
-    text-transform: none;
-    font-family: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif';
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: 0.25em;
-    line-height: 1.2em;
-    color: white;
-    background-color: #EA715E;
-    transition: all 0.3s ease;
+    text-transform: none !important;
+    font-family: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    letter-spacing: 0.25em !important;
+    line-height: 1.2em !important;
+    color: white !important;
+    background-color: #EA715E !important;
+    transition: all 0.3s ease !important;
 }
 
-.btn-xl:hover,
-.btn-xl:focus,
-.btn-xl:active,
-.btn-xl.active,
-.open .dropdown-toggle.btn-xl {
-    background-color: white;
-    color: #EA715E;
-    border: 1px solid #EA715E;
+.btn.btn-xl:hover,
+.btn.btn-xl:focus,
+.btn.btn-xl:active,
+.btn.btn-xl.active,
+.open .dropdown-toggle.btn.btn-xl {
+    background-color: white !important;
+    color: #EA715E !important;
+    border: 1px solid #EA715E !important;
     box-shadow: 
         4px 4px 2px 0px rgba(234, 113, 94, 1),
-        4px 4px 2px 0px rgba(255, 255, 255, 0);
+        4px 4px 2px 0px rgba(255, 255, 255, 0) !important;
 }
 
 .btn-xl:active,
