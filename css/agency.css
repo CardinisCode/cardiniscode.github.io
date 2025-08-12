@@ -274,15 +274,30 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-toggle {
     border-color: #007acc;
     background-color: #007acc;
+    border-radius: 4px;
+    padding: 10px 12px;
+    margin: 8px 0;
+    transition: all 0.3s ease;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    transition: all 0.3s ease;
 }
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #007acc;
+    background-color: #EA715E;
+    border-color: #EA715E;
+    transform: scale(1.05);
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #fff;
 }
 
 .navbar-default .nav li a {
@@ -882,6 +897,74 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #007acc;
+}
+
+/* ===================================
+   MOBILE NAVIGATION
+   =================================== */
+
+/* Ensure hamburger menu is visible on mobile */
+@media (max-width: 767px) {
+    .navbar-toggle {
+        display: block !important;
+        float: right;
+        margin-right: 15px;
+    }
+    
+    .navbar-collapse {
+        display: none !important;
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        right: 0 !important;
+        background-color: white !important;
+        border: none !important;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
+        z-index: 1000 !important;
+    }
+    
+    .navbar-collapse.in {
+        display: block !important;
+    }
+    
+    .navbar-nav {
+        float: none !important;
+        margin: 0 !important;
+        width: 100% !important;
+    }
+    
+    .navbar-nav > li {
+        float: none !important;
+        display: block !important;
+        width: 100% !important;
+    }
+    
+    .navbar-nav > li > a {
+        padding: 15px 20px !important;
+        border-bottom: 1px solid #e7e7e7 !important;
+        color: #333 !important;
+        background-color: white !important;
+        text-align: left !important;
+        font-weight: 500 !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    .navbar-nav > li > a:hover,
+    .navbar-nav > li > a:focus {
+        color: #EA715E !important;
+        background-color: #f8f9fa !important;
+        text-decoration: none !important;
+    }
+    
+    .navbar-nav > li.active > a {
+        color: #EA715E !important;
+        background-color: #f8f9fa !important;
+    }
+    
+    .navbar-brand {
+        float: left !important;
+        margin-left: 15px !important;
+    }
 }
 
 /* ===================================
