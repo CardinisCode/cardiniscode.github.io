@@ -921,6 +921,8 @@ body {
         border: none !important;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
         z-index: 1000 !important;
+        max-height: 80vh !important;
+        overflow-y: auto !important;
     }
     
     .navbar-collapse.in {
@@ -931,22 +933,33 @@ body {
         float: none !important;
         margin: 0 !important;
         width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
     }
     
     .navbar-nav > li {
         float: none !important;
         display: block !important;
         width: 100% !important;
+        border-bottom: 1px solid #e7e7e7 !important;
+    }
+    
+    .navbar-nav > li:last-child {
+        border-bottom: none !important;
     }
     
     .navbar-nav > li > a {
-        padding: 15px 20px !important;
-        border-bottom: 1px solid #e7e7e7 !important;
+        padding: 18px 20px !important;
         color: #333 !important;
         background-color: white !important;
-        text-align: left !important;
+        text-align: center !important;
         font-weight: 500 !important;
+        font-size: 16px !important;
+        line-height: 1.4 !important;
         transition: all 0.3s ease !important;
+        display: block !important;
+        width: 100% !important;
+        border: none !important;
     }
     
     .navbar-nav > li > a:hover,
