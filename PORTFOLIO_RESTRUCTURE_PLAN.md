@@ -44,8 +44,15 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 - **New File**: `resume.html` (to be created)
 - **Content**: Professional resume layout
 - **Navigation CTA**: "About" (will be updated later)
-- **Status**: 📋 Planned
+- **Status**: ✅ Completed
 - **Action**: Create `resume.html` with professional styling
+
+#### Resume Page Enhancements (Future Tasks)
+- **Add "Resume PDF" CTA** - Location to be determined
+- **Work on Skills section** - Improve content and presentation
+- **Add "Projects" section** - Content to be taken from CV
+- **Update "Work Experience" section** - Improve content and formatting
+- **Update Education section** - Rename to "Education and Certifications" and update content
 
 ### 5. Blog Page Enhancement
 - **File**: `blog.html` (to be updated)
@@ -78,13 +85,24 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 3. 📋 Redesign Contact section
 4. 📋 Update `_includes/about.html` (simplified intro with image)
 5. ✅ Create `resume.html` (Resume page)
-6. 📋 Migrate Skills, Experience, Education content to resume page
+6. ✅ Migrate Skills, Experience, Education content to resume page
 7. 📋 Update "About" navigation CTA to point to resume page
 8. 📋 Update "Blog" page design and content
 9. 📋 Re-enable "Blog" navigation CTA to point to updated blog page
 10. 📋 Create dedicated portfolio page
 11. 📋 Update "Portfolio" navigation CTA to point to new portfolio page
 12. 📋 SEO optimization for Home, Resume, and Portfolio pages
+
+## Resume Page Enhancement Tasks
+13. 📋 Add "Resume PDF" CTA (location to be determined)
+14. 📋 Work on Skills section (improve content and presentation)
+15. 📋 Add "Projects" section (content from CV)
+16. 📋 Update "Work Experience" section (improve content and formatting)
+17. 📋 Update Education section (rename to "Education and Certifications" and update content)
+
+## Home Page Updates
+18. 📋 Update "About me" content/text on the landing page
+19. 📋 Update "About me" CTA from "Resume PDF" to "Resume" (after Resume page is complete)
 
 ## Files to Create
 - `home.html` - Landing page
