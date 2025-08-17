@@ -91,6 +91,7 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 9. 📋 Create dedicated portfolio page
 10. 📋 Update "Portfolio" navigation CTA to point to new portfolio page
 11. 📋 SEO optimization for Home, Resume, and Portfolio pages
+12. 📋 Update navigation bar design (white on black → black on white background)
 
 ## Resume Page Enhancement Tasks
 12. 📋 Add "Resume PDF" CTA (location to be determined)
@@ -146,6 +147,22 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 - ✅ Optimized spacing between subtitle and social media icons
 - ✅ Increased social media icon size for better visibility
 - ✅ Tighter spacing between social media icons
+
+## Navigation Bar Redesign
+**Current Design:**
+- White text on dark/black background
+- Semi-transparent dark overlay
+
+**Desired Changes:**
+- 📋 Change to black text on white background
+- 📋 Update hover states for navigation links
+- 📋 Update branding/logo colors if needed
+- 📋 Ensure proper contrast and readability
+- 📋 Maintain mobile responsiveness
+
+**Files to Update:**
+- `css/agency.css` - Navigation styling
+- `_includes/navigation.html` - May need structural changes
 
 ## Notes
 - Keep all existing `_includes/` files intact until content migration is complete
