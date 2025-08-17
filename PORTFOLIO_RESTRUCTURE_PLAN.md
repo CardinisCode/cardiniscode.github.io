@@ -11,11 +11,11 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 ## New Structure (After Changes)
 
 ### 1. Home Page
-- **File**: `home.html` (new file to be created)
+- **File**: `index.html` (updated existing file)
 - **Content**: Landing page with multiple sections
 - **Navigation CTA**: "Home" 
-- **Status**: ✅ Ready to implement
-- **Action**: Create `home.html` file
+- **Status**: ✅ Completed
+- **Action**: Updated `index.html` with home page content
 
 **Sections to Include:**
 - ✅ Intro section (from `header.html`)
@@ -80,33 +80,31 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 - No fancy styling from original sections
 
 ## Implementation Order
-1. ✅ Create `home.html` (Home page)
+1. ✅ Create home page (`index.html`)
 2. 📋 Hide "Blog" navigation CTA temporarily
 3. 📋 Redesign Contact section
 4. 📋 Update `_includes/about.html` (simplified intro with image)
 5. ✅ Create `resume.html` (Resume page)
-6. ✅ Migrate Skills, Experience, Education content to resume page
-7. 📋 Update "About" navigation CTA to point to resume page
-8. 📋 Update "Blog" page design and content
-9. 📋 Re-enable "Blog" navigation CTA to point to updated blog page
-10. 📋 Create dedicated portfolio page
-11. 📋 Update "Portfolio" navigation CTA to point to new portfolio page
-12. 📋 SEO optimization for Home, Resume, and Portfolio pages
+6. 📋 Update "About" navigation CTA to point to resume page
+7. 📋 Update "Blog" page design and content
+8. 📋 Re-enable "Blog" navigation CTA to point to updated blog page
+9. 📋 Create dedicated portfolio page
+10. 📋 Update "Portfolio" navigation CTA to point to new portfolio page
+11. 📋 SEO optimization for Home, Resume, and Portfolio pages
 
 ## Resume Page Enhancement Tasks
-13. 📋 Add "Resume PDF" CTA (location to be determined)
-14. 📋 Work on Skills section (improve content and presentation)
-15. 📋 Add "Projects" section (content from CV)
-16. 📋 Update "Work Experience" section (improve content and formatting)
-17. 📋 Update Education section (rename to "Education and Certifications" and update content)
+12. 📋 Add "Resume PDF" CTA (location to be determined)
+13. 📋 Work on Skills section (improve content and presentation)
+14. 📋 Add "Projects" section (content from CV)
+15. 📋 Update "Work Experience" section (improve content and formatting)
+16. 📋 Update Education section (rename to "Education and Certifications" and update content)
 
 ## Home Page Updates
-18. 📋 Update "About me" content/text on the landing page
-19. 📋 Update "About me" CTA from "Resume PDF" to "Resume" (after Resume page is complete)
+17. 📋 Update "About me" content/text on the landing page
+18. 📋 Update "About me" CTA from "Resume PDF" to "Resume" (after Resume page is complete)
 
 ## Files to Create
-- `home.html` - Landing page
-- `resume.html` - Professional resume page
+- `resume.html` - Professional resume page ✅
 - `portfolio.html` - Dedicated portfolio page
 
 ## Files to Update
@@ -138,13 +136,13 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 - Form fields need light grey borders
 
 **Changes Required:**
-- ✅ Simple white background (remove background image)
-- ✅ Black font color for "Get in touch" heading
-- ✅ Smaller social media icons
-- ✅ Remove text labels from social media icons
-- ✅ Remove contact details display (email, github, linkedin)
-- ✅ Light grey borders for form fields
-- ✅ Keep "Send message" CTA unchanged
+- 📋 Simple white background (remove background image)
+- 📋 Black font color for "Get in touch" heading
+- 📋 Smaller social media icons
+- 📋 Remove text labels from social media icons
+- 📋 Remove contact details display (email, github, linkedin)
+- 📋 Light grey borders for form fields
+- 📋 Keep "Send message" CTA unchanged
 
 ## Notes
 - Keep all existing `_includes/` files intact until content migration is complete
