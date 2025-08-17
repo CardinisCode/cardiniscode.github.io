@@ -683,14 +683,11 @@ aside.clients img {
    =================================== */
 
 section#contact {
-    background-color: #222;
-    background-image: url('../img/map-image.png');
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #fff;
 }
 
 section#contact .section-heading {
-    color: #fff;
+    color: #000;
 }
 
 section#contact .form-group {
@@ -745,6 +742,34 @@ section#contact:-ms-input-placeholder {
 
 section#contact .text-danger {
     color: #e74c3c;
+}
+
+/* Social media links styling */
+section#contact .social-link {
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    margin: 0 10px;
+}
+
+section#contact .social-link:hover {
+    transform: scale(1.1);
+}
+
+/* Adjust spacing for social media section */
+section#contact .row:nth-child(2) {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+/* Form field borders */
+section#contact .form-control {
+    border: 1px solid #ccc;
+}
+
+section#contact .form-control:focus {
+    border-color: #007acc;
+    box-shadow: none;
 }
 
 /* ===================================
