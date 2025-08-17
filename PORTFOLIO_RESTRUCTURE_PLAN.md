@@ -83,8 +83,8 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 1. ✅ Create home page (`index.html`)
 2. ✅ Hide "Blog" navigation CTA temporarily
 3. ✅ Redesign Contact section
-4. 📋 Update `_includes/about.html` (simplified intro with image)
-5. ✅ Create `resume.html` (Resume page)
+4. 📋 Resume Page Enhancements (prioritized)
+5. 📋 Update `_includes/about.html` (simplified intro with image)
 6. 📋 Update "About" navigation CTA to point to resume page
 7. 📋 Update "Blog" page design and content
 8. 📋 Re-enable "Blog" navigation CTA to point to updated blog page
@@ -94,12 +94,14 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 12. ✅ Update navigation bar design (white on black → black on white background)
 13. ✅ Improve navigation CTA styling (font size, hover effects, performance)
 
-## Resume Page Enhancement Tasks
-12. 📋 Add "Resume PDF" CTA (location to be determined)
-13. 📋 Work on Skills section (improve content and presentation)
-14. 📋 Add "Projects" section (content from CV)
-15. 📋 Update "Work Experience" section (improve content and formatting)
-16. 📋 Update Education section (rename to "Education and Certifications" and update content)
+## Resume Page Enhancement Tasks (Priority #4)
+**Current Status**: Basic resume page created with professional styling
+**Next Steps**:
+- 📋 Add "Resume PDF" CTA (location to be determined)
+- 📋 Work on Skills section (improve content and presentation)
+- 📋 Add "Projects" section (content from CV)
+- 📋 Update "Work Experience" section (improve content and formatting)
+- 📋 Update Education section (rename to "Education and Certifications" and update content)
 
 ## Home Page Updates
 17. 📋 Update "About me" content/text on the landing page
