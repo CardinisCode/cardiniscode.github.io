@@ -81,7 +81,7 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 
 ## Implementation Order
 1. ✅ Create home page (`index.html`)
-2. 📋 Hide "Blog" navigation CTA temporarily
+2. ✅ Hide "Blog" navigation CTA temporarily
 3. 📋 Redesign Contact section
 4. 📋 Update `_includes/about.html` (simplified intro with image)
 5. ✅ Create `resume.html` (Resume page)
