@@ -251,12 +251,12 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default {
     border-color: transparent;
-    background-color: #222;
+    background-color: #fff;
 }
 
 .navbar-default .navbar-brand {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color: #ffffff;
+    color: #000;
     text-decoration: none;
 }
 
@@ -303,9 +303,10 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a {
     text-transform: uppercase;
     font-family: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif';
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 1px;
-    color: #fff;
+    color: #000;
+    font-size: 14px;
     -webkit-transition: all ease .35s;
     -moz-transition: all ease .35s;
     transition: all ease .35s;
@@ -323,7 +324,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color: #ffffff;
+    color: #000;
     text-decoration: none;
     line-height: 1.2 !important;
     vertical-align: middle !important;
@@ -348,7 +349,12 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #EA715E;
+    color: #fff;
+    background-color: #EA715E;
+    font-weight: 500;
+    border-radius: 3px;
+    padding: 8px 12px;
+    margin: 0 2px;
 }
 
 .navbar-default .navbar-nav>.active>a {
@@ -360,7 +366,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: #404040;
+    background-color: #EA715E;
 }
 
 /* ===================================
@@ -989,9 +995,10 @@ body {
     
     .navbar-nav > li > a:hover,
     .navbar-nav > li > a:focus {
-        color: #EA715E !important;
-        background-color: #f8f9fa !important;
+        color: #fff !important;
+        background-color: #EA715E !important;
         text-decoration: none !important;
+        font-weight: 500 !important;
     }
     
     .navbar-nav > li.active > a {
@@ -1013,7 +1020,7 @@ body {
     .navbar-default {
         padding: 25px 0;
         border: 0;
-        background-color: rgba(34, 34, 34, 0.9);
+        background-color: rgba(255, 255, 255, 0.95);
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -1026,13 +1033,18 @@ body {
         transition: all .3s;
     }
 
+    .navbar-default .nav li a {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
     .navbar-default .navbar-nav>.active>a {
         border-radius: 3px;
     }
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: #222;
+        background-color: #fff;
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
