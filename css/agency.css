@@ -149,7 +149,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .about-image {
-    max-width: 200px !important;
+    max-width: 250px !important;
     width: 100% !important;
     height: auto !important;
     border-radius: 8px !important;
@@ -160,13 +160,29 @@ fieldset[disabled] .btn-primary.active {
 
 /* Override img-responsive for about image specifically */
 img.img-responsive.about-image {
-    max-width: 200px !important;
+    max-width: 250px !important;
     width: 100% !important;
 }
 
 .about-content {
     padding: 20px 0;
     text-align: left;
+}
+
+/* Make the About section heading smaller */
+#about .section-subheading {
+    font-size: 18px !important;
+    font-weight: 400 !important;
+}
+
+/* Reduce gap between About section heading and content */
+#about .row:first-child {
+    margin-bottom: 20px !important;
+}
+
+/* Override the large margin-bottom on section-subheading for About section */
+#about .section-subheading {
+    margin-bottom: 20px !important;
 }
 
 .about-cta-container {
