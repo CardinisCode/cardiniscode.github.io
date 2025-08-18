@@ -779,6 +779,55 @@ section#contact .form-control:focus {
 }
 
 /* ===================================
+   CONTACT SECTION MOBILE RESPONSIVE
+   =================================== */
+
+@media (max-width: 767px) {
+    /* Social media icons - keep horizontal on mobile */
+    section#contact .row:nth-child(2) .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+    
+    section#contact .row:nth-child(2) .col-md-3 {
+        flex: 0 0 auto;
+        width: auto;
+        margin: 0 10px;
+    }
+    
+    /* Form layout - stack vertically on mobile */
+    section#contact .form-group {
+        margin-bottom: 20px;
+    }
+    
+    /* Make form fields full width on mobile */
+    section#contact .col-md-6 {
+        width: 100%;
+        float: none;
+    }
+    
+    /* Ensure proper spacing between form fields */
+    section#contact .form-group input,
+    section#contact .form-group textarea {
+        padding: 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    /* Adjust textarea height for mobile */
+    section#contact .form-group textarea.form-control {
+        height: 120px;
+        min-height: 120px;
+    }
+    
+    /* Center the submit button */
+    section#contact .col-lg-12.text-center {
+        margin-top: 20px;
+    }
+}
+
+/* ===================================
    FOOTER
    =================================== */
 
