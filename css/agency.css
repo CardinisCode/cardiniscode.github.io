@@ -165,7 +165,7 @@ img.img-responsive.about-image {
 
 .about-content {
     padding: 20px 0;
-    text-align: center;
+    text-align: left;
 }
 
 .about-cta-container {
@@ -178,22 +178,25 @@ img.img-responsive.about-image {
    =================================== */
 
 @media (max-width: 768px) {
-    /* Simple mobile adjustments for vertical layout */
+    /* Mobile: Vertical stack layout */
     .about-content {
         padding: 15px 0 !important;
+        text-align: center !important;
     }
     
     .about-content p {
         margin-bottom: 20px !important;
-        text-align: left !important;
+        text-align: center !important;
     }
     
     .about-cta-container {
         margin-top: 30px !important;
+        text-align: center !important;
     }
     
     .about-image-container {
         margin-bottom: 30px !important;
+        text-align: center !important;
     }
     
     /* Improve text readability on mobile */
