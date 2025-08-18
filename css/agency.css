@@ -148,7 +148,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .about-image {
-    max-width: 300px;
+    max-width: 200px;
     width: 100%;
     height: auto;
     border-radius: 8px;
@@ -198,7 +198,7 @@ fieldset[disabled] .btn-primary.active {
     
     /* Mobile image sizing */
     .about-image {
-        max-width: 250px !important;
+        max-width: 180px !important;
     }
 }
 
