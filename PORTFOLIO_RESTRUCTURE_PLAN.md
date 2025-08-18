@@ -24,8 +24,8 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 - ✅ Skills & Expertise (from `skills.html`)
 
 **Sections to Exclude:**
-- ❌ Education journey (from `education_journey.html`)
-- ❌ Work experience (from `work_experience.html`)
+- ✅ Education journey (from `education_journey.html`) - **PERMANENTLY MOVED** out of `_includes` directory
+- ✅ Work experience (from `work_experience.html`) - **PERMANENTLY MOVED** out of `_includes` directory
 
 ### 2. Portfolio Page  
 - **Current**: Links to `_includes/portfolio_grid.html`
@@ -186,6 +186,7 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 - Portfolio navigation will be updated once dedicated page is ready
 - SEO optimization will be applied to all main pages
 - Contact section redesign can be done independently
+- **PERMANENT SOLUTION**: Moved `education_journey.html` and `work_experience.html` out of `_includes` directory to prevent them from being automatically included by Jekyll layouts
 
 ---
 **Last Updated**: August 17, 2025
