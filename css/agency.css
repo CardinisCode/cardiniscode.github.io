@@ -750,22 +750,39 @@ section#contact .text-danger {
     color: #e74c3c;
 }
 
-/* Social media links styling */
+/* Social media links styling - DESKTOP */
 section#contact .social-link {
     display: inline-block;
     text-decoration: none;
     transition: transform 0.3s ease;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 section#contact .social-link:hover {
     transform: scale(1.1);
 }
 
-/* Adjust spacing for social media section */
+/* Social media icons container - DESKTOP */
 section#contact .row:nth-child(2) {
     margin-top: 10px;
     margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Ensure all social media icons are the same size */
+section#contact .social-link .fa-stack {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+}
+
+section#contact .social-link .fa-stack-2x {
+    font-size: 60px;
+}
+
+section#contact .social-link .fa-stack-1x {
+    font-size: 30px;
+    line-height: 60px;
 }
 
 /* Form field borders */
@@ -783,7 +800,7 @@ section#contact .form-control:focus {
    =================================== */
 
 @media (max-width: 767px) {
-    /* Social media icons - keep horizontal on mobile */
+    /* Social media icons - MOBILE SPECIFIC */
     section#contact .row:nth-child(2) .row {
         display: flex;
         justify-content: center;
@@ -794,6 +811,22 @@ section#contact .form-control:focus {
         flex: 0 0 auto;
         width: auto;
         margin: 0 10px;
+    }
+    
+    /* Mobile social media icon sizing */
+    section#contact .social-link .fa-stack {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    
+    section#contact .social-link .fa-stack-2x {
+        font-size: 50px;
+    }
+    
+    section#contact .social-link .fa-stack-1x {
+        font-size: 25px;
+        line-height: 50px;
     }
     
     /* Form layout - stack vertically on mobile */
