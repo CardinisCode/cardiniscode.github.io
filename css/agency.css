@@ -148,13 +148,19 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .about-image {
-    max-width: 200px;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: block;
-    margin: 0 auto;
+    max-width: 200px !important;
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+    display: block !important;
+    margin: 0 auto !important;
+}
+
+/* Override img-responsive for about image specifically */
+img.img-responsive.about-image {
+    max-width: 200px !important;
+    width: 100% !important;
 }
 
 .about-content {
@@ -196,9 +202,14 @@ fieldset[disabled] .btn-primary.active {
         line-height: 1.6 !important;
     }
     
-    /* Mobile image sizing */
+    /* Mobile image sizing - full width on mobile */
     .about-image {
-        max-width: 180px !important;
+        max-width: 100% !important;
+    }
+    
+    /* Override img-responsive for about image on mobile */
+    img.img-responsive.about-image {
+        max-width: 100% !important;
     }
 }
 
