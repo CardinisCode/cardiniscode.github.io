@@ -80,7 +80,8 @@
 ## Education & Training
 
 - CS50: Introduction to Computer Science — HarvardX (2021)  
-- Introduction to Python Programming — Georgia Tech (2020)  
+- Introduction to Python Programming — Georgia Tech (2020) 
+- Higher Diploma in Theology - Therapon University (2016) 
 - A-Levels (AVCE): Business Studies & ICT — Kingston College (2006)  
 - GCSEs — Cams Hill Secondary School (2003)  
 
