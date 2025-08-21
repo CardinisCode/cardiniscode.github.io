@@ -10,9 +10,17 @@
 
 ## Personal Profile
 
-Junior Software Developer with a foundation in full-stack web development and 2+ years of digital product design experience. Skilled in end-to-end feature delivery — from research and ideation to coding, testing, and documentation. Strong in Python, HTML, CSS, and user-first design thinking. 
+- Full-stack foundation + background in digital product design
 
-Open to hybrid or remote roles.  
+- End-to-end project experience → research, development, testing, documentation
+
+- Problem-solver → clean, scalable code + continuous learning
+
+- Tech skills → Python, HTML5, CSS, Figma, Miro
+
+- Strengths → quick learner, clear communicator, user-first approach
+
+- Available immediately → hybrid or remote roles
 
 ---
 
