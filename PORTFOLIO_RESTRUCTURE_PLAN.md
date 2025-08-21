@@ -41,18 +41,20 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 - **Action**: Update about section content and layout
 
 ### 4. About Page → Resume Page
-- **New File**: `resume.html` (to be created)
-- **Content**: Professional resume layout
-- **Navigation CTA**: "About" (will be updated later)
+- **New File**: `resume.html` (created and fully implemented)
+- **Content**: Professional resume layout with updated content from Resume Page Layout document
+- **Navigation CTA**: "Resume" (updated from "About")
 - **Status**: ✅ Completed
-- **Action**: Create `resume.html` with professional styling
+- **Action**: ✅ Created `resume.html` with professional styling and complete content
 
-#### Resume Page Enhancements (Future Tasks)
-- **Add "Resume PDF" CTA** - Location to be determined
-- **Work on Skills section** - Improve content and presentation
-- **Add "Projects" section** - Content to be taken from CV
-- **Update "Work Experience" section** - Improve content and formatting
-- **Update Education section** - Rename to "Education and Certifications" and update content
+#### Resume Page Enhancements (All Completed ✅)
+- ✅ **Added "Resume PDF" CTA** - Positioned under "Software Engineer & UX Designer" heading
+- ✅ **Updated Skills section** - Changed to "Key Skills" with bullet-point format
+- ✅ **Added "Projects" section** - Includes Gas Safety Record, Job Hunt Manager, and Dynamic Invoice Template
+- ✅ **Updated "Work Experience" section** - Changed to "Career History" with updated content and bullet points
+- ✅ **Updated Education section** - Changed to "Professional Training and Education" with updated content
+- ✅ **Updated Personal Profile section** - Converted to bullet-point format with current content
+- ✅ **Moved resume.pdf file** - From `assets/` to `Resume/` folder and updated all references
 
 ### 5. Blog Page Enhancement
 - **File**: `blog.html` (to be updated)
@@ -83,9 +85,9 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 1. ✅ Create home page (`index.html`)
 2. ✅ Hide "Blog" navigation CTA temporarily
 3. ✅ Redesign Contact section
-4. 📋 Resume Page Enhancements (prioritized)
+4. ✅ Resume Page Enhancements (fully completed)
 5. 📋 Update `_includes/about.html` (simplified intro with image)
-6. 📋 Update "About" navigation CTA to point to resume page
+6. ✅ Update "About" navigation CTA to "Resume" and point to resume page
 7. 📋 Update "Blog" page design and content
 8. 📋 Re-enable "Blog" navigation CTA to point to updated blog page
 9. 📋 Create dedicated portfolio page
@@ -94,28 +96,30 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 12. ✅ Update navigation bar design (white on black → black on white background)
 13. ✅ Improve navigation CTA styling (font size, hover effects, performance)
 
-## Resume Page Enhancement Tasks (Priority #4)
-**Current Status**: Basic resume page created with professional styling
-**Next Steps**:
-- 📋 Add "Resume PDF" CTA (location to be determined)
-- 📋 Work on Skills section (improve content and presentation)
-- 📋 Add "Projects" section (content from CV)
-- 📋 Update "Work Experience" section (improve content and formatting)
-- 📋 Update Education section (rename to "Education and Certifications" and update content)
+## Resume Page Enhancement Tasks (Priority #4) ✅ COMPLETED
+**Current Status**: ✅ Resume page fully implemented with all content from Resume Page Layout document
+**Completed Tasks**:
+- ✅ Add "Resume PDF" CTA (positioned under main heading)
+- ✅ Work on Skills section (converted to "Key Skills" with bullet points)
+- ✅ Add "Projects" section (includes all 3 projects with links and descriptions)
+- ✅ Update "Work Experience" section (converted to "Career History" with updated content)
+- ✅ Update Education section (converted to "Professional Training and Education" with updated content)
+- ✅ Update Personal Profile section (converted to bullet-point format)
+- ✅ Move resume.pdf file to Resume folder and update all references
 
 ## Home Page Updates
 17. 📋 Update "About me" content/text on the landing page
-18. 📋 Update "About me" CTA from "Resume PDF" to "Resume" (after Resume page is complete)
+18. ✅ Update "About me" CTA from "Resume PDF" to "Resume" (completed - now links to resume page)
 
 ## Files to Create
-- `resume.html` - Professional resume page ✅
-- `portfolio.html` - Dedicated portfolio page
+- ✅ `resume.html` - Professional resume page (fully implemented)
+- 📋 `portfolio.html` - Dedicated portfolio page
 
 ## Files to Update
-- `_includes/header.html` - Update navigation links (hide/show Blog, update Portfolio)
-- `_includes/about.html` - Simplified intro with image
-- `blog.html` - Redesigned blog page
-- `_layouts/` - May need new layouts for dedicated pages
+- ✅ `_includes/navigation.html` - Updated navigation links (changed "About" to "Resume", removed Blog)
+- 📋 `_includes/about.html` - Simplified intro with image
+- 📋 `blog.html` - Redesigned blog page
+- ✅ `_layouts/` - Created `resume.html` layout for dedicated resume page
 
 ## SEO Optimization
 **Pages to be SEO-optimized:**
@@ -190,13 +194,15 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 
 ---
 **Last Updated**: August 17, 2025
-**Status**: Implementation Phase - Multiple major components completed
-**Progress**: 6/13 main tasks completed (46% complete)
+**Status**: Implementation Phase - Major milestone achieved with Resume page MVP completed
+**Progress**: 9/13 main tasks completed (69% complete)
 
 **Recently Completed:**
+- ✅ Resume page fully implemented with all content from Resume Page Layout document
+- ✅ Navigation updated ("About" → "Resume", Blog CTA removed)
+- ✅ Resume PDF file moved to Resume folder and all references updated
 - ✅ Navigation bar redesign (black text on white background)
 - ✅ Navigation CTA improvements (font size, hover effects, performance)
 - ✅ Contact section redesign (white background, simplified social media)
-- ✅ Resume page creation with professional styling
 - ✅ Home page restructuring
 - ✅ Blog CTA temporarily hidden
