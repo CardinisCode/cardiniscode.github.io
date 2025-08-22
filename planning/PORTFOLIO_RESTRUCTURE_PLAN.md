@@ -88,14 +88,20 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 4. ✅ Resume Page Enhancements (fully completed)
 5. ✅ Update `_includes/about.html` (simplified intro with image)
 6. ✅ Update "About" navigation CTA to "Resume" and point to resume page
-7. 📋 Update "Blog" page design and content
-8. 📋 Re-enable "Blog" navigation CTA to point to updated blog page
-9. 📋 Create dedicated portfolio page
-10. 📋 Update "Portfolio" navigation CTA to point to new portfolio page
-11. 📋 SEO optimization for Home, Resume, and Portfolio pages
-12. ✅ Update navigation bar design (white on black → black on white background)
-13. ✅ Improve navigation CTA styling (font size, hover effects, performance)
-14. 📋 Add Client Onboarding project to portfolio (future session)
+7. 🚨 **CRITICAL**: Fix Portfolio Grid Display Issues (text overflow, modal close button)
+8. 📋 **MAJOR**: Portfolio Project Pages Transformation
+   - Update project photos for all portfolio tiles
+   - Create dedicated project pages (Job Hunt Manager, Gas Safety Assessment, Client Onboarding)
+   - Update project content and enhance descriptions
+   - Change portfolio grid navigation from modals to page links
+9. 📋 Update "Blog" page design and content
+10. 📋 Re-enable "Blog" navigation CTA to point to updated blog page
+11. 📋 Create dedicated portfolio page
+12. 📋 Update "Portfolio" navigation CTA to point to new portfolio page
+13. 📋 SEO optimization for Home, Resume, and Portfolio pages
+14. ✅ Update navigation bar design (white on black → black on white background)
+15. ✅ Improve navigation CTA styling (font size, hover effects, performance)
+16. 📋 Add Client Onboarding project to portfolio (future session)
 
 ## Resume Page Enhancement Tasks (Priority #4) ✅ COMPLETED
 **Current Status**: ✅ Resume page fully implemented with all content from Resume Page Layout document
@@ -115,11 +121,20 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 ## Files to Create
 - ✅ `resume.html` - Professional resume page (fully implemented)
 - 📋 `portfolio.html` - Dedicated portfolio page
+- 📋 `job-hunt-manager.html` - Dedicated Job Hunt Manager project page
+- 📋 `gas-safety-assessment.html` - Dedicated Gas Safety Assessment project page
+- 📋 `client-onboarding.html` - Dedicated Client Onboarding project page
 - 📋 `_posts/YYYY-MM-DD-client-onboarding.markdown` - Client Onboarding project post
 
 ## Files to Update
 - ✅ `_includes/navigation.html` - Updated navigation links (changed "About" to "Resume", removed Blog)
 - ✅ `_includes/about.html` - Simplified intro with image
+- 🚨 `_includes/portfolio_grid.html` - Fix text overflow and display issues + Change from modals to page links
+- 🚨 `_includes/modals.html` - Fix modal close button visibility (may be deprecated after page transformation)
+- 🚨 `css/agency.css` - Fix portfolio styling and modal close button
+- 📋 `_posts/2021-06-07-jobhuntmanager.markdown` - Update to link to dedicated project page
+- 📋 `_posts/2024-01-15-gas-safety-assessment.markdown` - Update to link to dedicated project page
+- 📋 `_posts/YYYY-MM-DD-client-onboarding.markdown` - Update to link to dedicated project page
 - 📋 `blog.html` - Redesigned blog page
 - ✅ `_layouts/` - Created `resume.html` layout for dedicated resume page
 
@@ -201,33 +216,129 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 - This creates visual inconsistency and stands out in a negative way
 - Need to resize the image to match the dimensions of other project tiles
 
-## Client Onboarding Project Addition
+## Portfolio Grid Display Issues (Critical - Needs Fixing)
+**Files Affected**: `_includes/portfolio_grid.html`, `_includes/modals.html`, `css/agency.css`
+**Status**: 🚨 Critical Issues Found - Needs immediate attention
+**Priority**: High - Affects user experience and readability
+
+**Current Issues:**
+1. **Portfolio Tile Text Overflow**: Half the text goes off the page, not all content is in front of white background
+2. **Modal Close Button Visibility**: The "Close" CTA is barely visible in the portfolio modals
+3. **Text Readability**: Content appears to be overlapping or extending beyond proper boundaries
+
+**Files to Investigate/Update:**
+- `_includes/portfolio_grid.html` - Portfolio tile layout and text display
+- `_includes/modals.html` - Modal close button styling and visibility
+- `css/agency.css` - Portfolio item styling, modal styling, and close button visibility
+
+**Required Actions:**
+1. **Fix Portfolio Tile Text Display**: Ensure all text content fits properly within white background areas
+2. **Improve Modal Close Button**: Make the close button more visible and accessible
+3. **Review Responsive Design**: Ensure portfolio tiles display correctly on all screen sizes
+4. **Test Modal Functionality**: Verify modals open/close properly with improved close button
+
+**Note**: This is blocking proper portfolio functionality and user experience. Cannot be left as-is.
+
+## Portfolio Project Pages Transformation
+**Status**: 📋 Major Restructure Planned - Convert from modals to dedicated pages
+**Priority**: High - Fundamental change to portfolio architecture
+**Impact**: Transforms portfolio from modal-based to page-based navigation
+
+### **1. Project Photos Update**
+**Action**: Update photos used for each project in portfolio tiles
+**Projects Affected**:
+- Job Hunt Manager (`_posts/2021-06-07-jobhuntmanager.markdown`)
+- Gas Safety Assessment (`_posts/2024-01-15-gas-safety-assessment.markdown`)
+- Client Onboarding (`_posts/YYYY-MM-DD-client-onboarding.markdown`)
+
+**Requirements**:
+- Ensure all project thumbnail images are properly sized (400x289px)
+- Update image quality and relevance for each project
+- Maintain visual consistency across all portfolio tiles
+
+### **2. Create Dedicated Project Pages**
+**Action**: Create individual HTML pages for each major project
+**Pages to Create**:
+- `job-hunt-manager.html` - Dedicated Job Hunt Manager project page
+- `gas-safety-assessment.html` - Dedicated Gas Safety Assessment project page  
+- `client-onboarding.html` - Dedicated Client Onboarding project page
+
+**Page Structure Requirements**:
+- Professional project showcase layout
+- Detailed project information and screenshots
+- Links to GitHub repositories and live demos
+- Responsive design for all devices
+- SEO-optimized content and meta tags
+
+### **3. Update Project Content**
+**Action**: Enhance and update content for each project page
+**Projects to Update**:
+
+#### **Job Hunt Manager**
+- **File**: `_posts/2021-06-07-jobhuntmanager.markdown` → `job-hunt-manager.html`
+- **Content**: Expand with detailed project description, features, technologies used
+- **Images**: Update with better quality screenshots and diagrams
+- **Links**: Ensure GitHub and demo links are current
+
+#### **Gas Safety Assessment**
+- **File**: `_posts/2024-01-15-gas-safety-assessment.markdown` → `gas-safety-assessment.html`
+- **Content**: Enhance with comprehensive project overview, technical details
+- **Images**: Add more project screenshots and workflow diagrams
+- **Links**: Update GitHub repository and demo links
+
+#### **Client Onboarding**
+- **File**: `planning/wix_portfolio/WixPortfolio_ClientOnboarding.md` → `client-onboarding.html`
+- **Content**: Transfer and enhance content from Wix portfolio document
+- **Images**: Use all 10 images from `img/portfolio/ClientOnboarding/` directory
+- **Details**: Include role, goals, business value, user value, and deliverables
+
+### **4. Update Portfolio Grid Navigation**
+**Action**: Change portfolio tiles from modal triggers to page links
+**Current Behavior**: Clicking tile opens modal with project details
+**New Behavior**: Clicking tile navigates to dedicated project page
+
+**Files to Update**:
+- `_includes/portfolio_grid.html` - Change modal links to page links
+- `_posts/2021-06-07-jobhuntmanager.markdown` - Update to link to `job-hunt-manager.html`
+- `_posts/2024-01-15-gas-safety-assessment.markdown` - Update to link to `gas-safety-assessment.html`
+- `_posts/YYYY-MM-DD-client-onboarding.markdown` - Update to link to `client-onboarding.html`
+
+**Navigation Changes**:
+```html
+<!-- Current (Modal) -->
+<a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+
+<!-- New (Page Navigation) -->
+<a href="{{ post.project-page-url }}" class="portfolio-link">
+```
+
+### **5. Client Onboarding Project Addition**
 **File**: `_posts/YYYY-MM-DD-client-onboarding.markdown` (to be created)
 **Content**: New portfolio project based on Wix portfolio content
 **Status**: 📋 Planned for future session
 **Action**: Create new post document and update portfolio grid
 
-**Source Materials:**
+**Source Materials**:
 - **Planning Document**: `planning/wix_portfolio/WixPortfolio_ClientOnboarding.md`
 - **Images**: `img/portfolio/ClientOnboarding/` directory (10 images available)
 - **Project Type**: Digital Product Design / UX/UI / Salesforce Integration
 
-**Project Details:**
+**Project Details**:
 - **Role**: Digital Product Designer
 - **Goal**: Streamline and automate B2B onboarding process through Salesforce integration
 - **Key Features**: Personalized welcome emails, pre-filled forms, automated case creation
 - **Business Value**: Improved client conversion, scalable onboarding solution
 - **User Value**: One-click welcome emails, instant alerts, personalized customer experience
 
-**Implementation Plan:**
+**Implementation Plan**:
 1. **Create new post file** in `_posts/` directory with proper front matter
 2. **Copy content** from `planning/wix_portfolio/WixPortfolio_ClientOnboarding.md`
 3. **Reference images** from `img/portfolio/ClientOnboarding/` directory
 4. **Update portfolio grid** to include this new project
 5. **Ensure proper image sizing** for portfolio grid display
-6. **Add to modals** for detailed project view
+6. **Create dedicated project page** instead of modal
 
-**Images Available:**
+**Images Available**:
 - `CO_LegacyUserflow.png` - Legacy user flow diagram
 - `CO_Proposed_E2EUserflow.png` - Proposed end-to-end user flow
 - `CO_Proposed_E2EUserflow_edited.png` - Edited user flow diagram
@@ -251,7 +362,7 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 ---
 **Last Updated**: August 17, 2025
 **Status**: Implementation Phase - Major milestone achieved with Resume page MVP completed
-**Progress**: 11/14 main tasks completed (79% complete)
+**Progress**: 11/16 main tasks completed (69% complete)
 
 **Recently Completed:**
 - ✅ Resume page fully implemented with all content from Resume Page Layout document
