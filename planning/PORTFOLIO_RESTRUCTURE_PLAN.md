@@ -35,10 +35,10 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 - **Action**: No action required at this time
 
 ### 3. About Section Update
-- **File**: `_includes/about.html` (to be updated)
-- **Content**: Simplified intro with single sentence, image, and "read more" invitation
-- **Status**: 📋 Planned
-- **Action**: Update about section content and layout
+- **File**: `_includes/about.html` (updated)
+- **Content**: Simplified intro with image and "Resume PDF" CTA
+- **Status**: ✅ Completed
+- **Action**: ✅ Updated about section with professional content and image
 
 ### 4. About Page → Resume Page
 - **New File**: `resume.html` (created and fully implemented)
@@ -95,6 +95,7 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 11. 📋 SEO optimization for Home, Resume, and Portfolio pages
 12. ✅ Update navigation bar design (white on black → black on white background)
 13. ✅ Improve navigation CTA styling (font size, hover effects, performance)
+14. 📋 Add Client Onboarding project to portfolio (future session)
 
 ## Resume Page Enhancement Tasks (Priority #4) ✅ COMPLETED
 **Current Status**: ✅ Resume page fully implemented with all content from Resume Page Layout document
@@ -108,16 +109,17 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 - ✅ Move resume.pdf file to Resume folder and update all references
 
 ## Home Page Updates
-17. 📋 Update "About me" content/text on the landing page
+17. ✅ Update "About me" content/text on the landing page
 18. ✅ Update "About me" CTA from "Resume PDF" to "Resume" (completed - now links to resume page)
 
 ## Files to Create
 - ✅ `resume.html` - Professional resume page (fully implemented)
 - 📋 `portfolio.html` - Dedicated portfolio page
+- 📋 `_posts/YYYY-MM-DD-client-onboarding.markdown` - Client Onboarding project post
 
 ## Files to Update
 - ✅ `_includes/navigation.html` - Updated navigation links (changed "About" to "Resume", removed Blog)
-- 📋 `_includes/about.html` - Simplified intro with image
+- ✅ `_includes/about.html` - Simplified intro with image
 - 📋 `blog.html` - Redesigned blog page
 - ✅ `_layouts/` - Created `resume.html` layout for dedicated resume page
 
@@ -199,6 +201,44 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 - This creates visual inconsistency and stands out in a negative way
 - Need to resize the image to match the dimensions of other project tiles
 
+## Client Onboarding Project Addition
+**File**: `_posts/YYYY-MM-DD-client-onboarding.markdown` (to be created)
+**Content**: New portfolio project based on Wix portfolio content
+**Status**: 📋 Planned for future session
+**Action**: Create new post document and update portfolio grid
+
+**Source Materials:**
+- **Planning Document**: `planning/wix_portfolio/WixPortfolio_ClientOnboarding.md`
+- **Images**: `img/portfolio/ClientOnboarding/` directory (10 images available)
+- **Project Type**: Digital Product Design / UX/UI / Salesforce Integration
+
+**Project Details:**
+- **Role**: Digital Product Designer
+- **Goal**: Streamline and automate B2B onboarding process through Salesforce integration
+- **Key Features**: Personalized welcome emails, pre-filled forms, automated case creation
+- **Business Value**: Improved client conversion, scalable onboarding solution
+- **User Value**: One-click welcome emails, instant alerts, personalized customer experience
+
+**Implementation Plan:**
+1. **Create new post file** in `_posts/` directory with proper front matter
+2. **Copy content** from `planning/wix_portfolio/WixPortfolio_ClientOnboarding.md`
+3. **Reference images** from `img/portfolio/ClientOnboarding/` directory
+4. **Update portfolio grid** to include this new project
+5. **Ensure proper image sizing** for portfolio grid display
+6. **Add to modals** for detailed project view
+
+**Images Available:**
+- `CO_LegacyUserflow.png` - Legacy user flow diagram
+- `CO_Proposed_E2EUserflow.png` - Proposed end-to-end user flow
+- `CO_Proposed_E2EUserflow_edited.png` - Edited user flow diagram
+- `CaseBooked_ConfirmationEmail.png` - Confirmation email example
+- `CO_projectimage_Email.png` - Main project image
+- `Sending_WelcomeEmail_p1.png` - Welcome email interface
+- `OnboardField_on_CaseRecord.png` - Salesforce field example
+- `NewCaseRecordType.png` - New case type interface
+- `CvE_Form_Prefilled.png` - Pre-filled form example
+- `OLB_Form_Prefilled.png` - Online booking form example
+
 ## Notes
 - Keep all existing `_includes/` files intact until content migration is complete
 - Maintain professional, clean styling for resume page
@@ -211,7 +251,7 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 ---
 **Last Updated**: August 17, 2025
 **Status**: Implementation Phase - Major milestone achieved with Resume page MVP completed
-**Progress**: 9/13 main tasks completed (69% complete)
+**Progress**: 11/14 main tasks completed (79% complete)
 
 **Recently Completed:**
 - ✅ Resume page fully implemented with all content from Resume Page Layout document
