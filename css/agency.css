@@ -563,6 +563,21 @@ section h3.section-subheading {
     }
 }
 
+/* Portfolio Grid Display Limits */
+/* Mobile: Show only 2 projects */
+@media (max-width: 767px) {
+    #portfolio .portfolio-item:nth-child(n+3) {
+        display: none !important;
+    }
+}
+
+/* Desktop: Show only 3 projects (already handled by Jekyll limit:3) */
+@media (min-width: 768px) {
+    #portfolio .portfolio-item:nth-child(n+4) {
+        display: none !important;
+    }
+}
+
 
 
 

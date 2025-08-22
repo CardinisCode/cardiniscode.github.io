@@ -86,7 +86,7 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 2. ✅ Hide "Blog" navigation CTA temporarily
 3. ✅ Redesign Contact section
 4. ✅ Resume Page Enhancements (fully completed)
-5. 📋 Update `_includes/about.html` (simplified intro with image)
+5. ✅ Update `_includes/about.html` (simplified intro with image)
 6. ✅ Update "About" navigation CTA to "Resume" and point to resume page
 7. 📋 Update "Blog" page design and content
 8. 📋 Re-enable "Blog" navigation CTA to point to updated blog page
@@ -182,6 +182,22 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 - ✅ Removed performance-heavy hover effects (transforms, shadows)
 - ✅ Consistent styling across desktop and mobile
 - ✅ Brand color (#EA715E) used for hover states
+
+## Portfolio Grid Updates (Landing Page)
+**File**: `_includes/portfolio_grid.html` (updated)
+**Content**: Portfolio section on the landing page
+**Status**: ✅ Completed
+**Action**: Updated portfolio grid display and image sizing
+
+**Changes Required:**
+- [x] **Mobile**: Only display 2 project tiles
+- [x] **Desktop**: Only display 3 project tiles  
+- [x] **Tile "Job hunt manager"**: Resize image to match other project tiles
+
+**Image Sizing Issue:**
+- The "Job hunt manager" tile image is not the same size as other images in the portfolio section
+- This creates visual inconsistency and stands out in a negative way
+- Need to resize the image to match the dimensions of other project tiles
 
 ## Notes
 - Keep all existing `_includes/` files intact until content migration is complete
