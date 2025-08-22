@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   My tag line / pitch goes here...
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: Andi_Folgado
+
 github_username:  CardinisCode
 linkedin_username: acfolgado
 
