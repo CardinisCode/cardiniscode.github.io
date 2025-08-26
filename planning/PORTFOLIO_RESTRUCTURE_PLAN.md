@@ -101,7 +101,13 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 13. 📋 SEO optimization for Home, Resume, and Portfolio pages
 14. ✅ Update navigation bar design (white on black → black on white background)
 15. ✅ Improve navigation CTA styling (font size, hover effects, performance)
-16. 📋 Add Client Onboarding project to portfolio (future session)
+16. 🎯 **CURRENT TASK**: Client Onboarding Project Implementation
+    - Create dedicated page for "Client Onboarding" project
+    - Move content from `planning/wix_portfolio/WixPortfolio_ClientOnboarding.md`
+    - Include photos from `img/portfolio/ClientOnboarding/` directory
+    - Add "Return to Home" CTA with preferred styling
+    - Update portfolio tile on landing page (replace one of the "Gas Safety Assessment" tiles)
+    - Remove hover screen functionality from portfolio tiles
 
 ## Resume Page Enhancement Tasks (Priority #4) ✅ COMPLETED
 **Current Status**: ✅ Resume page fully implemented with all content from Resume Page Layout document
@@ -349,6 +355,87 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 - `NewCaseRecordType.png` - New case type interface
 - `CvE_Form_Prefilled.png` - Pre-filled form example
 - `OLB_Form_Prefilled.png` - Online booking form example
+
+## Client Onboarding Project Implementation (Current Task)
+**Status**: 🎯 **ACTIVE** - Currently being implemented
+**Priority**: High - Next major portfolio enhancement
+**Files to Create/Update**: Multiple files involved in comprehensive project addition
+
+### **Project Overview**
+**Source Content**: `planning/wix_portfolio/WixPortfolio_ClientOnboarding.md`
+**Images Available**: `img/portfolio/ClientOnboarding/` directory (10 images)
+**Project Type**: Digital Product Design / UX/UI / Salesforce Integration
+**Role**: Digital Product Designer
+
+### **Implementation Tasks**
+
+#### **1. Create Dedicated Project Page**
+**File**: `client-onboarding.html` (to be created)
+**Content**: Transfer and enhance content from Wix portfolio document
+**Layout**: Professional project showcase with detailed sections
+**Features**:
+- Project overview and goals
+- Business and user value propositions
+- Deliverable features with screenshots
+- Background and approach methodology
+- Development process and testing
+- Lessons learned and next steps
+- "Return to Home" CTA with preferred styling
+
+#### **2. Update Portfolio Grid (Landing Page)**
+**File**: `_includes/portfolio_grid.html` (to be updated)
+**Action**: Replace one of the duplicate "Gas Safety Assessment" tiles
+**Changes Required**:
+- **Title**: "Client Onboarding"
+- **Label**: "Digital Product Designer"
+- **Image**: To be provided later (placeholder for now)
+- **Link**: Navigate to `client-onboarding.html` instead of modal
+- **Remove**: Hover screen functionality (not working well)
+
+#### **3. Image Integration**
+**Images to Include** (from `img/portfolio/ClientOnboarding/`):
+- `CO_LegacyUserflow.png` - Legacy user flow diagram
+- `CO_Proposed_E2EUserflow.png` - Proposed end-to-end user flow
+- `CO_Proposed_E2EUserflow_edited.png` - Edited user flow diagram
+- `CaseBooked_ConfirmationEmail.png` - Confirmation email example
+- `CO_projectimage_Email.png` - Main project image
+- `Sending_WelcomeEmail_p1.png` - Welcome email interface
+- `OnboardField_on_CaseRecord.png` - Salesforce field example
+- `NewCaseRecordType.png` - New case type interface
+- `CvE_Form_Prefilled.png` - Pre-filled form example
+- `OLB_Form_Prefilled.png` - Online booking form example
+
+#### **4. CTA Implementation**
+**"Return to Home" CTA**:
+- **Styling**: Based on preferred CTA styling from existing pages
+- **Link**: Navigate to `index.html`
+- **Position**: Bottom of project page
+- **Design**: Consistent with other CTAs in the portfolio
+
+#### **5. Portfolio Tile Updates**
+**Current Issue**: Two "Gas Safety Assessment" tiles on landing page
+**Solution**: Replace one tile with "Client Onboarding" project
+**Tile Configuration**:
+- **Title**: "Client Onboarding"
+- **Subtitle**: "Digital Product Designer"
+- **Image**: Placeholder (to be provided later)
+- **Link**: Direct navigation to project page (no modal)
+- **Hover Effect**: Remove current hover screen functionality
+
+### **Project Details from Source Content**
+**Role**: Digital Product Designer
+**Goal**: Streamline and automate B2B onboarding process through Salesforce integration
+**Key Features**: Personalized welcome emails, pre-filled forms, automated case creation
+**Business Value**: Improved client conversion, scalable onboarding solution
+**User Value**: One-click welcome emails, instant alerts, personalized customer experience
+
+### **Technical Requirements**
+- Responsive design for all devices
+- Professional project showcase layout
+- SEO-optimized content and meta tags
+- Consistent styling with existing portfolio pages
+- Proper image optimization and loading
+- Accessible navigation and CTAs
 
 ## Notes
 - Keep all existing `_includes/` files intact until content migration is complete
