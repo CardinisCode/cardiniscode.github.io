@@ -89,15 +89,24 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 5. ✅ Update `_includes/about.html` (simplified intro with image)
 6. ✅ Update "About" navigation CTA to "Resume" and point to resume page
 7. 🚨 **CRITICAL**: Fix Portfolio Grid Display Issues (text overflow, modal close button)
-8. 📋 **MAJOR**: Portfolio Project Pages Transformation
-   - Update project photos for all portfolio tiles
-   - Create dedicated project pages (Job Hunt Manager, Gas Safety Assessment, Client Onboarding)
-   - Update project content and enhance descriptions
-   - Change portfolio grid navigation from modals to page links
-9. 📋 Update "Blog" page design and content
-10. 📋 Re-enable "Blog" navigation CTA to point to updated blog page
-11. 📋 Create dedicated portfolio page
-12. 📋 Update "Portfolio" navigation CTA to point to new portfolio page
+8. ✅ **MAJOR**: Portfolio Project Pages Transformation - Client Onboarding (COMPLETED)
+9. 🚨 **CURRENT TASK**: Gas Safety Assessment Project Implementation
+   - Create dedicated page for "Gas Safety Assessment" project (`gas-safety-assessment.html`)
+   - Move content from `planning/wix_portfolio/WixPortfolio - Gas Safety Assessment.md`
+   - Include photos from `img/portfolio/GasSafetyAssessment/` directory
+   - Add "Return to Home" CTA with preferred styling
+   - Update portfolio tile on landing page to link to dedicated page
+   - Apply custom typography and styling (Caudex font, custom colors)
+   - Implement responsive deliverable features grid
+   - Add modal functionality for images and deliverable details
+10. 📋 **NEXT**: Job Hunt Manager Project Implementation
+    - Create dedicated page for "Job Hunt Manager" project (`job-hunt-manager.html`)
+    - Update project content and enhance descriptions
+    - Update portfolio tile to link to dedicated page
+11. 📋 Update "Blog" page design and content
+12. 📋 Re-enable "Blog" navigation CTA to point to updated blog page
+13. 📋 Create dedicated portfolio page
+14. 📋 Update "Portfolio" navigation CTA to point to new portfolio page
 13. 📋 SEO optimization for Home, Resume, and Portfolio pages
 14. ✅ Update navigation bar design (white on black → black on white background)
 15. ✅ Improve navigation CTA styling (font size, hover effects, performance)
@@ -287,11 +296,12 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 - **Images**: Update with better quality screenshots and diagrams
 - **Links**: Ensure GitHub and demo links are current
 
-#### **Gas Safety Assessment**
-- **File**: `_posts/2024-01-15-gas-safety-assessment.markdown` → `gas-safety-assessment.html`
-- **Content**: Enhance with comprehensive project overview, technical details
-- **Images**: Add more project screenshots and workflow diagrams
-- **Links**: Update GitHub repository and demo links
+#### **Gas Safety Assessment** 🚨 **CURRENT TASK**
+- **File**: `planning/wix_portfolio/WixPortfolio - Gas Safety Assessment.md` → `gas-safety-assessment.html`
+- **Content**: Transfer and enhance content from Wix portfolio document
+- **Images**: Use all 14 images from `img/portfolio/GasSafetyAssessment/` directory
+- **Details**: Include role, goals, business value, user value, deliverables, and video demo
+- **Status**: 🚨 **CURRENT TASK** - Ready for implementation
 
 #### **Client Onboarding** ✅ COMPLETED
 - ✅ **File**: `planning/wix_portfolio/WixPortfolio_ClientOnboarding.md` → `client-onboarding.html`
@@ -320,6 +330,80 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 ```
 
 
+
+## Gas Safety Assessment Project Implementation 🚨 **CURRENT TASK**
+**Status**: 🚨 **CURRENT TASK** - Ready for implementation
+**Priority**: High - Next major portfolio enhancement
+**Files to Create/Update**: Multiple files for comprehensive project addition
+
+### **Project Overview**
+**Source Content**: `planning/wix_portfolio/WixPortfolio - Gas Safety Assessment.md`
+**Images Available**: `img/portfolio/GasSafetyAssessment/` directory (14 images + 1 video)
+**Project Type**: Digital Product Design / UX/UI / Salesforce Integration / Field Service
+**Role**: Digital Product Designer
+
+### **Implementation Tasks**
+
+#### **1. Create Dedicated Project Page** 🚨 **CURRENT TASK**
+**File**: `gas-safety-assessment.html` 📋 To be created
+**Content**: 📋 Transfer and enhance content from Wix portfolio document
+**Layout**: 📋 Professional project showcase with detailed sections
+**Features**:
+- 📋 Project overview and goals
+- 📋 Business and user value propositions
+- 📋 Deliverable features with screenshots (responsive grid layout)
+- 📋 Background and approach methodology
+- 📋 Development process and testing
+- 📋 Lessons learned and next steps
+- 📋 "Return to Home" CTA with preferred styling
+- 📋 Custom typography (Caudex font, custom colors)
+- 📋 Modal functionality for images and deliverable details
+- 📋 Video integration for product demo
+- 📋 Responsive design for all devices
+
+#### **2. Update Portfolio Grid (Landing Page)** 📋 Planned
+**File**: `_posts/2024-01-15-gas-safety-assessment.markdown` 📋 To be updated
+**Action**: 📋 Update existing Gas Safety Assessment tile
+**Changes Required**:
+- 📋 **Title**: "Gas Safety Assessment" (unchanged)
+- 📋 **Label**: "Digital Product Designer"
+- 📋 **Image**: `GSR_MainImage.png` from GasSafetyAssessment directory
+- 📋 **Link**: Navigate to `gas-safety-assessment.html` instead of modal
+- 📋 **Remove**: Hover screen functionality (not working well)
+
+#### **3. Image Integration** 📋 Planned
+**Images to Include** (from `img/portfolio/GasSafetyAssessment/`):
+- 📋 `GSR_MainImage.png` - Main project image (with modal functionality)
+- 📋 `GSR_LegacyUserFlow.png` - Legacy user flow diagram
+- 📋 `GSR_Proposed_E2E_Userflow.jpg` - Proposed end-to-end user flow
+- 📋 `GSR_Project_ProposedUserFlow.png` - Project proposed user flow
+- 📋 `GSR_Legacy_GSR_Form.png` - Legacy gas safety form
+- 📋 `GSR_LegacyReportDesign.png` - Legacy report design
+- 📋 `GSR_Wireframe_GSReport.jpeg` - Wireframe gas safety report
+- 📋 `GSR_Prototype_GSReport.png` - Prototype gas safety report
+- 📋 `GSR_EmailTemplate.jpg` - Email template
+- 📋 `GSR_Wireframe_EmailTemplate.png` - Wireframe email template
+- 📋 `GSR_Prototype_EmailTemplate.png` - Prototype email template
+- 📋 `GSR_SalesforceDesktopView.png` - Salesforce desktop view
+- 📋 `Video_tutorial_GSR_Assessment_final.mp4` - Product demo video
+
+#### **4. Deliverable Features Grid Layout** 📋 Planned
+**Layout Requirements**: 
+- 📋 **Same Design as Client Onboarding**: Use identical tile layout and modal functionality
+- 📋 **Responsive Grid**: 3 columns on desktop, 1 column on mobile
+- 📋 **Tile Design**: Each deliverable feature as a clickable tile with image and heading
+- 📋 **Modal Functionality**: Clicking tiles opens modal with image, heading, and description
+- 📋 **Styling**: Blue border (`#2c2787`) with orange hover (`#EA715E`)
+- 📋 **Images**: All 13 deliverable images integrated into responsive grid layout
+- 📋 **Video Integration**: Special handling for video demo in grid layout
+- 📋 **Modal Functionality**: Images can be viewed in larger modal windows
+
+#### **5. CTA Implementation** 📋 Planned
+**"Return to Home" CTA**:
+- 📋 **Styling**: Based on preferred CTA styling from existing pages
+- 📋 **Link**: Navigate to `index.html`
+- 📋 **Position**: Bottom of project page
+- 📋 **Design**: Consistent with other CTAs in the portfolio
 
 ## Client Onboarding Project Implementation ✅ COMPLETED
 **Status**: ✅ **COMPLETED** - Fully implemented and functional
@@ -407,8 +491,8 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 
 ---
 **Last Updated**: August 26, 2025
-**Status**: Implementation Phase - Major milestone achieved with Client Onboarding project completed
-**Progress**: 15/16 main tasks completed (94% complete)
+**Status**: Implementation Phase - Gas Safety Assessment Project Implementation (Current Task)
+**Progress**: 15/17 main tasks completed (88% complete)
 
 **Recently Completed:**
 - ✅ Client Onboarding project fully implemented with dedicated page and portfolio integration
