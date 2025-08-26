@@ -385,7 +385,7 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 - 📋 `GSR_Wireframe_EmailTemplate.png` - Wireframe email template
 - 📋 `GSR_Prototype_EmailTemplate.png` - Prototype email template
 - 📋 `GSR_SalesforceDesktopView.png` - Salesforce desktop view
-- 📋 `Video_tutorial_GSR_Assessment_final.mp4` - Product demo video
+
 
 #### **4. Deliverable Features Grid Layout** 📋 Planned
 **Layout Requirements**: 

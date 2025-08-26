@@ -3,13 +3,11 @@
 Streamlined the end-to-end digital product experience.
 
 (source directory for all images: img/portfolio/GasSafetyAssessment/{filename})
-[tiles column 1:
-[Image src: "GSR_Prototype_GSReport.png"]
-]
-[tiles column 2:
-[image src: "GSR_MainImage.png"]
-]
-[break]
+
+### Project Overview Images
+**Layout Plan**: Two images side by side on desktop, vertically stacked on mobile
+- **Left Image**: `GSR_Prototype_GSReport.png` - Gas Safety Report Prototype
+- **Right Image**: `GSR_MainImage.png` - Main Project Overview
 
 ## At a Glance
 
@@ -46,7 +44,7 @@ title: "Proposed User Flow (Engineers)"
 
 [image: 
 src: "GSR_Wireframe_EmailTemplate.png",
-image title: "Wireframe - Email Template"
+title: "Wireframe - Email Template"
 description: "This wireframe represents the existing email template applied to all emails sent out to our customers, through Salesforce and WordPress. I made a few minor modifications to align this template with the needs for this project. "
 ]
 
@@ -92,11 +90,6 @@ src: "GSR_SalesforceDesktopView.png"
 title: "Desktop View"
 description: "A desktop view to provide our internal teams with the tools they need to support our engineers and to offer fantastic service to our customers."
 ]
-
-[video: 
-src: "Video_tutorial_GSR_Assessment_final.mp4"
-title: "GSR Product demo"
-description: "Take a brief look through the screens and user behaviour built into the engineer gas safety form. This form runs within Salesforce's Field Service Application. Once the user submits this form, they'll be able to continue their post-job documentation within Field Service, as per standard practice. "
 ]
 
 ## Background:
