@@ -222,6 +222,34 @@ section {
             }
         }
 
+        /* Contact Section Mobile Fixes - Working WITH Bootstrap */
+        @media (max-width: 767px) {
+            /* Form fields - ensure full width on mobile */
+            .form-field-group {
+                margin-bottom: 20px !important;
+                width: 100% !important;
+                float: none !important;
+            }
+            
+            /* Force form controls to full width */
+            section#contact .form-control {
+                width: 100% !important;
+                box-sizing: border-box !important;
+            }
+            
+            /* Center the form container */
+            section#contact form {
+                margin: 0 auto !important;
+                max-width: 90% !important;
+            }
+            
+            /* Ensure button is centered */
+            section#contact .btn-xl {
+                margin: 0 auto !important;
+                display: block !important;
+            }
+        }
+
 
 
         /* Reduce Portfolio Tile Spacing */
