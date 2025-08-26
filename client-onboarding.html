@@ -11,7 +11,7 @@ title: Client Onboarding - Andrea Folgado
             <div class="col-lg-12 text-center">
                 <h1>Client Onboarding</h1>
                 <p class="subtitle" style="font-style: italic;">Optimised the onboarding process for commercial clients</p>
-                <img src="img/portfolio/ClientOnboarding/CO_projectimage_Email.png" alt="Client Onboarding Project - Email Interface" style="max-width: 35%; height: auto; border: 2px solid #EA715E; border-radius: 8px; margin-bottom: 50px; cursor: pointer; box-shadow: 0 4px 12px rgba(234,113,94,0.2);" onclick="openImageModal(this.src, this.alt)">
+                <img src="img/portfolio/ClientOnboarding/CO_projectimage_Email.png" alt="Client Onboarding Project - Email Interface" class="main-project-image" style="max-width: 35%; height: auto; margin-bottom: 50px;" onclick="openImageModal(this.src, this.alt)">
             </div>
         </div>
 
@@ -96,7 +96,7 @@ title: Client Onboarding - Andrea Folgado
                         <h4>Case Confirmation Email (Automated)</h4>
                     </div>
 
-                    <div class="deliverable-tile" data-title="Proposed End-to-End User Flow" data-description="This diagram maps out the ideal onboarding journey for both stakeholders and their customers. It shows how automation and personalised touchpoints support a faster, more efficient experience for everyone involved." data-image="img/portfolio/ClientOnboarding/CO_Proposed_E2EUserflow_edited.png">
+                    <div class="deliverable-tile" data-title="Proposed End-to-End User Flow" data-description="This diagram maps out the ideal onboarding journey for both stakeholders and their customers. It shows how automation and personalised touchpoints support a faster, more efficient experience for everyone involved." data-image="img/portfolio/ClientOnboarding/CO_Proposed_E2EUserflow.png">
                         <img src="img/portfolio/ClientOnboarding/CO_Proposed_E2EUserflow_edited.png" alt="Proposed End-to-End User Flow">
                         <h4>Proposed End-to-End User Flow</h4>
                     </div>
@@ -298,9 +298,9 @@ title: Client Onboarding - Andrea Folgado
 </section>
 
 <!-- Image Modal -->
-<div id="imageModal" class="modal" style="display: none; position: fixed; z-index: 1025; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.9);">
+<div id="imageModal" class="modal" style="display: none; position: fixed; z-index: 1025; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.9); padding-top: 120px;">
     <!-- Close button positioned at modal corner, below navbar -->
-    <div onclick="closeImageModal()" style="position: fixed; right: 30px; top: 100px; z-index: 1026; width: 60px; height: 60px; background-color: #ffffff; border: 3px solid #000000; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 6px 20px rgba(0,0,0,0.8);">
+    <div onclick="closeImageModal()" style="position: fixed; right: 30px; top: 160px; z-index: 1026; width: 60px; height: 60px; background-color: #ffffff; border: 3px solid #000000; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 6px 20px rgba(0,0,0,0.8); transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#f0f0f0'; this.style.transform='scale(1.1)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.9)'; this.querySelector('span').style.color='#EA715E'" onmouseout="this.style.backgroundColor='#ffffff'; this.style.transform='scale(1)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.8)'; this.querySelector('span').style.color='#000000'">
         <span style="color: #000000; font-size: 32px; font-weight: bold; line-height: 1;">×</span>
     </div>
     
@@ -312,7 +312,7 @@ title: Client Onboarding - Andrea Folgado
             <!-- Deliverable Modal -->
             <div id="deliverableModal" class="deliverable-modal">
                 <!-- Close button positioned at modal corner, below navbar -->
-                <div onclick="closeDeliverableModal()" style="position: fixed; right: 30px; top: 140px; z-index: 1026; width: 60px; height: 60px; background-color: #ffffff; border: 3px solid #000000; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 6px 20px rgba(0,0,0,0.8);">
+                <div onclick="closeDeliverableModal()" style="position: fixed; right: 30px; top: 140px; z-index: 1026; width: 60px; height: 60px; background-color: #ffffff; border: 3px solid #000000; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 6px 20px rgba(0,0,0,0.8); transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#f0f0f0'; this.style.transform='scale(1.1)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.9)'; this.querySelector('span').style.color='#EA715E'" onmouseout="this.style.backgroundColor='#ffffff'; this.style.transform='scale(1)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.8)'; this.querySelector('span').style.color='#000000'">
                     <span style="color: #000000; font-size: 32px; font-weight: bold; line-height: 1;">×</span>
                 </div>
     
@@ -359,11 +359,23 @@ function openDeliverableModal(title, description, imageSrc) {
     var modalTitle = document.getElementById("deliverableModalTitle");
     var modalDescription = document.getElementById("deliverableModalDescription");
     
+    console.log("Opening deliverable modal with:", {title, description, imageSrc});
+    
     modal.style.display = "block";
     modalImg.src = imageSrc;
     modalImg.alt = title;
     modalTitle.textContent = title;
     modalDescription.textContent = description;
+    
+    // Add error handling for image loading
+    modalImg.onerror = function() {
+        console.error("Failed to load image:", imageSrc);
+        this.style.display = "none";
+    };
+    
+    modalImg.onload = function() {
+        console.log("Image loaded successfully:", imageSrc);
+    };
 }
 
 function closeDeliverableModal() {
@@ -373,11 +385,15 @@ function closeDeliverableModal() {
 // Add click event listeners to deliverable tiles
 document.addEventListener('DOMContentLoaded', function() {
     var tiles = document.querySelectorAll('.deliverable-tile');
-    tiles.forEach(function(tile) {
+    console.log("Found", tiles.length, "deliverable tiles");
+    
+    tiles.forEach(function(tile, index) {
         tile.addEventListener('click', function() {
             var title = this.getAttribute('data-title');
             var description = this.getAttribute('data-description');
             var imageSrc = this.getAttribute('data-image');
+            
+            console.log("Tile clicked:", index, {title, description, imageSrc});
             openDeliverableModal(title, description, imageSrc);
         });
     });
