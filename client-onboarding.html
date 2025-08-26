@@ -11,7 +11,7 @@ title: Client Onboarding - Andrea Folgado
             <div class="col-lg-12 text-center">
                 <h1>Client Onboarding</h1>
                 <p class="subtitle" style="font-style: italic;">Optimised the onboarding process for commercial clients</p>
-                <img src="img/portfolio/ClientOnboarding/CO_projectimage_Email.png" alt="Client Onboarding Project - Email Interface" class="main-project-image" style="max-width: 35%; height: auto; margin-bottom: 50px;" onclick="openImageModal(this.src, this.alt)">
+                <img src="img/portfolio/ClientOnboarding/CO_projectimage_Email.png" alt="Client Onboarding Project - Email Interface" class="main-project-image" style="max-width: 35%; height: auto; margin-bottom: 50px;" onclick="openImageModal(this.src, this.alt, '', '')">
             </div>
         </div>
 
@@ -109,7 +109,7 @@ title: Client Onboarding - Andrea Folgado
             <div class="col-lg-12">
                 <h2>Background</h2>
                 
-                <img src="img/portfolio/ClientOnboarding/CO_LegacyUserflow.png" alt="Legacy User Flow" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 30px;">
+                <img src="img/portfolio/ClientOnboarding/CO_LegacyUserflow.png" alt="Legacy User Flow" class="background-image" style="max-width: 35%; height: auto; display: block; margin: 0 auto 30px auto;" onclick="openImageModal(this.src, this.alt, 'Legacy User Flow for Client Onboarding', 'This diagram outlines the manual onboarding process previously used by the stakeholder, highlighting disconnected systems, lack of automation, and limited visibility.')">
 
                 <h3>Key Pain Points</h3>
                 <ul>
@@ -305,7 +305,9 @@ title: Client Onboarding - Andrea Folgado
     </div>
     
     <div style="position: relative; margin: auto; padding: 20px; width: 90%; max-width: 800px; text-align: center;">
-        <img id="modalImage" style="max-width: 100%; height: auto; border-radius: 5px;">
+        <img id="modalImage" style="max-width: 100%; height: auto; border-radius: 5px; margin-bottom: 20px;">
+        <h3 id="imageModalTitle" style="color: #EA715E !important; margin-bottom: 15px; border-bottom: none !important; padding-bottom: 0 !important;"></h3>
+        <p id="imageModalDescription" style="color: #ffffff !important; text-align: left; margin-bottom: 30px;"></p>
     </div>
 </div>
 
@@ -324,12 +326,30 @@ title: Client Onboarding - Andrea Folgado
 </div>
 
 <script>
-function openImageModal(src, alt) {
+function openImageModal(src, alt, title, description) {
     var modal = document.getElementById("imageModal");
     var modalImg = document.getElementById("modalImage");
+    var modalTitle = document.getElementById("imageModalTitle");
+    var modalDescription = document.getElementById("imageModalDescription");
+    
     modal.style.display = "block";
     modalImg.src = src;
     modalImg.alt = alt;
+    
+    // Set title and description if provided
+    if (title) {
+        modalTitle.textContent = title;
+        modalTitle.style.display = "block";
+    } else {
+        modalTitle.style.display = "none";
+    }
+    
+    if (description) {
+        modalDescription.textContent = description;
+        modalDescription.style.display = "block";
+    } else {
+        modalDescription.style.display = "none";
+    }
 }
 
 function closeImageModal() {

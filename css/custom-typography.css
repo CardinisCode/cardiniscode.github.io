@@ -171,6 +171,20 @@ section {
             box-shadow: 0 8px 25px rgba(234,113,94,0.2);
         }
 
+        /* Background Image Modal Styling */
+        .background-image {
+            cursor: pointer;
+            border: 2px solid #2c2787;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(44,39,135,0.1);
+        }
+
+        .background-image:hover {
+            border-color: #EA715E;
+            box-shadow: 0 8px 25px rgba(234,113,94,0.2);
+        }
+
         /* Mobile responsive */
         @media (max-width: 768px) {
             .deliverables-grid {
