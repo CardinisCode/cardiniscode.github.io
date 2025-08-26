@@ -5,7 +5,7 @@ layout: default
 modal-id: 1
 date: 2021-06-11
 img: jhm_dashboard2.jpg
-thumbnail: jhm_intro_screen.jpg
+thumbnail: jhm_dashboard.jpg
 alt: Job Hunt Manager Dashboard
 project-date: May 2021
 client: Harvard University - CS50

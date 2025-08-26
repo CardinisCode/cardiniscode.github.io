@@ -10,14 +10,25 @@
             <div class="row">
             {% for post in site.posts limit:3 %}
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
+                    {% if post.demo-link and post.demo-link != "" %}
+                        <a href="{{ post.demo-link }}" class="portfolio-link">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-external-link fa-3x"></i>
+                                </div>
                             </div>
-                        </div>
-                        <img src="img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
-                    </a>
+                            <img src="img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
+                        </a>
+                    {% else %}
+                        <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
+                        </a>
+                    {% endif %}
                     <div class="portfolio-caption">
                         <h4>{{ post.title }}</h4>
                         <p class="text-muted">{{ post.subtitle }}</p>

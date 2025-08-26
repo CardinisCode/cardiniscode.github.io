@@ -1,17 +1,17 @@
 ---
-title: Gas Safety Assessment
-subtitle: Safety Management System
+title: Client Onboarding
+subtitle: Digital Product Designer
 layout: default
-modal-id: 2
-date: 2024-01-15
-img: gas-safety-thumbnail.jpg
-thumbnail: gas-safety-thumbnail.jpg
-alt: Gas Safety Assessment System
-project-date: January 2024
+modal-id: 3
+date: 2025-08-22
+img: ClientOnboarding/CO_projectimage_Email.png
+thumbnail: ClientOnboarding/CO_projectimage_Email.png
+alt: Client Onboarding Project
+project-date: August 2025
 client: Personal Project
-category: Web Development
-description: A comprehensive gas safety assessment and management system designed to help businesses and organizations maintain compliance with safety regulations. The application provides tools for conducting safety audits, tracking compliance, and generating detailed reports.
-github-link: "https://github.com/CardinisCode/gas-safety-assessment"
-demo-link: "https://gas-safety-demo.example.com"
-closing-message: "Explore the Gas Safety Assessment project on: "
+category: Product Design
+description: A comprehensive client onboarding solution built within Salesforce to streamline and partially automate the manual B2B onboarding process. This project involved improving internal workflows and creating a more seamless, consistent experience for prospective clients through personalized welcome emails, pre-filled customer forms, automated case creation, and account management tools.
+github-link: ""
+demo-link: "/client-onboarding.html"
+closing-message: "Explore the Client Onboarding project: "
 --- 

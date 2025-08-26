@@ -185,6 +185,35 @@ section {
             box-shadow: 0 8px 25px rgba(234,113,94,0.2);
         }
 
+        /* Portfolio Image Sizing */
+        #portfolio .portfolio-item img,
+        #portfolio .portfolio-item .portfolio-link img {
+            width: 100% !important;
+            height: 250px !important;
+            object-fit: cover !important;
+            object-position: center !important;
+            max-width: none !important;
+            border-bottom: 2px solid #2c2787 !important;
+        }
+
+        /* Fix Intro Heading Capitalization */
+        header .intro-text .intro-heading {
+            text-transform: none !important;
+        }
+
+        /* Reduce Portfolio Tile Spacing */
+        #portfolio .portfolio-item {
+            margin: 0 0 10px !important;
+        }
+
+        #portfolio .row > .col-md-4 {
+            padding: 0 8px !important;
+        }
+
+        #portfolio .portfolio-item .portfolio-caption {
+            padding: 15px !important;
+        }
+
         /* Mobile responsive */
         @media (max-width: 768px) {
             .deliverables-grid {
