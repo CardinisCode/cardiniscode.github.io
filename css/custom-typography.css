@@ -1,0 +1,97 @@
+/* Custom Typography Styles */
+/* This file overrides Bootstrap and Agency theme typography */
+
+/* H1 Styles */
+h1 {
+    color: #EA715E !important;
+    font-family: 'Caudex', serif !important;
+    font-size: 56px !important;
+    text-align: center !important;
+    font-weight: 700 !important;
+    margin-bottom: 20px !important;
+}
+
+/* H2 Styles */
+h2 {
+    color: #2c2787 !important;
+    font-family: 'Caudex', serif !important;
+    font-size: 45px !important;
+    text-align: center !important;
+    font-weight: 700 !important;
+    margin-bottom: 30px !important;
+}
+
+/* H3 Styles */
+h3 {
+    color: #2c2787 !important;
+    font-family: 'Caudex', serif !important;
+    font-size: 30px !important;
+    text-align: left !important;
+    font-weight: 700 !important;
+    margin-bottom: 30px !important;
+    border-bottom: 3px solid #2c2787 !important;
+    padding-bottom: 10px !important;
+}
+
+/* H4 Styles */
+h4 {
+    color: #2c2787 !important;
+    font-family: 'Caudex', serif !important;
+    font-size: 20px !important;
+    text-align: left !important;
+    font-weight: 700 !important;
+    margin-bottom: 15px !important;
+}
+
+/* H5 Styles */
+h5 {
+    color: #000 !important;
+    font-family: 'Caudex', serif !important;
+    font-size: 18px !important;
+    text-align: left !important;
+    font-weight: 700 !important;
+    margin-bottom: 10px !important;
+}
+
+/* Paragraph Styles */
+p {
+    color: #000 !important;
+    font-size: 18px !important;
+    line-height: 1.6 !important;
+    text-align: left !important;
+    margin-bottom: 20px !important;
+}
+
+/* List Styles */
+ul, ol {
+    color: #000 !important;
+    font-size: 18px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 20px !important;
+    padding-left: 20px !important;
+}
+
+ul li, ol li {
+    margin-bottom: 10px !important;
+}
+
+/* Override Bootstrap's text-transform for headings */
+h1, h2, h3, h4, h5, h6 {
+    text-transform: none !important;
+}
+
+/* Ensure proper spacing for lists within sections */
+div ul, div ol {
+    margin-bottom: 30px !important;
+}
+
+/* Override any Bootstrap heading margins */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0 !important;
+}
+
+/* Ensure proper font rendering */
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
