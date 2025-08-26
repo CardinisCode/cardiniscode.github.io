@@ -1,11 +1,11 @@
 ---
 title: Gas Safety Assessment
-subtitle: Safety Management System
+subtitle: Digital Product Designer
 layout: default
 modal-id: 2
 date: 2024-01-15
-img: gas-safety-thumbnail.jpg
-thumbnail: gas-safety-thumbnail.jpg
+img: GasSafetyAssessment/GSR_MainImage.png
+thumbnail: GasSafetyAssessment/GSR_MainImage.png
 alt: Gas Safety Assessment System
 project-date: January 2024
 client: Personal Project

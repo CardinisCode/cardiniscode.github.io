@@ -1,6 +1,6 @@
 ---
 title: Job Hunt Manager
-subtitle: A Web Application for Job Seekers
+subtitle: Full Stack developer
 layout: default
 modal-id: 1
 date: 2021-06-11
