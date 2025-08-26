@@ -201,6 +201,27 @@ section {
             text-transform: none !important;
         }
 
+        /* Skills Section Subtitle Spacing */
+        #skills .section-subheading {
+            margin-bottom: 60px !important;
+        }
+
+        /* Skills Section Headings */
+        #skills .skills-heading {
+            text-align: center !important;
+        }
+
+        /* Mobile Skills Section Spacing */
+        @media (max-width: 767px) {
+            #skills .col-md-4 {
+                margin-bottom: 40px;
+            }
+            
+            #skills .col-md-4:last-child {
+                margin-bottom: 0;
+            }
+        }
+
         /* Reduce Portfolio Tile Spacing */
         #portfolio .portfolio-item {
             margin: 0 0 10px !important;
