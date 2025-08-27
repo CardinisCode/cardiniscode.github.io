@@ -398,7 +398,24 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 - 📋 **Video Integration**: Special handling for video demo in grid layout
 - 📋 **Modal Functionality**: Images can be viewed in larger modal windows
 
-#### **5. CTA Implementation** 📋 Planned
+#### **5. YouTube Demo Video Integration** 📋 Planned
+**Action**: 📋 Add live demo video below H1 and description
+**Requirements**:
+- 📋 **Source**: User to upload GSR live demo to YouTube and provide link
+- 📋 **Design**: Same styling as main image on Client Onboarding project page
+- 📋 **Position**: Below H1 title and description
+- 📋 **Modal Functionality**: Video can be viewed in larger modal window
+- 📋 **Responsive**: Works on both desktop and mobile devices
+
+#### **6. Portfolio Tile Image Update** 📋 Planned
+**Action**: 📋 Update Gas Safety Assessment tile image on landing page (separate from linking)
+**Requirements**:
+- 📋 **Timing**: After Gas Safety Assessment page is complete and user gives go-ahead
+- 📋 **Image**: Update to use `GSR_MainImage.png` from GasSafetyAssessment directory
+- 📋 **Sizing**: Ensure consistent sizing with other portfolio tiles
+- 📋 **Quality**: High-quality image that represents the project well
+
+#### **7. CTA Implementation** 📋 Planned
 **"Return to Home" CTA**:
 - 📋 **Styling**: Based on preferred CTA styling from existing pages
 - 📋 **Link**: Navigate to `index.html`
