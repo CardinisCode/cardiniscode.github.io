@@ -40,6 +40,7 @@ All products presented below were redesigned, built and integrated within Salesf
 [image: 
 src: "GSR_Project_ProposedUserFlow.png", 
 title: "Proposed User Flow (Engineers)"
+description: "Mapped the engineer’s journey within Salesforce Field Service to ensure data capture was seamless, reliable, and aligned with the tools they already used daily."
 ]
 
 [image: 
