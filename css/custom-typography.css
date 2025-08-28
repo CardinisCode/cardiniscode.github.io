@@ -119,11 +119,13 @@ section {
 }
 
 /* Deliverable Features Grid */
-.deliverables-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    margin: 40px 0;
+.deliverables-grid,
+section .deliverables-grid,
+.container .deliverables-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 30px !important;
+    margin: 40px 0 !important;
 }
 
 .deliverable-tile {
