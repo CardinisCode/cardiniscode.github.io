@@ -19,6 +19,11 @@ kill -9 [PID]
 kill -9 $(lsof -ti:4000)
 ```
 
+**Kill all processes on port 4000 & run new server:**
+```
+kill -9 $(lsof -ti:4000) && bundle exec jekyll serve --host 0.0.0.0 --port 4000
+```
+
 ### Alternative Port Usage
 
 **Start Jekyll on different port:**
