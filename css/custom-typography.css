@@ -160,6 +160,17 @@ section .deliverables-grid,
     text-align: center !important;
 }
 
+/* Image section headings - specific styling to avoid conflicts */
+.image-section-heading {
+    margin: 15px 0 !important;
+    font-size: 18px !important;
+    color: #2c2787 !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    font-family: inherit !important;
+    line-height: 1.4 !important;
+}
+
         /* Main Project Image Modal Styling */
         .main-project-image {
             cursor: pointer;
