@@ -268,9 +268,13 @@ section .deliverables-grid,
 
         /* Mobile responsive */
         @media (max-width: 768px) {
-            .deliverables-grid {
-                grid-template-columns: 1fr;
-                gap: 20px;
+            .deliverables-grid,
+            section .deliverables-grid,
+            .container .deliverables-grid {
+                display: grid !important;
+                grid-template-columns: 1fr !important;
+                gap: 20px !important;
+                margin: 40px 0 !important;
             }
 
             .deliverable-tile {
