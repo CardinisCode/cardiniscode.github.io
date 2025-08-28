@@ -98,6 +98,48 @@ p {
    =================================== */
 
 /* Primary Button */
+
+/* ===================================
+   ACCESSIBILITY IMPROVEMENTS
+   =================================== */
+
+/* Focus indicators for keyboard navigation */
+.deliverable-tile:focus {
+    outline: 3px solid #EA715E !important;
+    outline-offset: 2px !important;
+    transform: scale(1.02) !important;
+    box-shadow: 0 4px 15px rgba(234, 113, 94, 0.3) !important;
+}
+
+.deliverable-tile:focus-visible {
+    outline: 3px solid #EA715E !important;
+    outline-offset: 2px !important;
+}
+
+/* Ensure focus indicators work across browsers */
+.deliverable-tile:focus:not(:focus-visible) {
+    outline: none !important;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .deliverable-tile:focus {
+        outline: 4px solid #000000 !important;
+        outline-offset: 3px !important;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    .deliverable-tile {
+        transition: none !important;
+    }
+    
+    .deliverable-tile:hover,
+    .deliverable-tile:focus {
+        transform: none !important;
+    }
+}
 .btn-primary {
     color: #fff;
     background-color: #007acc;

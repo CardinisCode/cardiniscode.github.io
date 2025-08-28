@@ -82,5 +82,16 @@ document.addEventListener('DOMContentLoaded', function() {
             var imageSrc = this.getAttribute('data-image');
             openDeliverableModal(title, description, imageSrc);
         });
+        
+        // Add keyboard event listeners for accessibility
+        tile.addEventListener('keydown', function(event) {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                var title = this.getAttribute('data-title');
+                var description = this.getAttribute('data-description');
+                var imageSrc = this.getAttribute('data-image');
+                openDeliverableModal(title, description, imageSrc);
+            }
+        });
     });
 });
