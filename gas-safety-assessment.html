@@ -178,52 +178,44 @@ subtitle: Digital Product Designer
             <h3 style="padding-top: 30px;">Legacy Products</h3>
             <p>The following legacy products and user flow illustrate the problematic system that engineers were struggling with before the new Salesforce-based solution was implemented.</p>
             
-            <div class="deliverables-grid" style="display: grid !important; grid-template-columns: repeat(2, 1fr) !important; gap: 30px !important; margin: 40px 0 !important;">
-                <div class="deliverable-tile" 
-                     data-title="Legacy Digital Gas Safety Form" 
-                     data-description="The old third-party form tool that frequently crashed, causing data loss and workflow interruptions for field engineers." 
-                     data-image="img/portfolio/GasSafetyAssessment/GSR_Legacy_GSR_Form.png"
-                     role="button"
-                     tabindex="0"
-                     aria-label="View Legacy Digital Gas Safety Form - The old third-party form tool that frequently crashed, causing data loss and workflow interruptions for field engineers. Press Enter or Space to open."
-                     onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openDeliverableModal(this.getAttribute('data-title'), this.getAttribute('data-description'), this.getAttribute('data-image')); }">
-                    <div style="position: relative; display: inline-block; width: 100%;">
-                        <img src="img/portfolio/GasSafetyAssessment/GSR_Legacy_GSR_Form.png" alt="Legacy Digital Gas Safety Form - The old third-party form tool that frequently crashed"
-                             style="width: 100%; height: 350px; object-fit: contain; cursor: pointer; transition: all 0.3s ease;"
-                             onmouseover="this.nextElementSibling.style.opacity='1'"
-                             onmouseout="this.nextElementSibling.style.opacity='0'"
-                             onclick="openDeliverableModal('Legacy Digital Gas Safety Form', 'The old third-party form tool that frequently crashed, causing data loss and workflow interruptions for field engineers.', 'img/portfolio/GasSafetyAssessment/GSR_Legacy_GSR_Form.png')">
-                        <!-- Semi-transparent overlay with "Click to view" text -->
-                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); color: white; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; font-size: clamp(12px, 2.5vw, 18px); font-weight: bold; text-align: center; pointer-events: none; padding: 10px; line-height: 1.2;">
-                            👁<br>Click to view
-                        </div>
-                    </div>
-                    <h4 class="text-center">Legacy Digital Gas Safety Form</h4>
+            <div style="display: flex; flex-wrap: wrap; margin: 40px 0; gap: 30px;">
+                <div style="flex: 1 1 45%; min-width: 300px; margin-bottom: 30px;">
+                    <figure style="margin: 0; text-align: center;">
+                        <img src="img/portfolio/GasSafetyAssessment/GSR_Legacy_GSR_Form.png" 
+                             alt="Legacy Digital Gas Safety Form - The old third-party form tool that frequently crashed" 
+                             style="max-width: 100%; height: 350px; object-fit: contain; border: 2px solid #2c2787; border-radius: 8px; margin-bottom: 15px;">
+                        <figcaption style="font-size: 16px; line-height: 1.5; color: #333; margin-bottom: 15px; font-style: italic;">
+                            The old third-party form tool that frequently crashed, causing data loss and workflow interruptions for field engineers.
+                        </figcaption>
+                        <a href="img/portfolio/GasSafetyAssessment/GSR_Legacy_GSR_Form.png" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           style="background-color: #EA715E; border-color: #EA715E; color: white; font-weight: bold; padding: 8px 16px; font-size: 14px; border-radius: 5px; text-decoration: none; display: inline-block; transition: all 0.3s ease;"
+                           onmouseover="this.style.backgroundColor='#d65a4a'; this.style.borderColor='#d65a4a'; this.style.transform='scale(1.05)'"
+                           onmouseout="this.style.backgroundColor='#EA715E'; this.style.borderColor='#EA715E'; this.style.transform='scale(1)'">
+                            View larger version
+                        </a>
+                    </figure>
                 </div>
                 
-                <div class="deliverable-tile" 
-                     data-title="Legacy Report Template" 
-                     data-description="The old report template that required manual generation and lacked integration with existing business systems." 
-                     data-image="img/portfolio/GasSafetyAssessment/GSR_LegacyReportDesign.png"
-                     role="button"
-                     tabindex="0"
-                     aria-label="View Legacy Report Template - The old report template that required manual generation and lacked integration with existing business systems. Press Enter or Space to open."
-                     onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openDeliverableModal(this.getAttribute('data-title'), this.getAttribute('data-description'), this.getAttribute('data-image')); }">
-                    <div style="position: relative; display: inline-block; width: 100%;">
-                        <img src="img/portfolio/GasSafetyAssessment/GSR_LegacyReportDesign.png" alt="Legacy Report Template - The old report template that required manual generation"
-                             style="width: 100%; height: 350px; object-fit: contain; cursor: pointer; transition: all 0.3s ease;"
-                             onmouseover="this.nextElementSibling.style.opacity='1'"
-                             onmouseout="this.nextElementSibling.style.opacity='0'"
-                             onclick="openDeliverableModal('Legacy Report Template', 'The old report template that required manual generation and lacked integration with existing business systems.', 'img/portfolio/GasSafetyAssessment/GSR_LegacyReportDesign.png')">
-                        <!-- Semi-transparent overlay with "Click to view" text -->
-                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); color: white; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; font-size: clamp(12px, 2.5vw, 18px); font-weight: bold; text-align: center; pointer-events: none; padding: 10px; line-height: 1.2;">
-                            👁<br>Click to view
-                        </div>
-                    </div>
-                    <h4 class="text-center">Legacy Report Template</h4>
+                <div style="flex: 1 1 45%; min-width: 300px; margin-bottom: 0;">
+                    <figure style="margin: 0; text-align: center;">
+                        <img src="img/portfolio/GasSafetyAssessment/GSR_LegacyReportDesign.png" 
+                             alt="Legacy Report Template - The old report template that required manual generation" 
+                             style="max-width: 100%; height: auto; border: 2px solid #2c2787; border-radius: 8px; margin-bottom: 15px;">
+                        <figcaption style="font-size: 16px; line-height: 1.5; color: #333; margin-bottom: 15px; font-style: italic;">
+                            The old report template that required manual generation and lacked integration with existing business systems.
+                        </figcaption>
+                        <a href="img/portfolio/GasSafetyAssessment/GSR_LegacyReportDesign.png" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           style="background-color: #EA715E; border-color: #EA715E; color: white; font-weight: bold; padding: 8px 16px; font-size: 14px; border-radius: 5px; text-decoration: none; display: inline-block; transition: all 0.3s ease;"
+                           onmouseover="this.style.backgroundColor='#d65a4a'; this.style.borderColor='#d65a4a'; this.style.transform='scale(1.05)'"
+                           onmouseout="this.style.backgroundColor='#EA715E'; this.style.borderColor='#EA715E'; this.style.transform='scale(1)'">
+                            View larger version
+                        </a>
+                    </figure>
                 </div>
-                
-
             </div>
         </div>
     </div>
