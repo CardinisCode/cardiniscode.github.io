@@ -134,15 +134,25 @@ subtitle: Digital Product Designer
                 </div>
                 
                 <div class="deliverable-tile" 
-                     data-title="Email Template System" 
-                     data-description="Automated email notifications with professional templates, ensuring customers receive assessment reports promptly." 
+                     data-title="Prototype - Email Template Design" 
+                     data-description="Design for the email template that customers receive after the assessment, triggered within Salesforce based on Aspect business rules." 
                      data-image="img/portfolio/GasSafetyAssessment/GSR_EmailTemplate.jpg"
                      role="button"
                      tabindex="0"
-                     aria-label="View Email Template System - Automated email notifications with professional templates, ensuring customers receive assessment reports promptly. Press Enter or Space to open."
+                     aria-label="View Prototype - Email Template Design - Design for the email template that customers receive after the assessment, triggered within Salesforce based on Aspect business rules. Press Enter or Space to open."
                      onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openDeliverableModal(this.getAttribute('data-title'), this.getAttribute('data-description'), this.getAttribute('data-image')); }">
-                    <img src="img/portfolio/GasSafetyAssessment/GSR_EmailTemplate.jpg" alt="Email Template System - Automated email notifications with professional templates">
-                    <h4>Email Template System</h4>
+                    <div style="position: relative; display: inline-block; width: 100%;">
+                        <img src="img/portfolio/GasSafetyAssessment/GSR_EmailTemplate.jpg" alt="Prototype - Email Template Design - Design for the email template that customers receive after the assessment"
+                             style="width: 100%; height: 350px; object-fit: contain; cursor: pointer; transition: all 0.3s ease;"
+                             onmouseover="this.nextElementSibling.style.opacity='1'"
+                             onmouseout="this.nextElementSibling.style.opacity='0'"
+                             onclick="openDeliverableModal('Prototype - Email Template Design', 'Design for the email template that customers receive after the assessment, triggered within Salesforce based on Aspect business rules.', 'img/portfolio/GasSafetyAssessment/GSR_EmailTemplate.jpg')">
+                        <!-- Semi-transparent overlay with "Click to view" text -->
+                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); color: white; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; font-size: clamp(12px, 2.5vw, 18px); font-weight: bold; text-align: center; pointer-events: none; padding: 10px; line-height: 1.2;">
+                            👁<br>Click to view
+                        </div>
+                    </div>
+                    <h4>Prototype - Email Template Design</h4>
                 </div>
                 
                 <div class="deliverable-tile" 
