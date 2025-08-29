@@ -176,6 +176,45 @@ subtitle: Digital Product Designer
                         View larger version
                     </a>
                 </div>
+                
+                <div class="video-tile" 
+                     data-title="Gas Safety Assessment Demo" 
+                     data-description="This video demo serves as a training tool for engineers, showcasing the streamlined gas safety assessment process within the Salesforce Field Service application. It highlights the new custom form's efficiency and how it automates data storage and report generation." 
+                     data-video="https://www.youtube.com/watch?v=TwYdOBr2TQY"
+                     role="button"
+                     tabindex="0"
+                     aria-label="Watch Gas Safety Assessment Demo Video - Training tool for engineers showcasing the streamlined gas safety assessment process. Press Enter or Space to open."
+                     onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openVideoModal(this.getAttribute('data-title'), this.getAttribute('data-description'), this.getAttribute('data-video')); }">
+                    <div style="position: relative; display: inline-block; width: 100%;">
+                        <!-- YouTube Video Thumbnail with Play Icon -->
+                        <div style="width: 100%; height: 250px; background: linear-gradient(135deg, #ff0000, #cc0000); border-radius: 8px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease; position: relative;"
+                             onmouseover="this.nextElementSibling.style.opacity='1'"
+                             onmouseout="this.nextElementSibling.style.opacity='0'"
+                             onclick="openVideoModal('Gas Safety Assessment Demo', 'This video demo serves as a training tool for engineers, showcasing the streamlined gas safety assessment process within the Salesforce Field Service application. It highlights the new custom form\'s efficiency and how it automates data storage and report generation.', 'https://www.youtube.com/watch?v=TwYdOBr2TQY')">
+                            <!-- Play Icon -->
+                            <div style="width: 80px; height: 80px; background-color: rgba(255, 255, 255, 0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);">
+                                <div style="width: 0; height: 0; border-left: 20px solid #ff0000; border-top: 12px solid transparent; border-bottom: 12px solid transparent; margin-left: 4px;"></div>
+                            </div>
+                            <!-- Video Title Overlay -->
+                            <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0, 0, 0, 0.8)); color: white; padding: 20px 15px 15px; text-align: center; font-weight: bold; font-size: 16px;">
+                                Gas Safety Assessment Demo
+                            </div>
+                        </div>
+                        <!-- Semi-transparent overlay with "Click to watch" text -->
+                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); color: white; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; font-size: clamp(12px, 2.5vw, 18px); font-weight: bold; text-align: center; pointer-events: none; padding: 10px; line-height: 1.2; border-radius: 8px;">
+                            ▶️<br>Click to watch
+                        </div>
+                    </div>
+                    <h4 class="text-center">Training Demo Video</h4>
+                    <a href="https://www.youtube.com/watch?v=TwYdOBr2TQY" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       style="background-color: #EA715E; border-color: #EA715E; color: white; font-weight: bold; padding: 8px 16px; font-size: 14px; border-radius: 5px; text-decoration: none; display: inline-block; transition: all 0.3s ease; margin-top: 15px;"
+                       onmouseover="this.style.backgroundColor='#d65a4a'; this.style.borderColor='#d65a4a'; this.style.transform='scale(1.05)'"
+                       onmouseout="this.style.backgroundColor='#EA715E'; this.style.borderColor='#EA715E'; this.style.transform='scale(1)'">
+                        Watch on YouTube
+                    </a>
+                </div>
 
             </div>
         </div>
@@ -472,3 +511,154 @@ subtitle: Digital Product Designer
         <p id="deliverableModalDescription"></p>
     </div>
 </div>
+
+<!-- Video Modal -->
+<div id="videoModal" class="modal" style="display: none; position: fixed; z-index: 1025; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.9); padding-top: 120px;">
+    <!-- Close button positioned at modal corner, below navbar -->
+    <div onclick="closeVideoModal()" style="position: fixed; right: 30px; top: 160px; z-index: 1026; width: 60px; height: 60px; background-color: #ffffff; border: 3px solid #000000; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 6px 20px rgba(0,0,0,0.8); transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#f0f0f0'; this.style.transform='scale(1.1)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.9)'; this.querySelector('span').style.color='#EA715E'" onmouseout="this.style.backgroundColor='#ffffff'; this.style.transform='scale(1)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.8)'; this.querySelector('span').style.color='#000000'">
+        <span style="color: #000000; font-size: 32px; font-weight: bold; line-height: 1;">×</span>
+    </div>
+    
+    <div style="position: relative; margin: auto; padding: 20px; width: 90%; max-width: 800px; text-align: center;">
+        <div id="videoModalContent" style="margin-bottom: 20px;">
+            <!-- YouTube iframe will be inserted here -->
+        </div>
+        <h3 id="videoModalTitle" style="color: #EA715E !important; margin-bottom: 15px; border-bottom: none !important; padding-bottom: 0 !important;"></h3>
+        <p id="videoModalDescription" style="color: #ffffff !important; text-align: left; margin-bottom: 30px;"></p>
+    </div>
+</div>
+
+<style>
+.video-tile {
+    background: white;
+    border: 2px solid #2c2787;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.video-tile:hover {
+    border-color: #EA715E;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.video-tile h4 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+.video-tile a {
+    text-decoration: none;
+}
+</style>
+
+<script>
+// Wait for the page to load and then set up our video modal functionality
+document.addEventListener('DOMContentLoaded', function() {
+    // Store original functions
+    var originalOpenDeliverableModal = window.openDeliverableModal;
+    var originalCloseDeliverableModal = window.closeDeliverableModal;
+    var originalCloseImageModal = window.closeImageModal;
+    
+    // Function to open video modal
+    function openVideoModal(title, description, videoUrl) {
+        // Close any existing modals first
+        if (typeof originalCloseDeliverableModal === 'function') {
+            originalCloseDeliverableModal();
+        }
+        if (typeof originalCloseImageModal === 'function') {
+            originalCloseImageModal();
+        }
+        
+        // Extract video ID from YouTube URL
+        const videoId = videoUrl.split('v=')[1];
+        const embedUrl = `https://www.youtube.com/embed/${videoId}`;
+        
+        // Create iframe for YouTube video
+        const iframe = document.createElement('iframe');
+        iframe.src = embedUrl;
+        iframe.width = '100%';
+        iframe.height = '450';
+        iframe.frameBorder = '0';
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+        iframe.allowFullscreen = true;
+        iframe.style.borderRadius = '8px';
+        
+        // Clear previous content and add new iframe
+        const videoContent = document.getElementById('videoModalContent');
+        videoContent.innerHTML = '';
+        videoContent.appendChild(iframe);
+        
+        // Set modal content
+        document.getElementById('videoModalTitle').textContent = title;
+        document.getElementById('videoModalDescription').textContent = description;
+        
+        // Show modal
+        document.getElementById('videoModal').style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
+    
+    // Function to close video modal
+    function closeVideoModal() {
+        document.getElementById('videoModal').style.display = 'none';
+        document.body.style.overflow = 'auto';
+        
+        // Clear video content to stop playback
+        document.getElementById('videoModalContent').innerHTML = '';
+    }
+    
+    // Override the existing modal functions to close video modal when opening others
+    window.openDeliverableModal = function(title, description, imageSrc) {
+        closeVideoModal();
+        if (typeof originalOpenDeliverableModal === 'function') {
+            originalOpenDeliverableModal(title, description, imageSrc);
+        }
+    };
+    
+    window.closeDeliverableModal = function() {
+        if (typeof originalCloseDeliverableModal === 'function') {
+            originalCloseDeliverableModal();
+        }
+        closeVideoModal();
+    };
+    
+    window.closeImageModal = function() {
+        if (typeof originalCloseImageModal === 'function') {
+            originalCloseImageModal();
+        }
+        closeVideoModal();
+    };
+    
+    // Override the window.onclick function to include video modal
+    var originalOnClick = window.onclick;
+    window.onclick = function(event) {
+        const videoModal = document.getElementById('videoModal');
+        if (event.target === videoModal) {
+            closeVideoModal();
+            return;
+        }
+        
+        // Call the original onclick handler
+        if (typeof originalOnClick === 'function') {
+            originalOnClick(event);
+        }
+    };
+    
+    // Add escape key handler for video modal
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            closeVideoModal();
+        }
+    });
+    
+    // Make openVideoModal globally available
+    window.openVideoModal = openVideoModal;
+    window.closeVideoModal = closeVideoModal;
+});
+</script>

@@ -12,5 +12,6 @@ client: Personal Project
 category: Web Development
 description: A comprehensive gas safety assessment and management system designed to help businesses and organizations maintain compliance with safety regulations. The application provides tools for conducting safety audits, tracking compliance, and generating detailed reports.
 github-link: "https://github.com/CardinisCode/gas-safety-assessment"
+demo-link: "gas-safety-assessment.html"
 closing-message: "Explore the Gas Safety Assessment project on: "
 --- 
