@@ -450,7 +450,7 @@ header .intro-text .intro-subheading {
    =================================== */
 
 section {
-    padding: 100px 0;
+    padding: 10px 0;
 }
 
 section h2.section-heading {
@@ -460,7 +460,7 @@ section h2.section-heading {
 }
 
 section h3.section-subheading {
-    margin-bottom: 75px;
+    margin-bottom: 25px;
     text-transform: none;
     font-family: 'Georgia, "Times New Roman", serif';
     font-size: 16px;
