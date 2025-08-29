@@ -276,6 +276,8 @@ section .deliverables-grid,
             display: block;
         }
 
+
+
         #portfolio .portfolio-item .portfolio-tile {
             background: white;
             border: 2px solid #2c2787;
@@ -436,9 +438,13 @@ section .deliverables-grid,
         }
 
         #portfolio .portfolio-item .portfolio-cta-link:hover .cta-text {
-            background-color: #d65a4a;
+            background-color: white;
+            color: #EA715E;
+            border: 2px solid #EA715E;
             transform: scale(1.05);
         }
+
+
 
         #portfolio .portfolio-item .portfolio-caption {
             padding: 15px 10px !important;
