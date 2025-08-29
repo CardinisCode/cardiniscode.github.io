@@ -12,7 +12,7 @@
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     {% if post.demo-link and post.demo-link != "" %}
                         <div class="portfolio-tile">
-                            <div class="portfolio-image-wrapper">
+                            <div class="portfolio-image-wrapper portfolio-image-{{ post.title | downcase | replace: ' ', '-' }}">
                                 <img src="img/portfolio/{{ post.thumbnail }}" class="img-fluid" alt="">
                                 <div class="portfolio-overlay">
                                     <i class="fa fa-external-link fa-2x"></i>
@@ -29,7 +29,7 @@
                         </a>
                     {% else %}
                         <div class="portfolio-tile">
-                            <div class="portfolio-image-wrapper">
+                            <div class="portfolio-image-wrapper portfolio-image-{{ post.title | downcase | replace: ' ', '-' }}">
                                 <img src="img/portfolio/{{ post.thumbnail }}" class="img-fluid" alt="">
                                 <div class="portfolio-overlay">
                                     <i class="fa fa-plus fa-2x"></i>

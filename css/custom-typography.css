@@ -296,8 +296,7 @@ section .deliverables-grid,
 
         /* Fixed-size image container using Bootstrap grid */
         #portfolio .portfolio-item .portfolio-tile .portfolio-image-wrapper {
-            width: 200px;
-            height: 150px;
+            height: 170px;
             margin: 40px auto;
             position: relative;
             display: flex;
@@ -315,6 +314,22 @@ section .deliverables-grid,
             border: none;
             outline: none;
             box-shadow: none;
+        }
+
+        /* Custom image widths for specific projects */
+        #portfolio .portfolio-item .portfolio-tile .portfolio-image-wrapper.portfolio-image-client-onboarding {
+            width: 150px;
+            height: 170px;
+        }
+
+        #portfolio .portfolio-item .portfolio-tile .portfolio-image-wrapper.portfolio-image-gas-safety-assessment {
+            width: 120px;
+            height: 170px;
+        }
+
+        #portfolio .portfolio-item .portfolio-tile .portfolio-image-wrapper.portfolio-image-job-hunt-manager {
+            width: 270px;
+            height: 170px;
         }
 
         /* Override any existing image borders */
