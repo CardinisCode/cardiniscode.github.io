@@ -12,10 +12,12 @@
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     {% if post.demo-link and post.demo-link != "" %}
                         <div class="portfolio-tile">
-                            <img src="img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
-                            <div class="portfolio-overlay">
-                                <i class="fa fa-external-link fa-2x"></i>
-                                <span>View Project</span>
+                            <div class="portfolio-image-wrapper">
+                                <img src="img/portfolio/{{ post.thumbnail }}" class="img-fluid" alt="">
+                                <div class="portfolio-overlay">
+                                    <i class="fa fa-external-link fa-2x"></i>
+                                    <span>View Project</span>
+                                </div>
                             </div>
                             <h4 class="portfolio-title">{{ post.title }}</h4>
                             <p class="portfolio-subtitle">{{ post.subtitle }}</p>
@@ -27,10 +29,12 @@
                         </a>
                     {% else %}
                         <div class="portfolio-tile">
-                            <img src="img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
-                            <div class="portfolio-overlay">
-                                <i class="fa fa-plus fa-2x"></i>
-                                <span>View Details</span>
+                            <div class="portfolio-image-wrapper">
+                                <img src="img/portfolio/{{ post.thumbnail }}" class="img-fluid" alt="">
+                                <div class="portfolio-overlay">
+                                    <i class="fa fa-plus fa-2x"></i>
+                                    <span>View Details</span>
+                                </div>
                             </div>
                             <h4 class="portfolio-title">{{ post.title }}</h4>
                             <p class="portfolio-subtitle">{{ post.subtitle }}</p>
