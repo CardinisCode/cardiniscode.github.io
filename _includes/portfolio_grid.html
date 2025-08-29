@@ -11,27 +11,33 @@
             {% for post in site.posts limit:3 %}
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     {% if post.demo-link and post.demo-link != "" %}
-                        <a href="{{ post.demo-link }}" class="portfolio-link">
-                            <div class="portfolio-tile">
-                                <img src="img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
-                                <div class="portfolio-overlay">
-                                    <i class="fa fa-external-link fa-2x"></i>
-                                    <span>View Project</span>
-                                </div>
-                                <h4 class="portfolio-title">{{ post.title }}</h4>
-                                <p class="portfolio-subtitle">{{ post.subtitle }}</p>
+                        <div class="portfolio-tile">
+                            <img src="img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
+                            <div class="portfolio-overlay">
+                                <i class="fa fa-external-link fa-2x"></i>
+                                <span>View Project</span>
+                            </div>
+                            <h4 class="portfolio-title">{{ post.title }}</h4>
+                            <p class="portfolio-subtitle">{{ post.subtitle }}</p>
+                        </div>
+                        <a href="{{ post.demo-link }}" class="portfolio-cta-link">
+                            <div class="portfolio-cta">
+                                <span class="cta-text">View Project</span>
                             </div>
                         </a>
                     {% else %}
-                        <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
-                            <div class="portfolio-tile">
-                                <img src="img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
-                                <div class="portfolio-overlay">
-                                    <i class="fa fa-plus fa-2x"></i>
-                                    <span>View Details</span>
-                                </div>
-                                <h4 class="portfolio-title">{{ post.title }}</h4>
-                                <p class="portfolio-subtitle">{{ post.subtitle }}</p>
+                        <div class="portfolio-tile">
+                            <img src="img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
+                            <div class="portfolio-overlay">
+                                <i class="fa fa-plus fa-2x"></i>
+                                <span>View Details</span>
+                            </div>
+                            <h4 class="portfolio-title">{{ post.title }}</h4>
+                            <p class="portfolio-subtitle">{{ post.subtitle }}</p>
+                        </div>
+                        <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-cta-link" data-toggle="modal">
+                            <div class="portfolio-cta">
+                                <span class="cta-text">View Details</span>
                             </div>
                         </a>
                     {% endif %}
@@ -40,3 +46,27 @@
             </div>
         </div>
     </section>
+
+<script>
+// Make portfolio tiles clickable while keeping CTA separate
+document.addEventListener('DOMContentLoaded', function() {
+    const portfolioTiles = document.querySelectorAll('.portfolio-item .portfolio-tile');
+    
+    portfolioTiles.forEach(function(tile) {
+        tile.addEventListener('click', function(e) {
+            // Don't trigger if clicking on the CTA (which is outside the tile)
+            if (e.target.closest('.portfolio-cta-link')) {
+                return;
+            }
+            
+            // Find the corresponding CTA link and trigger it
+            const portfolioItem = this.closest('.portfolio-item');
+            const ctaLink = portfolioItem.querySelector('.portfolio-cta-link');
+            
+            if (ctaLink) {
+                ctaLink.click();
+            }
+        });
+    });
+});
+</script>
