@@ -18,6 +18,8 @@
                                     <i class="fa fa-external-link fa-2x"></i>
                                     <span>View Project</span>
                                 </div>
+                                <h4 class="portfolio-title">{{ post.title }}</h4>
+                                <p class="portfolio-subtitle">{{ post.subtitle }}</p>
                             </div>
                         </a>
                     {% else %}
@@ -28,13 +30,11 @@
                                     <i class="fa fa-plus fa-2x"></i>
                                     <span>View Details</span>
                                 </div>
+                                <h4 class="portfolio-title">{{ post.title }}</h4>
+                                <p class="portfolio-subtitle">{{ post.subtitle }}</p>
                             </div>
                         </a>
                     {% endif %}
-                    <div class="portfolio-caption">
-                        <h4>{{ post.title }}</h4>
-                        <p class="text-muted">{{ post.subtitle }}</p>
-                    </div>
                 </div>
             {% endfor %}
             </div>

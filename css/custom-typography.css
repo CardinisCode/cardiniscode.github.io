@@ -345,6 +345,22 @@ section .deliverables-grid,
             font-size: 14px !important;
         }
 
+        #portfolio .portfolio-item .portfolio-tile .portfolio-title {
+            color: #333 !important;
+            font-weight: bold !important;
+            margin: 15px 0 5px 0 !important;
+            font-size: 18px !important;
+            text-align: center !important;
+        }
+
+        #portfolio .portfolio-item .portfolio-tile .portfolio-subtitle {
+            color: #666 !important;
+            font-style: normal !important;
+            margin: 0 0 10px 0 !important;
+            font-size: 14px !important;
+            text-align: center !important;
+        }
+
         #portfolio .portfolio-item .portfolio-caption {
             padding: 15px 10px !important;
             background-color: transparent !important;
