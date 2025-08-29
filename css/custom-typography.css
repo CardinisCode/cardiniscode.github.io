@@ -294,33 +294,32 @@ section .deliverables-grid,
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
         }
 
-        #portfolio .portfolio-item .portfolio-tile img {
-            width: 85%;
-            height: 250px;
+        /* Portfolio tile images - more specific selectors */
+        #portfolio .portfolio-item .portfolio-tile img,
+        #portfolio .portfolio-item .portfolio-tile img.img-responsive,
+        #portfolio .portfolio-item .portfolio-tile img.img-centered,
+        #portfolio .portfolio-item .portfolio-link .portfolio-tile img,
+        #portfolio .portfolio-item .portfolio-tile img[src*="portfolio"] {
+            width: 60px;
+            height: 45px;
             object-fit: contain;
             border-radius: 4px;
             transition: all 0.3s ease;
             margin: 0 auto;
             display: block;
-            max-width: 85%;
-            max-height: 250px;
-            border: none;
+            border: none !important;
+            outline: none;
+            box-shadow: none;
         }
 
-        /* Force image sizing with higher specificity */
-        #portfolio .portfolio-item .portfolio-link .portfolio-tile img,
+        /* Override any existing image borders with maximum specificity */
         #portfolio .portfolio-item .portfolio-tile img.img-responsive,
         #portfolio .portfolio-item .portfolio-tile img.img-centered {
-            width: 85%;
-            height: 250px;
-            object-fit: contain;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-            margin: 0 auto;
-            display: block;
-            max-width: 85%;
-            max-height: 250px;
-            border: none;
+            border: none !important;
+            border-bottom: none !important;
+            border-top: none !important;
+            border-left: none !important;
+            border-right: none !important;
         }
 
         #portfolio .portfolio-item .portfolio-tile .portfolio-overlay {
@@ -354,20 +353,27 @@ section .deliverables-grid,
             font-size: 14px;
         }
 
-        #portfolio .portfolio-item .portfolio-tile .portfolio-title {
+        /* Portfolio tile titles and subtitles - more specific selectors */
+        #portfolio .portfolio-item .portfolio-tile .portfolio-title,
+        #portfolio .portfolio-item .portfolio-tile h4.portfolio-title {
             color: #333;
             font-weight: bold;
             margin: 15px 0 5px 0;
             font-size: 18px;
             text-align: center;
+            display: block;
+            width: 100%;
         }
 
-        #portfolio .portfolio-item .portfolio-tile .portfolio-subtitle {
+        #portfolio .portfolio-item .portfolio-tile .portfolio-subtitle,
+        #portfolio .portfolio-item .portfolio-tile p.portfolio-subtitle {
             color: #666;
             font-style: normal;
             margin: 0 0 15px 0;
             font-size: 14px;
             text-align: center;
+            display: block;
+            width: 100%;
         }
 
         #portfolio .portfolio-item .portfolio-cta {
