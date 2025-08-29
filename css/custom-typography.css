@@ -312,14 +312,10 @@ section .deliverables-grid,
             box-shadow: none;
         }
 
-        /* Override any existing image borders with maximum specificity */
+        /* Override any existing image borders */
         #portfolio .portfolio-item .portfolio-tile img.img-responsive,
         #portfolio .portfolio-item .portfolio-tile img.img-centered {
             border: none !important;
-            border-bottom: none !important;
-            border-top: none !important;
-            border-left: none !important;
-            border-right: none !important;
         }
 
         #portfolio .portfolio-item .portfolio-tile .portfolio-overlay {
@@ -360,9 +356,11 @@ section .deliverables-grid,
             font-weight: bold;
             margin: 15px 0 5px 0;
             font-size: 18px;
-            text-align: center;
+            text-align: center !important;
             display: block;
             width: 100%;
+            line-height: 1.2;
+            padding: 20px 0 0 0;
         }
 
         #portfolio .portfolio-item .portfolio-tile .portfolio-subtitle,
@@ -371,9 +369,10 @@ section .deliverables-grid,
             font-style: normal;
             margin: 0 0 15px 0;
             font-size: 14px;
-            text-align: center;
+            text-align: center !important;
             display: block;
             width: 100%;
+            line-height: 1.2;
         }
 
         #portfolio .portfolio-item .portfolio-cta {
