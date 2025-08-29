@@ -271,11 +271,12 @@ section .deliverables-grid,
             background: white !important;
             border: 2px solid #2c2787 !important;
             border-radius: 8px !important;
-            padding: 15px !important;
+            padding: 25px !important;
             text-align: center !important;
             transition: all 0.3s ease !important;
             position: relative !important;
             overflow: hidden !important;
+            min-height: 300px !important;
         }
 
         #portfolio .portfolio-item .portfolio-tile:hover {
@@ -285,11 +286,32 @@ section .deliverables-grid,
         }
 
         #portfolio .portfolio-item .portfolio-tile img {
-            width: 100% !important;
-            height: 200px !important;
-            object-fit: cover !important;
+            width: 85% !important;
+            height: 250px !important;
+            object-fit: contain !important;
             border-radius: 4px !important;
             transition: all 0.3s ease !important;
+            margin: 0 auto !important;
+            display: block !important;
+            max-width: 85% !important;
+            max-height: 250px !important;
+            border: none !important;
+        }
+
+        /* Force image sizing with higher specificity */
+        #portfolio .portfolio-item .portfolio-link .portfolio-tile img,
+        #portfolio .portfolio-item .portfolio-tile img.img-responsive,
+        #portfolio .portfolio-item .portfolio-tile img.img-centered {
+            width: 85% !important;
+            height: 250px !important;
+            object-fit: contain !important;
+            border-radius: 4px !important;
+            transition: all 0.3s ease !important;
+            margin: 0 auto !important;
+            display: block !important;
+            max-width: 85% !important;
+            max-height: 250px !important;
+            border: none !important;
         }
 
         #portfolio .portfolio-item .portfolio-tile .portfolio-overlay {
