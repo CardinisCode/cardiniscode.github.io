@@ -113,6 +113,14 @@ section {
     padding-top: 150px !important;
 }
 
+/* Mobile: Reduce section padding for better spacing */
+@media (max-width: 768px) {
+    section {
+        padding-top: 30px !important;
+        padding-bottom: 50px !important;
+    }
+}
+
 /* Ensure proper spacing for main content */
 .container {
     margin-top: 20px !important;
