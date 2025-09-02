@@ -28,9 +28,8 @@ The app was built with Python, Flask, HTML, CSS, and SQLite. It was deployed on 
 ## At a glance
 
 * My role: Full stack developer
-* Key Skills: {Write content}
-* Collaborators: {Write content}
-* Tools: {Write content}
+* Key Skills: Full-Stack Development, Flask, Python, HTML, CSS, SQLite, Git, Version Control, Heroku Deployment
+* Tools: VS Code, Git, GitHub, Heroku
 * Timeframe: 2021
 
 ## Deliverable Features 

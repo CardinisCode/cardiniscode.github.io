@@ -1,0 +1,484 @@
+---
+layout: resume
+title: Job Hunt Manager - Andrea Folgado
+---
+
+
+
+    <!-- Project Content -->
+    <section id="project-content">
+        <div class="container">
+            <!-- Project Header -->
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1>Job Hunt Manager</h1>
+                    <p class="subtitle" style="font-style: italic;">A full-stack web application for organizing your job hunt in one place</p>
+                    <div class="video-container" style="margin-bottom: 50px;">
+                        <div class="video-thumbnail" onclick="openVideoModal()" style="cursor: pointer; position: relative; display: inline-block;">
+                            <img src="img/portfolio/job_hunt_manager/dashboard.jpg" alt="Job Hunt Manager Dashboard" class="main-project-image" style="max-width: 35%; height: auto;">
+                            <div class="play-button-overlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.7); border-radius: 50%; width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fa fa-play" style="color: white; font-size: 30px;"></i>
+                            </div>
+                        </div>
+                        <div class="text-center" style="margin-top: 15px;">
+                            <a href="https://youtu.be/bX6YD33VKIw?si=xFaUoYbLCajtxAa8" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                <i class="fa fa-youtube-play"></i> Watch on YouTube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Project Overview</h2>
+                    <p class="section-subheading">A comprehensive web application that helps users track job applications, interviews, and offers in one centralized platform.</p>
+                </div>
+            </div>
+
+            <!-- At a Glance -->
+            <div class="row" style="margin-bottom: 60px;">
+                <div class="col-lg-12">
+                    <h3 class="section-subheading">At a Glance</h3>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6" style="margin-bottom: 30px;">
+                            <div class="text-center">
+                                <h4>My Role</h4>
+                                <p>Full Stack Developer</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6" style="margin-bottom: 30px;">
+                            <div class="text-center">
+                                <h4>Key Skills</h4>
+                                <p>Full-Stack Development, Flask, Python, HTML, CSS, SQLite, Git, Version Control, Heroku Deployment</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6" style="margin-bottom: 30px;">
+                            <div class="text-center">
+                                <h4>Tools</h4>
+                                <p>VS Code, Git, GitHub, Heroku</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6" style="margin-bottom: 30px;">
+                            <div class="text-center">
+                                <h4>Timeframe</h4>
+                                <p>2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Problem -->
+            <div class="row" style="margin-bottom: 60px;">
+                <div class="col-lg-12">
+                    <h3 class="section-subheading">Problem</h3>
+                    <p>Job hunting can be overwhelming when information is scattered across different tools. Applications may be logged in spreadsheets, interview dates kept in calendars, and notes stored elsewhere. Without a single place to bring everything together, it becomes difficult to stay organized and maintain a clear picture of progress.</p>
+                    
+                    <h4>Key Pain Points</h4>
+                    <ul>
+                        <li>Information spread across multiple tools (spreadsheets, calendars, notes apps)</li>
+                        <li>No central place to manage the full journey of each application</li>
+                        <li>Difficulty keeping track of application progress and interview details</li>
+                        <li>Frustration in maintaining an organized, consistent process</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Solution -->
+            <div class="row" style="margin-bottom: 60px;">
+                <div class="col-lg-12">
+                    <h3 class="section-subheading">Solution</h3>
+                    <p>I started by validating the idea with LinkedIn polls. From there, I built the backend, created forms with WTForms, styled the frontend, and deployed the app to Heroku. The project was managed entirely by myself, with occasional technical guidance.</p>
+                    
+                    <h4>User Research & Discovery</h4>
+                    <p>I began by asking my LinkedIn network if they would find an app like this useful. The response was very positive, with many people saying they saw real value in the idea and would personally use it to manage their own job hunt.</p>
+                    
+                    <p>Based on this feedback, I moved forward with building a simple, centralized system that users could log into and use regularly throughout their job search. It needed to store all the relevant data and be flexible enough for future updates.</p>
+                    
+                    <h4>Technical Implementation</h4>
+                    <ul>
+                        <li><strong>Backend:</strong> Developed with <strong>Python (Flask)</strong> to manage application logic and routing, and to provide the API for data handling.</li>
+                        <li><strong>Frontend:</strong> The user interface was built using standard <strong>HTML</strong> and styled with <strong>CSS</strong> for a clear and intuitive user experience.</li>
+                        <li><strong>Database:</strong> A <strong>SQLite</strong> relational database was implemented to persistently store user data, including applications, notes, and interview details.</li>
+                        <li><strong>Version Control:</strong> <strong>Git</strong> was used for version control, with all project commits and updates regularly pushed to a <strong>GitHub</strong> repository.</li>
+                        <li><strong>Deployment:</strong> The application was deployed and hosted on <strong>Heroku</strong>, making it accessible for live testing and use.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Deliverable Features -->
+            <div class="row" style="margin-bottom: 60px;">
+                <div class="col-lg-12">
+                    <h3 class="section-subheading">Deliverable Features</h3>
+                    <p>Key features developed for Job Hunt Manager that help users stay organized, motivated, and in control of their job hunt.</p>
+                    
+                    <div class="deliverables-grid">
+                        <div class="deliverable-tile" data-toggle="modal" data-target="#modal1">
+                            <img src="img/portfolio/job_hunt_manager/add_job_application.jpg" alt="Add a new job application form">
+                            <h4>Add a new job application</h4>
+                        </div>
+                        
+                        <div class="deliverable-tile" data-toggle="modal" data-target="#modal2">
+                            <img src="img/portfolio/job_hunt_manager/dashboard.jpg" alt="Dashboard overview">
+                            <h4>Dashboard overview</h4>
+                        </div>
+                        
+                        <div class="deliverable-tile" data-toggle="modal" data-target="#modal3">
+                            <img src="img/portfolio/job_hunt_manager/address-book-indiv-contacts.jpg" alt="Individual Contacts Directory">
+                            <h4>Individual Contacts Directory</h4>
+                        </div>
+                        
+                        <div class="deliverable-tile" data-toggle="modal" data-target="#modal4">
+                            <img src="img/portfolio/job_hunt_manager/company_directory.jpg" alt="Company Contact Directory">
+                            <h4>Company Contact Directory</h4>
+                        </div>
+                        
+                        <div class="deliverable-tile" data-toggle="modal" data-target="#modal5">
+                            <img src="img/portfolio/job_hunt_manager/add_application_notes.jpg" alt="Application Notes">
+                            <h4>Application Notes</h4>
+                        </div>
+                        
+                        <div class="deliverable-tile" data-toggle="modal" data-target="#modal6">
+                            <img src="img/portfolio/job_hunt_manager/add_interview_form.jpg" alt="Interview Details">
+                            <h4>Interview Details</h4>
+                        </div>
+                        
+                        <div class="deliverable-tile" data-toggle="modal" data-target="#modal7">
+                            <img src="img/portfolio/job_hunt_manager/dashboard_notifications.jpg" alt="Dashboard Notifications">
+                            <h4>Dashboard Notifications</h4>
+                        </div>
+                        
+                        <div class="deliverable-tile" data-toggle="modal" data-target="#modal8">
+                            <img src="img/portfolio/job_hunt_manager/job_application_details.png" alt="Job Application Details">
+                            <h4>Job Application Details</h4>
+                        </div>
+                        
+                        <div class="deliverable-tile" data-toggle="modal" data-target="#modal9">
+                            <img src="img/portfolio/job_hunt_manager/change_password.jpg" alt="Change Account Password">
+                            <h4>Change Account Password</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impact -->
+            <div class="row" style="margin-bottom: 60px;">
+                <div class="col-lg-12">
+                    <h3 class="section-subheading">Impact</h3>
+                    <p>The Job Hunt Manager provides users with a centralized, intuitive tool to streamline and organize their job search. By offering a single place to track applications, interviews, and notes, the application helps users feel more in control of their job hunt, reduce feelings of being overwhelmed, and clearly visualize their progress. This ultimately allows them to be more efficient and focused throughout the process.</p>
+                    
+                    <h4>Project Delivery</h4>
+                    <ul>
+                        <li><strong>Solo Development:</strong> Built this project from the ground up as the sole full-stack developer.</li>
+                        <li><strong>End-to-End Ownership:</strong> Managed the entire development lifecycle, from initial concept and user research to final deployment.</li>
+                        <li><strong>Live Demonstration:</strong> Produced a walkthrough video to demonstrate the core functionality and user experience of the deployed application.</li>
+                        <li><strong>Practical Experience:</strong> Gained hands-on experience in delivering a fully functional web application designed to solve a real-world problem.</li>
+                    </ul>
+                    
+                    <h4>Planned Next Steps</h4>
+                    <ul>
+                        <li>Rebuild the app using JavaScript frameworks for both frontend and backend</li>
+                        <li>Redesign the UI with a mobile-first approach</li>
+                        <li>Incorporate accessibility features</li>
+                        <li>Deploy both a new web and mobile version</li>
+                        <li>Improve security, by adding authentication features like 2FA and allowing applications like Google Authenticator</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="row text-center">
+                <div class="col-lg-12">
+                    <a href="index.html" class="btn btn-primary btn-xl text-uppercase js-scroll-trigger">Return to Home</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Modals -->
+    <!-- Modal 1 -->
+    <div class="portfolio-modal modal fade" id="modal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2>Add a new job application</h2>
+                                <img class="img-fluid d-block mx-auto" src="img/portfolio/job_hunt_manager/add_job_application.jpg" alt="Add a new job application form">
+                                <p>Allows users to quickly log new job applications, capturing key info like role, company, and notes in a single form.</p>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="portfolio-modal modal fade" id="modal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2>Dashboard overview</h2>
+                                <img class="img-fluid d-block mx-auto" src="img/portfolio/job_hunt_manager/dashboard.jpg" alt="Dashboard overview">
+                                <p>Gives users a clear summary of all job applications and progress, helping them feel more in control and focused.</p>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="portfolio-modal modal fade" id="modal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2>Individual Contacts Directory</h2>
+                                <img class="img-fluid d-block mx-auto" src="img/portfolio/job_hunt_manager/address-book-indiv-contacts.jpg" alt="Individual Contacts Directory">
+                                <p>Gives users a dedicated place to save professional contact details, so everything they need for job hunting lives in one place. Makes it easy to find and reach out to contacts quickly when needed.</p>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="portfolio-modal modal fade" id="modal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2>Company Contact Directory</h2>
+                                <img class="img-fluid d-block mx-auto" src="img/portfolio/job_hunt_manager/company_directory.jpg" alt="Company Contact Directory">
+                                <p>All your business contacts stored within 1 view.</p>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div class="portfolio-modal modal fade" id="modal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2>Application Notes</h2>
+                                <img class="img-fluid d-block mx-auto" src="img/portfolio/job_hunt_manager/add_application_notes.jpg" alt="Application Notes">
+                                <p>Add notes for a specific Job application you've submitted.</p>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div class="portfolio-modal modal fade" id="modal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2>Interview Details</h2>
+                                <img class="img-fluid d-block mx-auto" src="img/portfolio/job_hunt_manager/add_interview_form.jpg" alt="Interview Details">
+                                <p>Got a scheduled Interview lined up? Save it on your dashboard.</p>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 7 -->
+    <div class="portfolio-modal modal fade" id="modal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2>Dashboard Notifications</h2>
+                                <img class="img-fluid d-block mx-auto" src="img/portfolio/job_hunt_manager/dashboard_notifications.jpg" alt="Dashboard Notifications">
+                                <p>See details of all the job applications you've submitted, all job offers you've received and all upcoming interviews.</p>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 8 -->
+    <div class="portfolio-modal modal fade" id="modal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2>Job Application Details</h2>
+                                <img class="img-fluid d-block mx-auto" src="img/portfolio/job_hunt_manager/job_application_details.png" alt="Job Application Details">
+                                <p>See all the details you've provided for a job application. You'll have the option to update the details and to see the company details.</p>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 9 -->
+    <div class="portfolio-modal modal fade" id="modal9" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2>Change Account Password</h2>
+                                <img class="img-fluid d-block mx-auto" src="img/portfolio/job_hunt_manager/change_password.jpg" alt="Change Account Password">
+                                <p>Changing your account password is quick and easy.</p>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div class="portfolio-modal modal fade" id="videoModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="modal-body">
+                                <h2>Job Hunt Manager Demo Video</h2>
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bX6YD33VKIw" 
+                                            title="Job Hunt Manager web app demo video" 
+                                            frameborder="0" 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                            referrerpolicy="strict-origin-when-cross-origin"
+                                            allowfullscreen>
+                                    </iframe>
+                                </div>
+                                <p style="margin-top: 20px;">This video demonstrates the core functionality and user experience of the deployed Job Hunt Manager application.</p>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openVideoModal() {
+            $('#videoModal').modal('show');
+        }
+    </script>
