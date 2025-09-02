@@ -13,18 +13,41 @@ title: Job Hunt Manager - Andrea Folgado
                 <div class="col-lg-12 text-center">
                     <h1>Job Hunt Manager</h1>
                     <p class="subtitle" style="font-style: italic;">A full-stack web application for organizing your job hunt in one place</p>
-                    <div class="video-container" style="margin-bottom: 50px;">
-                        <div class="video-thumbnail" onclick="openVideoModal()" style="cursor: pointer; position: relative; display: inline-block;">
-                            <img src="img/portfolio/job_hunt_manager/dashboard.jpg" alt="Job Hunt Manager Dashboard" class="main-project-image" style="max-width: 35%; height: auto;">
-                            <div class="play-button-overlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.7); border-radius: 50%; width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
-                                <i class="fa fa-play" style="color: white; font-size: 30px;"></i>
+                    <div class="video-tile" 
+                         data-title="Job Hunt Manager Demo" 
+                         data-description="This video demonstrates the core functionality and user experience of the deployed Job Hunt Manager application, showcasing how users can track job applications, manage interviews, and organize their job search process." 
+                         data-video="https://www.youtube.com/watch?v=bX6YD33VKIw"
+                         role="button"
+                         tabindex="0"
+                         aria-label="Watch Job Hunt Manager Demo Video - Demonstrates the core functionality and user experience of the deployed application. Press Enter or Space to open."
+                         onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openVideoModal(this.getAttribute('data-title'), this.getAttribute('data-description'), this.getAttribute('data-video')); }">
+                        <div style="position: relative; display: inline-block; width: 100%;">
+                            <!-- YouTube Video Thumbnail with Play Icon -->
+                            <div style="width: 100%; height: 250px; background: linear-gradient(135deg, #ff0000, #cc0000); border-radius: 8px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease; position: relative;"
+                                 onmouseover="this.nextElementSibling.style.opacity='1'"
+                                 onmouseout="this.nextElementSibling.style.opacity='0'">
+                                <!-- Play Icon -->
+                                <div style="width: 80px; height: 80px; background-color: rgba(255, 255, 255, 0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);">
+                                    <div style="width: 0; height: 0; border-left: 20px solid #ff0000; border-top: 12px solid transparent; border-bottom: 12px solid transparent; margin-left: 4px;"></div>
+                                </div>
+                                <!-- Video Title Overlay -->
+                                <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0, 0, 0, 0.8)); color: white; padding: 20px 15px 15px; text-align: center; font-weight: bold; font-size: 16px;">
+                                    Job Hunt Manager Demo
+                                </div>
+                            </div>
+                            <!-- Semi-transparent overlay with "Click to watch" text -->
+                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); color: white; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; font-size: clamp(12px, 2.5vw, 18px); font-weight: bold; text-align: center; pointer-events: none; padding: 10px; line-height: 1.2; border-radius: 8px;">
+                                ▶️<br>Click to watch
                             </div>
                         </div>
-                        <div class="text-center" style="margin-top: 15px;">
-                            <a href="https://youtu.be/bX6YD33VKIw?si=xFaUoYbLCajtxAa8" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                                <i class="fa fa-youtube-play"></i> Watch on YouTube
-                            </a>
-                        </div>
+                        <a href="https://youtu.be/bX6YD33VKIw?si=xFaUoYbLCajtxAa8" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           style="background-color: #EA715E; border-color: #EA715E; color: white; font-weight: bold; padding: 8px 16px; font-size: 14px; border-radius: 5px; text-decoration: none; display: inline-block; transition: all 0.3s ease; margin-top: 15px;"
+                           onmouseover="this.style.backgroundColor='#d65a4a'; this.style.borderColor='#d65a4a'; this.style.transform='scale(1.05)'"
+                           onmouseout="this.style.backgroundColor='#EA715E'; this.style.borderColor='#EA715E'; this.style.transform='scale(1)'">
+                            View in YouTube
+                        </a>
                     </div>
                 </div>
             </div>
@@ -442,43 +465,35 @@ title: Job Hunt Manager - Andrea Folgado
         </div>
     </div>
 
-    <!-- Video Modal -->
-    <div class="portfolio-modal modal fade" id="videoModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="modal-body">
-                                <h2>Job Hunt Manager Demo Video</h2>
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bX6YD33VKIw" 
-                                            title="Job Hunt Manager web app demo video" 
-                                            frameborder="0" 
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                            referrerpolicy="strict-origin-when-cross-origin"
-                                            allowfullscreen>
-                                    </iframe>
-                                </div>
-                                <p style="margin-top: 20px;">This video demonstrates the core functionality and user experience of the deployed Job Hunt Manager application.</p>
-                                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                    <i class="fa fa-times"></i> Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <script>
-        function openVideoModal() {
-            $('#videoModal').modal('show');
-        }
-    </script>
+
+    <style>
+    .video-tile {
+        background: white;
+        border: 2px solid #2c2787;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .video-tile:hover {
+        border-color: #EA715E;
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .video-tile h4 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .video-tile a {
+        text-decoration: none;
+    }
+    </style>
+
