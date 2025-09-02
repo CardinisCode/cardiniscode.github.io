@@ -9,6 +9,12 @@ Image
 
 ## At a glance 
 
+* My role: {role title - user to update}
+* Key Skills: {Key skills - user to update}
+* Collaborators: {Key skills - user to update / remove}
+* Tools: {Tools - user to update}
+* Timeframe: 2021
+
 ### Role
 #### {role title}
 {Brief role description EG: "Product Design and ownership, UX/UI, Workflow logic, Email template design and development"}
