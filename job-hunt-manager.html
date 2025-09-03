@@ -117,49 +117,274 @@ title: Job Hunt Manager - Andrea Folgado
                     <p>Key features developed for Job Hunt Manager that help users stay organized, motivated, and in control of their job hunt.</p>
                     
                     <div class="deliverables-grid">
-                        <div class="deliverable-tile" data-toggle="modal" data-target="#modal1">
-                            <img src="img/portfolio/job_hunt_manager/add_job_application.jpg" alt="Add a new job application form">
-                            <h3>Add a new job application</h3>
+                        <div class="deliverable-tile" 
+                             data-title="Add a new job application" 
+                             data-description="Allows users to quickly log new job applications, capturing key info like role, company, and notes in a single form." 
+                             data-image="img/portfolio/job_hunt_manager/add_job_application.jpg"
+                             role="button"
+                             tabindex="0"
+                             aria-label="View Add a new job application - Allows users to quickly log new job applications, capturing key info like role, company, and notes in a single form. Press Enter or Space to open."
+                             onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openDeliverableModal(this.getAttribute('data-title'), this.getAttribute('data-description'), this.getAttribute('data-image')); }">
+                            <div style="position: relative; display: inline-block; width: 100%;">
+                                <img src="img/portfolio/job_hunt_manager/add_job_application.jpg" alt="Add a new job application form"
+                                     style="width: 100%; height: 250px; object-fit: cover; cursor: pointer; transition: all 0.3s ease;"
+                                     onmouseover="this.nextElementSibling.style.opacity='1'"
+                                     onmouseout="this.nextElementSibling.style.opacity='0'"
+                                     onclick="openDeliverableModal('Add a new job application', 'Allows users to quickly log new job applications, capturing key info like role, company, and notes in a single form.', 'img/portfolio/job_hunt_manager/add_job_application.jpg')">
+                                <!-- Semi-transparent overlay with "Click to view" text -->
+                                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); color: white; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; font-size: clamp(12px, 2.5vw, 18px); font-weight: bold; text-align: center; pointer-events: none; padding: 10px; line-height: 1.2;">
+                                    👁<br>Click to view
+                                </div>
+                            </div>
+                            <h4 class="text-center">Add a new job application</h4>
+                            <a href="img/portfolio/job_hunt_manager/add_job_application.jpg" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               style="background-color: #EA715E; border-color: #EA715E; color: white; font-weight: bold; padding: 8px 16px; font-size: 14px; border-radius: 5px; text-decoration: none; display: inline-block; transition: all 0.3s ease; margin-top: 15px;"
+                               onmouseover="this.style.backgroundColor='#d65a4a'; this.style.borderColor='#d65a4a'; this.style.transform='scale(1.05)'"
+                               onmouseout="this.style.backgroundColor='#EA715E'; this.style.borderColor='#EA715E'; this.style.transform='scale(1)'">
+                                View larger version
+                            </a>
                         </div>
                         
-                        <div class="deliverable-tile" data-toggle="modal" data-target="#modal2">
-                            <img src="img/portfolio/job_hunt_manager/dashboard.jpg" alt="Dashboard overview">
-                            <h3>Dashboard overview</h3>
+                        <div class="deliverable-tile" 
+                             data-title="Dashboard overview" 
+                             data-description="Gives users a clear summary of all job applications and progress, helping them feel more in control and focused." 
+                             data-image="img/portfolio/job_hunt_manager/dashboard.jpg"
+                             role="button"
+                             tabindex="0"
+                             aria-label="View Dashboard overview - Gives users a clear summary of all job applications and progress, helping them feel more in control and focused. Press Enter or Space to open."
+                             onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openDeliverableModal(this.getAttribute('data-title'), this.getAttribute('data-description'), this.getAttribute('data-image')); }">
+                            <div style="position: relative; display: inline-block; width: 100%;">
+                                <img src="img/portfolio/job_hunt_manager/dashboard.jpg" alt="Dashboard overview"
+                                     style="width: 100%; height: 250px; object-fit: cover; cursor: pointer; transition: all 0.3s ease;"
+                                     onmouseover="this.nextElementSibling.style.opacity='1'"
+                                     onmouseout="this.nextElementSibling.style.opacity='0'"
+                                     onclick="openDeliverableModal('Dashboard overview', 'Gives users a clear summary of all job applications and progress, helping them feel more in control and focused.', 'img/portfolio/job_hunt_manager/dashboard.jpg')">
+                                <!-- Semi-transparent overlay with "Click to view" text -->
+                                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); color: white; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; font-size: clamp(12px, 2.5vw, 18px); font-weight: bold; text-align: center; pointer-events: none; padding: 10px; line-height: 1.2;">
+                                    👁<br>Click to view
+                                </div>
+                            </div>
+                            <h4 class="text-center">Dashboard overview</h4>
+                            <a href="img/portfolio/job_hunt_manager/dashboard.jpg" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               style="background-color: #EA715E; border-color: #EA715E; color: white; font-weight: bold; padding: 8px 16px; font-size: 14px; border-radius: 5px; text-decoration: none; display: inline-block; transition: all 0.3s ease; margin-top: 15px;"
+                               onmouseover="this.style.backgroundColor='#d65a4a'; this.style.borderColor='#d65a4a'; this.style.transform='scale(1.05)'"
+                               onmouseout="this.style.backgroundColor='#EA715E'; this.style.borderColor='#EA715E'; this.style.transform='scale(1)'">
+                                View larger version
+                            </a>
                         </div>
                         
-                        <div class="deliverable-tile" data-toggle="modal" data-target="#modal3">
-                            <img src="img/portfolio/job_hunt_manager/address-book-indiv-contacts.jpg" alt="Individual Contacts Directory">
-                            <h3>Individual Contacts Directory</h3>
+                        <div class="deliverable-tile" 
+                             data-title="Individual Contacts Directory" 
+                             data-description="Gives users a dedicated place to save professional contact details, so everything they need for job hunting lives in one place. Makes it easy to find and reach out to contacts quickly when needed." 
+                             data-image="img/portfolio/job_hunt_manager/address-book-indiv-contacts.jpg"
+                             role="button"
+                             tabindex="0"
+                             aria-label="View Individual Contacts Directory - Gives users a dedicated place to save professional contact details. Press Enter or Space to open."
+                             onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openDeliverableModal(this.getAttribute('data-title'), this.getAttribute('data-description'), this.getAttribute('data-image')); }">
+                            <div style="position: relative; display: inline-block; width: 100%;">
+                                <img src="img/portfolio/job_hunt_manager/address-book-indiv-contacts.jpg" alt="Individual Contacts Directory"
+                                     style="width: 100%; height: 250px; object-fit: cover; cursor: pointer; transition: all 0.3s ease;"
+                                     onmouseover="this.nextElementSibling.style.opacity='1'"
+                                     onmouseout="this.nextElementSibling.style.opacity='0'"
+                                     onclick="openDeliverableModal('Individual Contacts Directory', 'Gives users a dedicated place to save professional contact details, so everything they need for job hunting lives in one place. Makes it easy to find and reach out to contacts quickly when needed.', 'img/portfolio/job_hunt_manager/address-book-indiv-contacts.jpg')">
+                                <!-- Semi-transparent overlay with "Click to view" text -->
+                                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); color: white; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; font-size: clamp(12px, 2.5vw, 18px); font-weight: bold; text-align: center; pointer-events: none; padding: 10px; line-height: 1.2;">
+                                    👁<br>Click to view
+                                </div>
+                            </div>
+                            <h4 class="text-center">Individual Contacts Directory</h4>
+                            <a href="img/portfolio/job_hunt_manager/address-book-indiv-contacts.jpg" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               style="background-color: #EA715E; border-color: #EA715E; color: white; font-weight: bold; padding: 8px 16px; font-size: 14px; border-radius: 5px; text-decoration: none; display: inline-block; transition: all 0.3s ease; margin-top: 15px;"
+                               onmouseover="this.style.backgroundColor='#d65a4a'; this.style.borderColor='#d65a4a'; this.style.transform='scale(1.05)'"
+                               onmouseout="this.style.backgroundColor='#EA715E'; this.style.borderColor='#EA715E'; this.style.transform='scale(1)'">
+                                View larger version
+                            </a>
                         </div>
                         
-                        <div class="deliverable-tile" data-toggle="modal" data-target="#modal4">
-                            <img src="img/portfolio/job_hunt_manager/company_directory.jpg" alt="Company Contact Directory">
-                            <h3>Company Contact Directory</h3>
+                        <div class="deliverable-tile" 
+                             data-title="Company Contact Directory" 
+                             data-description="All your business contacts stored within 1 view." 
+                             data-image="img/portfolio/job_hunt_manager/company_directory.jpg"
+                             role="button"
+                             tabindex="0"
+                             aria-label="View Company Contact Directory - All your business contacts stored within 1 view. Press Enter or Space to open."
+                             onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openDeliverableModal(this.getAttribute('data-title'), this.getAttribute('data-description'), this.getAttribute('data-image')); }">
+                            <div style="position: relative; display: inline-block; width: 100%;">
+                                <img src="img/portfolio/job_hunt_manager/company_directory.jpg" alt="Company Contact Directory"
+                                     style="width: 100%; height: 250px; object-fit: cover; cursor: pointer; transition: all 0.3s ease;"
+                                     onmouseover="this.nextElementSibling.style.opacity='1'"
+                                     onmouseout="this.nextElementSibling.style.opacity='0'"
+                                     onclick="openDeliverableModal('Company Contact Directory', 'All your business contacts stored within 1 view.', 'img/portfolio/job_hunt_manager/company_directory.jpg')">
+                                <!-- Semi-transparent overlay with "Click to view" text -->
+                                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); color: white; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; font-size: clamp(12px, 2.5vw, 18px); font-weight: bold; text-align: center; pointer-events: none; padding: 10px; line-height: 1.2;">
+                                    👁<br>Click to view
+                                </div>
+                            </div>
+                            <h4 class="text-center">Company Contact Directory</h4>
+                            <a href="img/portfolio/job_hunt_manager/company_directory.jpg" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               style="background-color: #EA715E; border-color: #EA715E; color: white; font-weight: bold; padding: 8px 16px; font-size: 14px; border-radius: 5px; text-decoration: none; display: inline-block; transition: all 0.3s ease; margin-top: 15px;"
+                               onmouseover="this.style.backgroundColor='#d65a4a'; this.style.borderColor='#d65a4a'; this.style.transform='scale(1.05)'"
+                               onmouseout="this.style.backgroundColor='#EA715E'; this.style.borderColor='#EA715E'; this.style.transform='scale(1)'">
+                                View larger version
+                            </a>
                         </div>
                         
-                        <div class="deliverable-tile" data-toggle="modal" data-target="#modal5">
-                            <img src="img/portfolio/job_hunt_manager/add_application_notes.jpg" alt="Application Notes">
-                            <h3>Application Notes</h3>
+                        <div class="deliverable-tile" 
+                             data-title="Application Notes" 
+                             data-description="Add notes for a specific Job application you've submitted." 
+                             data-image="img/portfolio/job_hunt_manager/add_application_notes.jpg"
+                             role="button"
+                             tabindex="0"
+                             aria-label="View Application Notes - Add notes for a specific Job application you've submitted. Press Enter or Space to open."
+                             onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openDeliverableModal(this.getAttribute('data-title'), this.getAttribute('data-description'), this.getAttribute('data-image')); }">
+                            <div style="position: relative; display: inline-block; width: 100%;">
+                                <img src="img/portfolio/job_hunt_manager/add_application_notes.jpg" alt="Application Notes"
+                                     style="width: 100%; height: 250px; object-fit: cover; cursor: pointer; transition: all 0.3s ease;"
+                                     onmouseover="this.nextElementSibling.style.opacity='1'"
+                                     onmouseout="this.nextElementSibling.style.opacity='0'"
+                                     onclick="openDeliverableModal('Application Notes', 'Add notes for a specific Job application you\'ve submitted.', 'img/portfolio/job_hunt_manager/add_application_notes.jpg')">
+                                <!-- Semi-transparent overlay with "Click to view" text -->
+                                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); color: white; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; font-size: clamp(12px, 2.5vw, 18px); font-weight: bold; text-align: center; pointer-events: none; padding: 10px; line-height: 1.2;">
+                                    <br>Click to view
+                                </div>
+                            </div>
+                            <h4 class="text-center">Application Notes</h4>
+                            <a href="img/portfolio/job_hunt_manager/add_application_notes.jpg" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               style="background-color: #EA715E; border-color: #EA715E; color: white; font-weight: bold; padding: 8px 16px; font-size: 14px; border-radius: 5px; text-decoration: none; display: inline-block; transition: all 0.3s ease; margin-top: 15px;"
+                               onmouseover="this.style.backgroundColor='#d65a4a'; this.style.borderColor='#d65a4a'; this.style.transform='scale(1.05)'"
+                               onmouseout="this.style.backgroundColor='#EA715E'; this.style.borderColor='#EA715E'; this.style.transform='scale(1)'">
+                                View larger version
+                            </a>
                         </div>
                         
-                        <div class="deliverable-tile" data-toggle="modal" data-target="#modal6">
-                            <img src="img/portfolio/job_hunt_manager/add_interview_form.jpg" alt="Interview Details">
-                            <h3>Interview Details</h3>
+                        <div class="deliverable-tile" 
+                             data-title="Interview Details" 
+                             data-description="Got a scheduled Interview lined up? Save it on your dashboard." 
+                             data-image="img/portfolio/job_hunt_manager/add_interview_form.jpg"
+                             role="button"
+                             tabindex="0"
+                             aria-label="View Interview Details - Got a scheduled Interview lined up? Save it on your dashboard. Press Enter or Space to open."
+                             onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openDeliverableModal(this.getAttribute('data-title'), this.getAttribute('data-description'), this.getAttribute('data-image')); }">
+                            <div style="position: relative; display: inline-block; width: 100%;">
+                                <img src="img/portfolio/job_hunt_manager/add_interview_form.jpg" alt="Interview Details"
+                                     style="width: 100%; height: 250px; object-fit: cover; cursor: pointer; transition: all 0.3s ease;"
+                                     onmouseover="this.nextElementSibling.style.opacity='1'"
+                                     onmouseout="this.nextElementSibling.style.opacity='0'"
+                                     onclick="openDeliverableModal('Interview Details', 'Got a scheduled Interview lined up? Save it on your dashboard.', 'img/portfolio/job_hunt_manager/add_interview_form.jpg')">
+                                <!-- Semi-transparent overlay with "Click to view" text -->
+                                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); color: white; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; font-size: clamp(12px, 2.5vw, 18px); font-weight: bold; text-align: center; pointer-events: none; padding: 10px; line-height: 1.2;">
+                                    👁<br>Click to view
+                                </div>
+                            </div>
+                            <h4 class="text-center">Interview Details</h4>
+                            <a href="img/portfolio/job_hunt_manager/add_interview_form.jpg" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               style="background-color: #EA715E; border-color: #EA715E; color: white; font-weight: bold; padding: 8px 16px; font-size: 14px; border-radius: 5px; text-decoration: none; display: inline-block; transition: all 0.3s ease; margin-top: 15px;"
+                               onmouseover="this.style.backgroundColor='#d65a4a'; this.style.borderColor='#d65a4a'; this.style.transform='scale(1.05)'"
+                               onmouseout="this.style.backgroundColor='#EA715E'; this.style.borderColor='#EA715E'; this.style.transform='scale(1)'">
+                                View larger version
+                            </a>
                         </div>
                         
-                        <div class="deliverable-tile" data-toggle="modal" data-target="#modal7">
-                            <img src="img/portfolio/job_hunt_manager/dashboard_notifications.jpg" alt="Dashboard Notifications">
-                            <h3>Dashboard Notifications</h3>
+                        <div class="deliverable-tile" 
+                             data-title="Dashboard Notifications" 
+                             data-description="See details of all the job applications you've submitted, all job offers you've received and all upcoming interviews." 
+                             data-image="img/portfolio/job_hunt_manager/dashboard_notifications.jpg"
+                             role="button"
+                             tabindex="0"
+                             aria-label="View Dashboard Notifications - See details of all the job applications you've submitted, all job offers you've received and all upcoming interviews. Press Enter or Space to open."
+                             onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openDeliverableModal(this.getAttribute('data-title'), this.getAttribute('data-description'), this.getAttribute('data-image')); }">
+                            <div style="position: relative; display: inline-block; width: 100%;">
+                                <img src="img/portfolio/job_hunt_manager/dashboard_notifications.jpg" alt="Dashboard Notifications"
+                                     style="width: 100%; height: 250px; object-fit: cover; cursor: pointer; transition: all 0.3s ease;"
+                                     onmouseover="this.nextElementSibling.style.opacity='1'"
+                                     onmouseout="this.nextElementSibling.style.opacity='0'"
+                                     onclick="openDeliverableModal('Dashboard Notifications', 'See details of all the job applications you\'ve submitted, all job offers you\'ve received and all upcoming interviews.', 'img/portfolio/job_hunt_manager/dashboard_notifications.jpg')">
+                                <!-- Semi-transparent overlay with "Click to view" text -->
+                                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); color: white; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; font-size: clamp(12px, 2.5vw, 18px); font-weight: bold; text-align: center; pointer-events: none; padding: 10px; line-height: 1.2;">
+                                    👁<br>Click to view
+                                </div>
+                            </div>
+                            <h4 class="text-center">Dashboard Notifications</h4>
+                            <a href="img/portfolio/job_hunt_manager/dashboard_notifications.jpg" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               style="background-color: #EA715E; border-color: #EA715E; color: white; font-weight: bold; padding: 8px 16px; font-size: 14px; border-radius: 5px; text-decoration: none; display: inline-block; transition: all 0.3s ease; margin-top: 15px;"
+                               onmouseover="this.style.backgroundColor='#d65a4a'; this.style.borderColor='#d65a4a'; this.style.transform='scale(1.05)'"
+                               onmouseout="this.style.backgroundColor='#EA715E'; this.style.borderColor='#EA715E'; this.style.transform='scale(1)'">
+                                View larger version
+                            </a>
                         </div>
                         
-                        <div class="deliverable-tile" data-toggle="modal" data-target="#modal8">
-                            <img src="img/portfolio/job_hunt_manager/job_application_details.png" alt="Job Application Details">
-                            <h3>Job Application Details</h3>
+                        <div class="deliverable-tile" 
+                             data-title="Job Application Details" 
+                             data-description="See all the details you've provided for a job application. You'll have the option to update the details and to see the company details." 
+                             data-image="img/portfolio/job_hunt_manager/job_application_details.png"
+                             role="button"
+                             tabindex="0"
+                             aria-label="View Job Application Details - See all the details you've provided for a job application. Press Enter or Space to open."
+                             onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openDeliverableModal(this.getAttribute('data-title'), this.getAttribute('data-description'), this.getAttribute('data-image')); }">
+                            <div style="position: relative; display: inline-block; width: 100%;">
+                                <img src="img/portfolio/job_hunt_manager/job_application_details.png" alt="Job Application Details"
+                                     style="width: 100%; height: 250px; object-fit: cover; cursor: pointer; transition: all 0.3s ease;"
+                                     onmouseover="this.nextElementSibling.style.opacity='1'"
+                                     onmouseout="this.nextElementSibling.style.opacity='0'"
+                                     onclick="openDeliverableModal('Job Application Details', 'See all the details you\'ve provided for a job application. You\'ll have the option to update the details and to see the company details.', 'img/portfolio/job_hunt_manager/job_application_details.png')">
+                                <!-- Semi-transparent overlay with "Click to view" text -->
+                                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); color: white; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; font-size: clamp(12px, 2.5vw, 18px); font-weight: bold; text-align: center; pointer-events: none; padding: 10px; line-height: 1.2;">
+                                    👁<br>Click to view
+                                </div>
+                            </div>
+                            <h4 class="text-center">Job Application Details</h4>
+                            <a href="img/portfolio/job_hunt_manager/job_application_details.png" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               style="background-color: #EA715E; border-color: #EA715E; color: white; font-weight: bold; padding: 8px 16px; font-size: 14px; border-radius: 5px; text-decoration: none; display: inline-block; transition: all 0.3s ease; margin-top: 15px;"
+                               onmouseover="this.style.backgroundColor='#d65a4a'; this.style.borderColor='#d65a4a'; this.style.transform='scale(1.05)'"
+                               onmouseout="this.style.backgroundColor='#EA715E'; this.style.borderColor='#EA715E'; this.style.transform='scale(1)'">
+                                View larger version
+                            </a>
                         </div>
                         
-                        <div class="deliverable-tile" data-toggle="modal" data-target="#modal9">
-                            <img src="img/portfolio/job_hunt_manager/change_password.jpg" alt="Change Account Password">
-                            <h3>Change Account Password</h3>
+                        <div class="deliverable-tile" 
+                             data-title="Change Account Password" 
+                             data-description="Changing your account password is quick and easy." 
+                             data-image="img/portfolio/job_hunt_manager/change_password.jpg"
+                             role="button"
+                             tabindex="0"
+                             aria-label="View Change Account Password - Changing your account password is quick and easy. Press Enter or Space to open."
+                             onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openDeliverableModal(this.getAttribute('data-title'), this.getAttribute('data-description'), this.getAttribute('data-image')); }">
+                            <div style="position: relative; display: inline-block; width: 100%;">
+                                <img src="img/portfolio/job_hunt_manager/change_password.jpg" alt="Change Account Password"
+                                     style="width: 100%; height: 250px; object-fit: cover; cursor: pointer; transition: all 0.3s ease;"
+                                     onmouseover="this.nextElementSibling.style.opacity='1'"
+                                     onmouseout="this.nextElementSibling.style.opacity='0'"
+                                     onclick="openDeliverableModal('Change Account Password', 'Changing your account password is quick and easy.', 'img/portfolio/job_hunt_manager/change_password.jpg')">
+                                <!-- Semi-transparent overlay with "Click to view" text -->
+                                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); color: white; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; font-size: clamp(12px, 2.5vw, 18px); font-weight: bold; text-align: center; pointer-events: none; padding: 10px; line-height: 1.2;">
+                                    👁<br>Click to view
+                                </div>
+                            </div>
+                            <h4 class="text-center">Change Account Password</h4>
+                            <a href="img/portfolio/job_hunt_manager/change_password.jpg" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               style="background-color: #EA715E; border-color: #EA715E; color: white; font-weight: bold; padding: 8px 16px; font-size: 14px; border-radius: 5px; text-decoration: none; display: inline-block; transition: all 0.3s ease; margin-top: 15px;"
+                               onmouseover="this.style.backgroundColor='#d65a4a'; this.style.borderColor='#d65a4a'; this.style.transform='scale(1.05)'"
+                               onmouseout="this.style.backgroundColor='#EA715E'; this.style.borderColor='#EA715E'; this.style.transform='scale(1)'">
+                                View larger version
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -201,249 +426,7 @@ title: Job Hunt Manager - Andrea Folgado
 
 
 
-    <!-- Modals -->
-    <!-- Modal 1 -->
-    <div class="portfolio-modal modal fade" id="modal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2>Add a new job application</h2>
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/job_hunt_manager/add_job_application.jpg" alt="Add a new job application form">
-                                <p>Allows users to quickly log new job applications, capturing key info like role, company, and notes in a single form.</p>
-                                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                    <i class="fa fa-times"></i> Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Modal 2 -->
-    <div class="portfolio-modal modal fade" id="modal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2>Dashboard overview</h2>
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/job_hunt_manager/dashboard.jpg" alt="Dashboard overview">
-                                <p>Gives users a clear summary of all job applications and progress, helping them feel more in control and focused.</p>
-                                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                    <i class="fa fa-times"></i> Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 3 -->
-    <div class="portfolio-modal modal fade" id="modal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2>Individual Contacts Directory</h2>
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/job_hunt_manager/address-book-indiv-contacts.jpg" alt="Individual Contacts Directory">
-                                <p>Gives users a dedicated place to save professional contact details, so everything they need for job hunting lives in one place. Makes it easy to find and reach out to contacts quickly when needed.</p>
-                                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                    <i class="fa fa-times"></i> Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 4 -->
-    <div class="portfolio-modal modal fade" id="modal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2>Company Contact Directory</h2>
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/job_hunt_manager/company_directory.jpg" alt="Company Contact Directory">
-                                <p>All your business contacts stored within 1 view.</p>
-                                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                    <i class="fa fa-times"></i> Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 5 -->
-    <div class="portfolio-modal modal fade" id="modal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2>Application Notes</h2>
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/job_hunt_manager/add_application_notes.jpg" alt="Application Notes">
-                                <p>Add notes for a specific Job application you've submitted.</p>
-                                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                    <i class="fa fa-times"></i> Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 6 -->
-    <div class="portfolio-modal modal fade" id="modal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2>Interview Details</h2>
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/job_hunt_manager/add_interview_form.jpg" alt="Interview Details">
-                                <p>Got a scheduled Interview lined up? Save it on your dashboard.</p>
-                                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                    <i class="fa fa-times"></i> Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 7 -->
-    <div class="portfolio-modal modal fade" id="modal7" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2>Dashboard Notifications</h2>
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/job_hunt_manager/dashboard_notifications.jpg" alt="Dashboard Notifications">
-                                <p>See details of all the job applications you've submitted, all job offers you've received and all upcoming interviews.</p>
-                                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                    <i class="fa fa-times"></i> Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 8 -->
-    <div class="portfolio-modal modal fade" id="modal8" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2>Job Application Details</h2>
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/job_hunt_manager/job_application_details.png" alt="Job Application Details">
-                                <p>See all the details you've provided for a job application. You'll have the option to update the details and to see the company details.</p>
-                                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                    <i class="fa fa-times"></i> Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 9 -->
-    <div class="portfolio-modal modal fade" id="modal9" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2>Change Account Password</h2>
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/job_hunt_manager/change_password.jpg" alt="Change Account Password">
-                                <p>Changing your account password is quick and easy.</p>
-                                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                    <i class="fa fa-times"></i> Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
 
@@ -475,5 +458,109 @@ title: Job Hunt Manager - Andrea Folgado
     .video-tile a {
         text-decoration: none;
     }
+
+    .deliverables-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .deliverable-tile {
+        background: white;
+        border: 2px solid #2c2787;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .deliverable-tile:hover {
+        border-color: #EA715E;
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .deliverable-tile h4 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        color: #333;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .deliverable-tile img {
+        border-radius: 6px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .deliverable-tile a {
+        text-decoration: none;
+        margin-top: 15px;
+        display: inline-block;
+    }
     </style>
+
+    <script>
+    // Create a simple, self-contained modal system
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('Setting up simple modal system...');
+        
+        // Create modal HTML if it doesn't exist
+        if (!document.getElementById("simpleDeliverableModal")) {
+            var modalHTML = `
+                <div id="simpleDeliverableModal" style="display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.9); padding-top: 50px;">
+                    <div style="position: relative; width: 90%; max-width: 800px; margin: 0 auto; background-color: #fff; border-radius: 8px; padding: 20px;">
+                        <span onclick="closeSimpleModal()" style="position: absolute; right: 20px; top: 15px; font-size: 28px; font-weight: bold; cursor: pointer; color: #333;">&times;</span>
+                        <h3 id="simpleModalTitle" style="color: #EA715E; margin-bottom: 15px;"></h3>
+                        <img id="simpleModalImage" style="width: 100%; max-height: 400px; object-fit: contain; margin-bottom: 15px; border-radius: 6px;">
+                        <p id="simpleModalDescription" style="color: #333; line-height: 1.6;"></p>
+                        <button onclick="closeSimpleModal()" style="background-color: #EA715E; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin-top: 15px;">Close</button>
+                    </div>
+                </div>
+            `;
+            document.body.insertAdjacentHTML('beforeend', modalHTML);
+        }
+        
+        // Define the modal function
+        window.openDeliverableModal = function(title, description, imageSrc) {
+            console.log('Opening modal:', title, description, imageSrc);
+            
+            var modal = document.getElementById("simpleDeliverableModal");
+            var modalImg = document.getElementById("simpleModalImage");
+            var modalTitle = document.getElementById("simpleModalTitle");
+            var modalDescription = document.getElementById("simpleModalDescription");
+            
+            if (modal && modalImg && modalTitle && modalDescription) {
+                modalTitle.textContent = title;
+                modalDescription.textContent = description;
+                modalImg.src = imageSrc;
+                modalImg.alt = title;
+                modal.style.display = "block";
+                console.log('Modal opened successfully');
+            } else {
+                console.error('Modal elements not found');
+            }
+        };
+        
+        // Define close function
+        window.closeSimpleModal = function() {
+            var modal = document.getElementById("simpleDeliverableModal");
+            if (modal) {
+                modal.style.display = "none";
+            }
+        };
+        
+        // Close modal when clicking outside
+        document.getElementById("simpleDeliverableModal").addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeSimpleModal();
+            }
+        });
+        
+        console.log('Simple modal system ready');
+    });
+    </script>
 
