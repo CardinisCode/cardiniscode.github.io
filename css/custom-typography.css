@@ -595,26 +595,6 @@ section .deliverables-grid,
 }
 
 /* Custom heights for specific deliverable images */
-.deliverable-img.deliverable-img-gas-safety-report {
-    height: 320px !important;
-}
-
-.deliverable-img.deliverable-img-email-template {
-    height: 400px !important;
-}
-
-.deliverable-img.deliverable-img-email-template-mobile {
-    height: 350% !important;
-}
-
-.deliverable-img.deliverable-img-gsr-desktop-view {
-    height: 320px !important;
-}
-
-.deliverable-img.deliverable-img-dashboard {
-    height: 500px !important;
-}
-
 .deliverable-img.deliverable-img-application-notes {
     height: 400px !important;
 }
@@ -1167,3 +1147,30 @@ section .deliverables-grid,
 /* ===================================
    END OF UTILITY CLASSES
    =================================== */
+
+/* ===================================
+   GAS SAFETY ASSESSMENT DELIVERABLE IMAGES
+   =================================== */
+.deliverable-img-gsa {
+    height: 320px !important;
+    object-fit: contain !important;
+}
+
+/* ===================================
+   JOB HUNT MANAGER DELIVERABLE IMAGES
+   =================================== */
+.deliverable-img.deliverable-img-application-notes {
+    height: 400px !important;
+}
+
+.deliverable-img.deliverable-img-interview-form {
+    height: 450px !important;
+}
+
+.deliverable-img.deliverable-img-company-form {
+    height: 400px !important;
+}
+
+.deliverable-img.deliverable-img-add-application {
+    height: 450px !important;
+}
