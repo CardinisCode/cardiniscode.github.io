@@ -931,5 +931,195 @@ section .deliverables-grid,
 }
 
 /* ===================================
+   USER FLOW ITEM STYLES
+   =================================== */
+.user-flow-item {
+    flex: 1 1 45%;
+    min-width: 300px;
+    margin-bottom: 30px;
+}
+
+.user-flow-item:last-child {
+    margin-bottom: 0;
+}
+
+.user-flow-figure {
+    margin: 0;
+    text-align: center;
+}
+
+.user-flow-image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #2c2787;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.user-flow-caption {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+/* ===================================
+   WIREFRAMES CONTAINER STYLES
+   =================================== */
+.wireframes-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    gap: 30px;
+}
+
+.wireframe-item {
+    flex: 1 1 45%;
+    min-width: 300px;
+    margin-bottom: 30px;
+}
+
+.wireframe-item:last-child {
+    margin-bottom: 0;
+}
+
+.wireframe-figure {
+    margin: 0;
+    text-align: center;
+}
+
+.wireframe-image {
+    max-width: 100%;
+    height: 250px;
+    object-fit: contain;
+    border: 2px solid #2c2787;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.wireframe-caption {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+/* ===================================
+   SECTION HEADING STYLES
+   =================================== */
+.section-heading-small {
+    padding-top: 15px;
+}
+
+/* ===================================
+   CTA BUTTON STYLES
+   =================================== */
+.cta-button {
+    background-color: #EA715E;
+    border-color: #EA715E;
+    color: white;
+    font-weight: bold;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 40px;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #d65a4a;
+    border-color: #d65a4a;
+    transform: scale(1.05);
+}
+
+/* ===================================
+   MODAL STYLES
+   =================================== */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    z-index: 1025;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+    padding-top: 120px;
+}
+
+.modal-close-button {
+    position: fixed;
+    right: 30px;
+    top: 160px;
+    z-index: 1026;
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.8);
+    transition: all 0.3s ease;
+}
+
+.modal-close-button:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.9);
+}
+
+.modal-close-button:hover .modal-close-icon {
+    color: #EA715E;
+}
+
+.modal-close-icon {
+    color: #000000;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.modal-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.modal-title {
+    color: #EA715E !important;
+    margin-bottom: 15px;
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+}
+
+.modal-description {
+    color: #ffffff !important;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.deliverable-modal-close {
+    top: 140px;
+}
+
+/* ===================================
    END OF UTILITY CLASSES
    =================================== */
