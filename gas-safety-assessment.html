@@ -18,14 +18,14 @@ subtitle: Digital Product Designer
             <div class="text-center" style="margin: 40px 0;">
                 <img src="img/portfolio/GasSafetyAssessment/GSR_MainImage.png" 
                      alt="Gas Safety Assessment Main Project Image" 
-                     style="max-width: 40%; height: auto;">
+                     style="max-width: 20%; height: auto;">
             </div>
         </div>
     </div>
 
     <div class="row">
         <div class="col-lg-12">
-            <h2 style="padding-top: 30px;">Overview</h2>
+            <h2 class="padding-top-30">Overview</h2>
             <p>I led the Gas Safety Assessment project from design through to build, creating a native flow in Salesforce Field Service to replace a failing third-party tool.</p>
             <p>This gave engineers a reliable way to capture assessment data in the platform they already used every day.</p>
             <p>Working with our Systems Architect and Salesforce developers, I designed the workflows, reports, and email templates, and configured the required fields in Salesforce.</p>
@@ -35,7 +35,7 @@ subtitle: Digital Product Designer
 
     <div class="row">
         <div class="col-lg-12">
-            <h2 style="padding-top: 30px;">At a Glance</h2>
+            <h2 class="padding-top-30">At a Glance</h2>
 
             <ul>
                 <li><strong>My Role:</strong> Product Owner & Digital Product Designer</li>
@@ -49,12 +49,12 @@ subtitle: Digital Product Designer
 
     <div class="row">
         <div class="col-lg-12">
-            <h2 style="padding-top: 30px;">Deliverable Features</h2>
+            <h2 class="padding-top-30">Deliverable Features</h2>
             <p>All products presented below were redesigned, built and integrated within Salesforce, entirely removing the need for any external third party tools or software.
 
             </p>
             
-            <div class="deliverables-grid" style="margin: 40px 0;">
+            <div class="deliverables-grid container-spacing">
 
                 
                 <div class="deliverable-tile" 
@@ -65,24 +65,23 @@ subtitle: Digital Product Designer
                      tabindex="0"
                      aria-label="View Prototype Gas Safety Report - Automatically generated upon completion of the assessment, ensuring customers received accurate, standardised reports without delays. Press Enter or Space to open."
                      onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openDeliverableModal(this.getAttribute('data-title'), this.getAttribute('data-description'), this.getAttribute('data-image')); }">
-                    <div style="position: relative; display: inline-block; width: 100%;">
+                    <div class="overlay-container">
                         <img src="img/portfolio/GasSafetyAssessment/GSR_Prototype_GSReport.png" alt="Prototype Gas Safety Report - Automatically generated upon completion of the assessment"
-                             style="width: 100%; height: 250px; object-fit: cover; cursor: pointer; transition: all 0.3s ease;"
+                             class="img-hover-effect deliverable-img"
                              onmouseover="this.nextElementSibling.style.opacity='1'"
                              onmouseout="this.nextElementSibling.style.opacity='0'"
                              onclick="openDeliverableModal('Prototype Gas Safety Report', 'Automatically generated upon completion of the assessment, ensuring customers received accurate, standardised reports without delays.', 'img/portfolio/GasSafetyAssessment/GSR_Prototype_GSReport.png')">
                         <!-- Semi-transparent overlay with "Click to view" text -->
-                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); color: white; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; font-size: clamp(12px, 2.5vw, 18px); font-weight: bold; text-align: center; pointer-events: none; padding: 10px; line-height: 1.2;">
-                            👁<br>Click to view
+                        <div class="overlay-text">
+                            <br>Click to view
                         </div>
                     </div>
                     <h4 class="text-center">Prototype - Gas Safety Report Template</h4>
                     <a href="img/portfolio/GasSafetyAssessment/GSR_Prototype_GSReport.png" 
                        target="_blank" 
                        rel="noopener noreferrer"
-                       style="background-color: #EA715E; border-color: #EA715E; color: white; font-weight: bold; padding: 8px 16px; font-size: 14px; border-radius: 5px; text-decoration: none; display: inline-block; transition: all 0.3s ease; margin-top: 15px;"
-                       onmouseover="this.style.backgroundColor='#d65a4a'; this.style.borderColor='#d65a4a'; this.style.transform='scale(1.05)'"
-                       onmouseout="this.style.backgroundColor='#EA715E'; this.style.borderColor='#EA715E'; this.style.transform='scale(1)'">
+                       class="deliverable-btn"
+                       onclick="event.stopPropagation();">
                         View larger version
                     </a>
                 </div>
@@ -95,24 +94,23 @@ subtitle: Digital Product Designer
                      tabindex="0"
                      aria-label="View Prototype - Email Template Design - Design for the email template that customers receive after the assessment, triggered within Salesforce based on Aspect business rules. Press Enter or Space to open."
                      onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openDeliverableModal(this.getAttribute('data-title'), this.getAttribute('data-description'), this.getAttribute('data-image')); }">
-                    <div style="position: relative; display: inline-block; width: 100%;">
+                    <div class="overlay-container">
                         <img src="img/portfolio/GasSafetyAssessment/GSR_EmailTemplate.jpg" alt="Prototype - Email Template Design - Design for the email template that customers receive after the assessment"
-                             style="width: 100%; height: 250px; object-fit: contain; cursor: pointer; transition: all 0.3s ease;"
+                             class="img-hover-effect deliverable-img"
                              onmouseover="this.nextElementSibling.style.opacity='1'"
                              onmouseout="this.nextElementSibling.style.opacity='0'"
                              onclick="openDeliverableModal('Prototype - Email Template Design', 'Design for the email template that customers receive after the assessment, triggered within Salesforce based on Aspect business rules.', 'img/portfolio/GasSafetyAssessment/GSR_EmailTemplate.jpg')">
                         <!-- Semi-transparent overlay with "Click to view" text -->
-                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); color: white; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; font-size: clamp(12px, 2.5vw, 18px); font-weight: bold; text-align: center; pointer-events: none; padding: 10px; line-height: 1.2;">
-                            👁<br>Click to view
+                        <div class="overlay-text">
+                            <br>Click to view
                         </div>
                     </div>
                     <h4 class="text-center">Prototype - Email Template Design</h4>
                     <a href="img/portfolio/GasSafetyAssessment/GSR_EmailTemplate.jpg" 
                        target="_blank" 
                        rel="noopener noreferrer"
-                       style="background-color: #EA715E; border-color: #EA715E; color: white; font-weight: bold; padding: 8px 16px; font-size: 14px; border-radius: 5px; text-decoration: none; display: inline-block; transition: all 0.3s ease; margin-top: 15px;"
-                       onmouseover="this.style.backgroundColor='#d65a4a'; this.style.borderColor='#d65a4a'; this.style.transform='scale(1.05)'"
-                       onmouseout="this.style.backgroundColor='#EA715E'; this.style.borderColor='#EA715E'; this.style.transform='scale(1)'">
+                       class="deliverable-btn"
+                       onclick="event.stopPropagation();">
                         View larger version
                     </a>
                 </div>
@@ -125,24 +123,23 @@ subtitle: Digital Product Designer
                      tabindex="0"
                      aria-label="View Prototype Email Template - Designed and built an automated email template that sends the Gas Safety Report to customers immediately after payment. Press Enter or Space to open."
                      onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openDeliverableModal(this.getAttribute('data-title'), this.getAttribute('data-description'), this.getAttribute('data-image')); }">
-                    <div style="position: relative; display: inline-block; width: 100%;">
+                    <div class="overlay-container">
                         <img src="img/portfolio/GasSafetyAssessment/GSR_Prototype_EmailTemplate.png" alt="Prototype Email Template - Automated email template that sends the Gas Safety Report to customers immediately after payment"
-                             style="width: 100%; height: 250px; object-fit: contain; cursor: pointer; transition: all 0.3s ease;"
+                             class="img-hover-effect deliverable-img"
                              onmouseover="this.nextElementSibling.style.opacity='1'"
                              onmouseout="this.nextElementSibling.style.opacity='0'"
                              onclick="openDeliverableModal('Prototype Email Template', 'Designed and built an automated email template that sends the Gas Safety Report to customers immediately after payment.', 'img/portfolio/GasSafetyAssessment/GSR_Prototype_EmailTemplate.png')">
                         <!-- Semi-transparent overlay with "Click to view" text -->
-                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); color: white; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; font-size: clamp(12px, 2.5vw, 18px); font-weight: bold; text-align: center; pointer-events: none; padding: 10px; line-height: 1.2;">
-                            👁<br>Click to view
+                        <div class="overlay-text">
+                            <br>Click to view
                         </div>
                     </div>
                     <h4 class="text-center">Prototype - Email Template (Mobile)</h4>
                     <a href="img/portfolio/GasSafetyAssessment/GSR_Prototype_EmailTemplate.png" 
                        target="_blank" 
                        rel="noopener noreferrer"
-                       style="background-color: #EA715E; border-color: #EA715E; color: white; font-weight: bold; padding: 8px 16px; font-size: 14px; border-radius: 5px; text-decoration: none; display: inline-block; transition: all 0.3s ease; margin-top: 15px;"
-                       onmouseover="this.style.backgroundColor='#d65a4a'; this.style.borderColor='#d65a4a'; this.style.transform='scale(1.05)'"
-                       onmouseout="this.style.backgroundColor='#EA715E'; this.style.borderColor='#EA715E'; this.style.transform='scale(1)'">
+                       class="deliverable-btn"
+                       onclick="event.stopPropagation();">
                         View larger version
                     </a>
                 </div>
@@ -155,24 +152,23 @@ subtitle: Digital Product Designer
                      tabindex="0"
                      aria-label="View Salesforce Integration - Created a desktop experience in Salesforce to give operations and managers the ability to amend records and reissue reports. Press Enter or Space to open."
                      onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openDeliverableModal(this.getAttribute('data-title'), this.getAttribute('data-description'), this.getAttribute('data-image')); }">
-                    <div style="position: relative; display: inline-block; width: 100%;">
+                    <div class="overlay-container">
                         <img src="img/portfolio/GasSafetyAssessment/GSR_SalesforceDesktopView.png" alt="Salesforce Integration - Desktop experience in Salesforce for operations and managers"
-                             style="width: 100%; height: 250px; object-fit: contain; cursor: pointer; transition: all 0.3s ease;"
+                             class="img-hover-effect deliverable-img"
                              onmouseover="this.nextElementSibling.style.opacity='1'"
                              onmouseout="this.nextElementSibling.style.opacity='0'"
                              onclick="openDeliverableModal('Salesforce Integration', 'Created a desktop experience in Salesforce to give operations and managers the ability to amend records and reissue reports, improving efficiency and customer support.', 'img/portfolio/GasSafetyAssessment/GSR_SalesforceDesktopView.png')">
                         <!-- Semi-transparent overlay with "Click to view" text -->
-                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); color: white; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; font-size: clamp(12px, 2.5vw, 18px); font-weight: bold; text-align: center; pointer-events: none; padding: 10px; line-height: 1.2;">
-                            👁<br>Click to view
+                        <div class="overlay-text">
+                            <br>Click to view
                         </div>
                     </div>
                     <h4 class="text-center">Desktop View for Internal Teams</h4>
                     <a href="img/portfolio/GasSafetyAssessment/GSR_SalesforceDesktopView.png" 
                        target="_blank" 
                        rel="noopener noreferrer"
-                       style="background-color: #EA715E; border-color: #EA715E; color: white; font-weight: bold; padding: 8px 16px; font-size: 14px; border-radius: 5px; text-decoration: none; display: inline-block; transition: all 0.3s ease; margin-top: 15px;"
-                       onmouseover="this.style.backgroundColor='#d65a4a'; this.style.borderColor='#d65a4a'; this.style.transform='scale(1.05)'"
-                       onmouseout="this.style.backgroundColor='#EA715E'; this.style.borderColor='#EA715E'; this.style.transform='scale(1)'">
+                       class="deliverable-btn"
+                       onclick="event.stopPropagation();">
                         View larger version
                     </a>
                 </div>
@@ -185,23 +181,23 @@ subtitle: Digital Product Designer
                      tabindex="0"
                      aria-label="Watch Gas Safety Assessment Demo Video - Training tool for engineers showcasing the streamlined gas safety assessment process. Press Enter or Space to open."
                      onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openVideoModal(this.getAttribute('data-title'), this.getAttribute('data-description'), this.getAttribute('data-video')); }">
-                    <div style="position: relative; display: inline-block; width: 100%;">
+                    <div class="overlay-container">
                         <!-- YouTube Video Thumbnail with Play Icon -->
-                        <div style="width: 100%; height: 250px; background: linear-gradient(135deg, #ff0000, #cc0000); border-radius: 8px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease; position: relative;"
+                        <div class="video-thumbnail"
                              onmouseover="this.nextElementSibling.style.opacity='1'"
                              onmouseout="this.nextElementSibling.style.opacity='0'"
                              onclick="openVideoModal('Gas Safety Assessment Demo', 'This video demo serves as a training tool for engineers, showcasing the streamlined gas safety assessment process within the Salesforce Field Service application. It highlights the new custom form\'s efficiency and how it automates data storage and report generation.', 'https://www.youtube.com/watch?v=TwYdOBr2TQY')">
                             <!-- Play Icon -->
-                            <div style="width: 80px; height: 80px; background-color: rgba(255, 255, 255, 0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);">
-                                <div style="width: 0; height: 0; border-left: 20px solid #ff0000; border-top: 12px solid transparent; border-bottom: 12px solid transparent; margin-left: 4px;"></div>
+                            <div class="play-icon">
+                                <div class="play-triangle"></div>
                             </div>
                             <!-- Video Title Overlay -->
-                            <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0, 0, 0, 0.8)); color: white; padding: 20px 15px 15px; text-align: center; font-weight: bold; font-size: 16px;">
+                            <div class="video-title-overlay">
                                 Gas Safety Assessment Demo
                             </div>
                         </div>
                         <!-- Semi-transparent overlay with "Click to watch" text -->
-                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); color: white; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; font-size: clamp(12px, 2.5vw, 18px); font-weight: bold; text-align: center; pointer-events: none; padding: 10px; line-height: 1.2; border-radius: 8px;">
+                        <div class="overlay-text">
                             ▶️<br>Click to watch
                         </div>
                     </div>
@@ -209,9 +205,8 @@ subtitle: Digital Product Designer
                     <a href="https://www.youtube.com/watch?v=TwYdOBr2TQY" 
                        target="_blank" 
                        rel="noopener noreferrer"
-                       style="background-color: #EA715E; border-color: #EA715E; color: white; font-weight: bold; padding: 8px 16px; font-size: 14px; border-radius: 5px; text-decoration: none; display: inline-block; transition: all 0.3s ease; margin-top: 15px;"
-                       onmouseover="this.style.backgroundColor='#d65a4a'; this.style.borderColor='#d65a4a'; this.style.transform='scale(1.05)'"
-                       onmouseout="this.style.backgroundColor='#EA715E'; this.style.borderColor='#EA715E'; this.style.transform='scale(1)'">
+                       class="deliverable-btn"
+                       onclick="event.stopPropagation();">
                         Watch on YouTube
                     </a>
                 </div>
@@ -222,10 +217,10 @@ subtitle: Digital Product Designer
 
     <div class="row">
         <div class="col-lg-12">
-            <h2 style="padding-top: 30px;">Problem</h2>
+            <h2 class="padding-top-30">Problem</h2>
             <p>The client's field service engineers were struggling with a fragile third-party form tool that frequently crashed, causing data loss and workflow interruptions. The existing solution lacked integration with their Salesforce ecosystem, creating inefficiencies and potential compliance risks.</p>
             
-            <h3 style="padding-top: 15px;">Key Pain Points</h3>
+            <h3 class="padding-top-30">Key Pain Points</h3>
             <ul>
                 <li>Manual paper-based forms requiring physical storage and retrieval</li>
                 <li>Time-consuming data entry and report generation</li>
@@ -234,45 +229,43 @@ subtitle: Digital Product Designer
                 <li>Delayed customer communication and report delivery</li>
             </ul>
             
-            <h3 style="padding-top: 30px;">Legacy Products</h3>
+            <h3 class="padding-top-30">Legacy Products</h3>
             <p>The following legacy products and user flow illustrate the problematic system that engineers were struggling with before the new Salesforce-based solution was implemented.</p>
             
-            <div style="display: flex; flex-wrap: wrap; margin: 40px 0; gap: 30px;">
-                <div style="flex: 1 1 45%; min-width: 300px; margin-bottom: 30px;">
-                    <figure style="margin: 0; text-align: center;">
+            <div class="legacy-products-container">
+                <div class="legacy-product-item">
+                    <figure class="legacy-figure">
                         <img src="img/portfolio/GasSafetyAssessment/GSR_Legacy_GSR_Form.png" 
                              alt="Legacy Digital Gas Safety Form - The old third-party form tool that frequently crashed" 
-                             style="max-width: 100%; height: 350px; object-fit: contain; border: 2px solid #2c2787; border-radius: 8px; margin-bottom: 15px;">
+                             class="legacy-image">
                         <h4 class="image-section-heading">Legacy Digital Gas Safety Form</h4>
-                        <figcaption style="font-size: 16px; line-height: 1.5; color: #333; margin-bottom: 15px; font-style: italic;">
+                        <figcaption class="legacy-caption">
                             The old third-party form tool that frequently crashed, causing data loss and workflow interruptions for field engineers.
                         </figcaption>
                         <a href="img/portfolio/GasSafetyAssessment/GSR_Legacy_GSR_Form.png" 
                            target="_blank" 
                            rel="noopener noreferrer"
-                           style="background-color: #EA715E; border-color: #EA715E; color: white; font-weight: bold; padding: 8px 16px; font-size: 14px; border-radius: 5px; text-decoration: none; display: inline-block; transition: all 0.3s ease;"
-                           onmouseover="this.style.backgroundColor='#d65a4a'; this.style.borderColor='#d65a4a'; this.style.transform='scale(1.05)'"
-                           onmouseout="this.style.backgroundColor='#EA715E'; this.style.borderColor='#EA715E'; this.style.transform='scale(1)'">
+                           class="deliverable-btn"
+                           onclick="event.stopPropagation();">
                             View larger version
                         </a>
                     </figure>
                 </div>
                 
-                <div style="flex: 1 1 45%; min-width: 300px; margin-bottom: 0;">
-                    <figure style="margin: 0; text-align: center;">
+                <div class="legacy-product-item">
+                    <figure class="legacy-figure">
                         <img src="img/portfolio/GasSafetyAssessment/GSR_LegacyReportDesign.png" 
                              alt="Legacy Report Template - The old report template that required manual generation" 
-                             style="max-width: 100%; height: 350px; border: 2px solid #2c2787; border-radius: 8px; margin-bottom: 15px;">
+                             class="legacy-image">
                         <h4 class="image-section-heading">Legacy Report Template</h4>
-                        <figcaption style="font-size: 16px; line-height: 1.5; color: #333; margin-bottom: 15px; font-style: italic;">
+                        <figcaption class="legacy-caption">
                             The old report template that required manual generation and lacked integration with existing business systems.
                         </figcaption>
                         <a href="img/portfolio/GasSafetyAssessment/GSR_LegacyReportDesign.png" 
                            target="_blank" 
                            rel="noopener noreferrer"
-                           style="background-color: #EA715E; border-color: #EA715E; color: white; font-weight: bold; padding: 8px 16px; font-size: 14px; border-radius: 5px; text-decoration: none; display: inline-block; transition: all 0.3s ease;"
-                           onmouseover="this.style.backgroundColor='#d65a4a'; this.style.borderColor='#d65a4a'; this.style.transform='scale(1.05)'"
-                           onmouseout="this.style.backgroundColor='#EA715E'; this.style.borderColor='#EA715E'; this.style.transform='scale(1)'">
+                           class="deliverable-btn"
+                           onclick="event.stopPropagation();">
                             View larger version
                         </a>
                     </figure>
@@ -283,10 +276,10 @@ subtitle: Digital Product Designer
        
     <div class="row">
         <div class="col-lg-12">
-            <h2 style="padding-top: 30px;">Solution</h2>
+            <h2 class="padding-top-30">Solution</h2>
             <p>I adopted a user-centered design approach, focusing on the needs of field service engineers while ensuring seamless integration with existing business processes. My goal was to simplify the gas safety assessment, creating a smooth and positive experience for our engineers.</p>
 
-            <h3 style="padding-top: 15px;">User Research & Discovery</h3>
+            <h3 class="padding-top-30">User Research & Discovery</h3>
             <p>I engaged the Operations Manager to deeply understand existing process gaps and operational challenges, uncovering critical issues affecting service quality for customers. I spoke with engineering managers to hear what engineers really thought about the current form tool. They said it had too many extra steps and bugs, making it frustrating to use.</p>
             
             <p>Many engineers either needed constant help or gave up on the tool altogether, reverting back to paper certificates. These paper certificates couldn't be digitized, creating extra work for their manager and slowing down the process.</p>
@@ -294,7 +287,7 @@ subtitle: Digital Product Designer
             <p>The legacy user flow (shown above) illustrates the steps engineers currently take to complete an assessment. In the ideal scenario, the report is automatically generated and emailed to the client and key internal staff, allowing engineers to finish their visit quickly.</p>             
             <p>However, even in this "happy path," operations and customer service teams often face frustration. Simple customer questions can become complicated cross-team efforts to locate certificates, send engineers back for repeat assessments, or process refunds.</p>
 
-            <h3 style="padding-top: 15px;">Secondary Research</h3>
+            <h3 class="padding-top-30">Secondary Research</h3>
             <ul>
                 <li>I ensured legal compliance by researching gas safety report requirements</li>
                 <li>I conducted a competitive analysis to identify industry standards</li>
@@ -302,13 +295,13 @@ subtitle: Digital Product Designer
             </ul>
             <p>This research guided my discussions with the Systems Architect and CTO, leading to selecting a Salesforce-based solution as the best fit.</p>
 
-            <h3 style="padding-top: 15px;">Design & Development Approach</h3>
+            <h3 class="padding-top-30">Design & Development Approach</h3>
             <p>I designed a mobile-first digital assessment system with automated report generation, email notifications, and Salesforce integration to streamline the entire process from field inspection to customer delivery.</p>
 
-            <h3 style="padding-top: 15px;">User Flows</h3>
+            <h3 class="padding-top-30">User Flows</h3>
             <p>I created user flow journeys to visualize the experiences of engineers, operations, customer service teams, and customers. These flows guided the design process. My main goal was to simplify the gas safety assessment, creating a smooth and positive experience for our engineers.</p>
-            <div style="display: flex; flex-wrap: wrap; margin: 40px 0; gap: 30px;">
-                <div style="flex: 1 1 45%; min-width: 250px; margin-bottom: 30px;">
+            <div class="user-flows-container">
+                <div class="user-flow-item">
                     <figure style="margin: 0; text-align: center;">
                         <img src="img/portfolio/GasSafetyAssessment/GSR_Project_ProposedUserFlow.png" 
                              alt="Proposed User Flow for Engineers" 
