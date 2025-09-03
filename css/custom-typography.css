@@ -1153,20 +1153,50 @@ section .deliverables-grid,
 }
 
 /* ===================================
-   JOB HUNT MANAGER DELIVERABLE IMAGES
+   DELIVERABLE MODAL MOBILE OPTIMIZATION
    =================================== */
-.deliverable-img.deliverable-img-application-notes {
-    height: 400px !important;
+.deliverable-modal {
+    padding: 20px;
+    padding-right: 80px; /* Ensure content doesn't overlap with close button */
 }
 
-.deliverable-img.deliverable-img-interview-form {
-    height: 450px !important;
+.deliverable-modal-content {
+    max-width: 100%;
+    margin: 0 auto;
 }
 
-.deliverable-img.deliverable-img-company-form {
-    height: 400px !important;
+.deliverable-modal-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
-.deliverable-img.deliverable-img-add-application {
-    height: 450px !important;
+.deliverable-modal-content h3 {
+    color: #EA715E !important;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.deliverable-modal-content p {
+    color: #ffffff !important;
+    text-align: left;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    .deliverable-modal {
+        padding: 15px;
+        padding-right: 70px; /* Smaller right padding on mobile */
+    }
+    
+    .deliverable-modal-content h3 {
+        font-size: 18px;
+    }
+    
+    .deliverable-modal-content p {
+        font-size: 14px;
+    }
 }

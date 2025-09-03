@@ -155,7 +155,7 @@ title: Client Onboarding - Andrea Folgado
                          aria-label="View Desktop Feature: Send Welcome Email - A Salesforce interface tool for triggering onboarding emails. Press Enter or Space to open."
                          onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openDeliverableModal(this.getAttribute('data-title'), this.getAttribute('data-description'), this.getAttribute('data-image')); }"
                          onclick="openDeliverableModal('Desktop Feature: Send Welcome Email', 'A Salesforce interface tool enabling the team to trigger a prefilled onboarding email in one click, streamlining communication.', 'img/portfolio/ClientOnboarding/Sending_WelcomeEmail_p1.png')">
-                        <img src="img/portfolio/ClientOnboarding/Sending_WelcomeEmail_p1.png" alt="Send Welcome Email Interface" class="deliverable-img deliverable-img-co">
+                         <img src="img/portfolio/ClientOnboarding/Sending_WelcomeEmail_p1.png" alt="Send Welcome Email Interface" class="deliverable-img deliverable-img-co">
                         <h4>Desktop Feature: "Send Welcome Email"</h4>
                         <a href="img/portfolio/ClientOnboarding/Sending_WelcomeEmail_p1.png" 
                            target="_blank" 
@@ -478,16 +478,17 @@ title: Client Onboarding - Andrea Folgado
 </div>
 
             <!-- Deliverable Modal -->
-            <div id="deliverableModal" class="deliverable-modal">
-                <!-- Close button positioned at modal corner, below navbar -->
-                <div onclick="closeDeliverableModal()" style="position: fixed; right: 30px; top: 140px; z-index: 1026; width: 60px; height: 60px; background-color: #ffffff; border: 3px solid #000000; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 6px 20px rgba(0,0,0,0.8); transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#f0f0f0'; this.style.transform='scale(1.1)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.9)'; this.querySelector('span').style.color='#EA715E'" onmouseout="this.style.backgroundColor='#ffffff'; this.style.transform='scale(1)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.8)'; this.querySelector('span').style.color='#000000'">
-                    <span style="color: #000000; font-size: 32px; font-weight: bold; line-height: 1;">×</span>
-                </div>
+            <div id="deliverableModal" class="deliverable-modal" style="padding-top: 120px;">
     
     <div class="deliverable-modal-content">
         <img id="deliverableModalImage" src="" alt="">
         <h3 id="deliverableModalTitle"></h3>
         <p id="deliverableModalDescription"></p>
+        <div class="text-center">
+            <button onclick="closeDeliverableModal()" class="deliverable-btn">
+                Close
+            </button>
+        </div>
     </div>
 </div>
 
