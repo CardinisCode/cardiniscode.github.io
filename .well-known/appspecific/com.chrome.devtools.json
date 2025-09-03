@@ -1,0 +1,25 @@
+{
+  "name": "Andrea Folgado Portfolio",
+  "description": "Portfolio website for Andrea Folgado - Software Engineer & UX Designer",
+  "version": "1.0.0",
+  "devtools": {
+    "panels": {
+      "portfolio": {
+        "title": "Portfolio Debug",
+        "icon": "💼",
+        "description": "Debug tools for portfolio projects"
+      }
+    },
+    "features": {
+      "project-inspector": true,
+      "responsive-testing": true,
+      "performance-monitoring": true
+    }
+  },
+  "metadata": {
+    "author": "Andrea Folgado",
+    "website": "https://cardiniscode.github.io",
+    "github": "https://github.com/CardinisCode",
+    "lastUpdated": "2025-09-03"
+  }
+}
