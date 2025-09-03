@@ -114,14 +114,14 @@ title: Job Hunt Manager - Andrea Folgado
                              tabindex="0"
                              aria-label="View Dashboard overview - Gives users a clear summary of all job applications and progress, helping them feel more in control and focused. Press Enter or Space to open."
                              onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openDeliverableModal(this.getAttribute('data-title'), this.getAttribute('data-description'), this.getAttribute('data-image')); }">
-                            <div style="position: relative; display: inline-block; width: 100%;">
+                            <div class="overlay-container">
                                 <img src="img/portfolio/job_hunt_manager/dashboard.jpg" alt="Dashboard overview"
                                      class="img-hover-effect deliverable-img"
                                      onmouseover="this.nextElementSibling.style.opacity='1'"
                                      onmouseout="this.nextElementSibling.style.opacity='0'"
                                      onclick="openDeliverableModal('Dashboard overview', 'Gives users a clear summary of all job applications and progress, helping them feel more in control and focused.', 'img/portfolio/job_hunt_manager/dashboard.jpg')">
                                 <!-- Semi-transparent overlay with "Click to view" text -->
-                                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); color: white; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; font-size: clamp(12px, 2.5vw, 18px); font-weight: bold; text-align: center; pointer-events: none; padding: 10px; line-height: 1.2;">
+                                <div class="overlay-text">
                                     <br>Click to view
                                 </div>
                             </div>
@@ -381,7 +381,7 @@ title: Job Hunt Manager - Andrea Folgado
 
 
             <!-- Impact -->
-            <div class="row" style="margin-bottom: 60px;">
+            <div class="row section-spacing-bottom">
                 <div class="col-lg-12">
                     <h2 class="section-subheading">Impact</h2>
                     <p>The Job Hunt Manager provides users with a centralized, intuitive tool to streamline and organize their job search. By offering a single place to track applications, interviews, and notes, the application helps users feel more in control of their job hunt, reduce feelings of being overwhelmed, and clearly visualize their progress. This ultimately allows them to be more efficient and focused throughout the process.</p>
@@ -420,78 +420,7 @@ title: Job Hunt Manager - Andrea Folgado
 
 
 
-    <style>
-    .video-tile {
-        background: white;
-        border: 2px solid #2c2787;
-        border-radius: 8px;
-        padding: 20px;
-        margin-bottom: 30px;
-        text-align: center;
-        transition: all 0.3s ease;
-        cursor: pointer;
-    }
 
-    .video-tile:hover {
-        border-color: #EA715E;
-        transform: translateY(-5px);
-        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    }
-
-    .video-tile h4 {
-        margin-top: 15px;
-        margin-bottom: 15px;
-        color: #333;
-        font-weight: bold;
-    }
-
-    .video-tile a {
-        text-decoration: none;
-    }
-
-    .deliverables-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 30px;
-        margin-top: 30px;
-    }
-
-    .deliverable-tile {
-        background: white;
-        border: 2px solid #2c2787;
-        border-radius: 8px;
-        padding: 20px;
-        text-align: center;
-        transition: all 0.3s ease;
-        cursor: pointer;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-
-    .deliverable-tile:hover {
-        border-color: #EA715E;
-        transform: translateY(-5px);
-        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    }
-
-    .deliverable-tile h4 {
-        margin-top: 15px;
-        margin-bottom: 15px;
-        color: #333;
-        font-weight: bold;
-        font-size: 18px;
-    }
-
-    .deliverable-tile img {
-        border-radius: 6px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-
-    .deliverable-tile a {
-        text-decoration: none;
-        margin-top: 15px;
-        display: inline-block;
-    }
-    </style>
 
     <script>
     // Create a simple, self-contained modal system
