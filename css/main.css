@@ -1,0 +1,472 @@
+/* ===================================
+   MAIN.CSS - Consolidated Styles
+   ===================================
+   This file consolidates:
+   - agency.css (main theme styles)
+   - custom-bootstrap.css (Bootstrap overrides)
+   - styles.css (additional custom styles)
+   
+   Last updated: September 3, 2025
+   =================================== */
+
+/* ===================================
+   AGENCY THEME STYLES (from agency.css)
+   =================================== */
+
+/* Global Styles */
+body {
+    overflow-x: hidden;
+    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #202020;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-family: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif';
+    font-weight: 700;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+p.large {
+    font-size: 16px;
+}
+
+/* ===================================
+   LINKS & TEXT
+   =================================== */
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+}
+
+a {
+    color: #007acc;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: #005a99;
+    text-decoration: none;
+}
+
+.text-muted {
+    color: #6c757d;
+}
+
+.text-primary {
+    color: #007acc;
+}
+
+ol {
+    color: #007acc;
+}
+
+/* ===================================
+   UTILITY CLASSES
+   =================================== */
+
+.img-centered {
+    margin: 0 auto;
+}
+
+.bg-light-gray {
+    background-color: #f7f7f7;
+}
+
+.bg-darkest-gray {
+    background-color: #222;
+}
+
+/* Navigation */
+.navbar-custom {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+    font-size: 20px;
+    color: #fed136 !important;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 8px 0;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+    color: #fed136;
+    background-color: transparent;
+    border-bottom-color: #fed136;
+}
+
+/* Header */
+header {
+    background-attachment: scroll;
+    background-image: url('../img/header-bg.jpg');
+    background-position: center center;
+    background-repeat: none;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+header .intro-text {
+    padding-top: 150px;
+    padding-bottom: 200px;
+}
+
+header .intro-text .intro-lead-in {
+    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 25px;
+}
+
+header .intro-text .intro-heading {
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 25px;
+}
+
+/* Buttons */
+.btn-xl {
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px 40px;
+    border-radius: 3px;
+    border: none;
+    background-color: #fed136;
+    color: #222;
+    transition: all 0.3s ease;
+}
+
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active {
+    background-color: #fec503;
+    color: #222;
+    transform: scale(1.05);
+}
+
+/* Sections */
+section {
+    padding: 100px 0;
+}
+
+section h2.section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+section h3.section-subheading {
+    font-size: 16px;
+    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: none;
+    font-style: italic;
+    margin-bottom: 75px;
+}
+
+/* Portfolio */
+.portfolio-caption {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.portfolio-caption h4 {
+    text-transform: none;
+    margin: 0;
+}
+
+.portfolio-caption p {
+    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Team */
+.team-member {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.team-member img {
+    margin: 0 auto;
+    border: 7px solid white;
+}
+
+.team-member h4 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none;
+}
+
+.team-member p {
+    margin-top: 0;
+}
+
+/* Contact */
+#contact {
+    background-color: #222;
+    background-image: url('../img/map-image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#contact .section-heading {
+    color: white;
+}
+
+#contact .form-group {
+    margin-bottom: 25px;
+}
+
+#contact .form-control {
+    height: auto;
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#contact .form-control:focus {
+    box-shadow: none;
+    border: 1px solid #fed136;
+}
+
+/* Footer */
+footer {
+    padding: 25px 0;
+    text-align: center;
+}
+
+footer span.copyright {
+    line-height: 40px;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    text-transform: none;
+}
+
+footer ul.quicklinks {
+    margin-bottom: 0;
+    line-height: 40px;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    text-transform: none;
+}
+
+/* ===================================
+   CUSTOM BOOTSTRAP OVERRIDES (from custom-bootstrap.css)
+   =================================== */
+
+/* Navigation Overrides */
+.navbar-custom {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.navbar-custom .navbar-brand {
+    color: #333 !important;
+    font-weight: 700;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color: #333 !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+    color: #EA715E !important;
+    background-color: #EA715E !important;
+    color: white !important;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Button Overrides */
+.btn-primary {
+    border-color: #007acc;
+    text-transform: uppercase;
+    font-family: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif';
+    font-weight: 700;
+    color: #fff;
+    background-color: #007acc;
+}
+
+/* Form Overrides */
+.form-control:focus {
+    border-color: #EA715E;
+    box-shadow: 0 0 0 0.2rem rgba(234, 113, 94, 0.25);
+}
+
+/* ===================================
+   ADDITIONAL CUSTOM STYLES (from styles.css)
+   =================================== */
+
+/* Project Page Specific Styles */
+.project-page {
+    background-color: #fff;
+}
+
+.project-page h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.project-page .subtitle {
+    color: #666;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.project-page .section-heading {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.project-page .section-subheading {
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+/* Video Tile Styles */
+.video-tile {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.video-tile img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.video-tile:hover img {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Main Project Image */
+.main-project-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 20px 0;
+}
+
+.main-project-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Background Image */
+.background-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.background-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Return to Home CTA */
+.return-home-cta {
+    text-align: center;
+    margin: 60px 0;
+    padding: 40px 0;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.return-home-cta h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.return-home-cta .btn {
+    background-color: #EA715E;
+    border-color: #EA715E;
+    color: white;
+    font-weight: bold;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.return-home-cta .btn:hover {
+    background-color: #d65a4a;
+    border-color: #d65a4a;
+    transform: scale(1.05);
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-page h1 {
+        font-size: 2rem;
+    }
+    
+    .project-page .section-heading {
+        font-size: 1.5rem;
+    }
+    
+    .video-tile {
+        margin: 20px 0;
+    }
+    
+    .return-home-cta {
+        margin: 40px 0;
+        padding: 30px 0;
+    }
+}
+
+/* ===================================
+   END OF CONSOLIDATED CSS
+   =================================== */
