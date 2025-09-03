@@ -12,7 +12,7 @@ title: Job Hunt Manager - Andrea Folgado
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h1>Job Hunt Manager</h1>
-                    <p class="subtitle" style="font-style: italic;">A full-stack web application for organizing your job hunt in one place</p>
+                    <p class="subtitle project-subtitle">A full-stack web application for organizing your job hunt in one place</p>
                     <div class="video-tile" 
                          data-title="Job Hunt Manager Demo" 
                          data-description="This video demonstrates the core functionality and user experience of the deployed Job Hunt Manager application, showcasing how users can track job applications, manage interviews, and organize their job search process." 
@@ -43,16 +43,14 @@ title: Job Hunt Manager - Andrea Folgado
                         <a href="https://youtu.be/bX6YD33VKIw?si=xFaUoYbLCajtxAa8" 
                            target="_blank" 
                            rel="noopener noreferrer"
-                           style="background-color: #EA715E; border-color: #EA715E; color: white; font-weight: bold; padding: 8px 16px; font-size: 14px; border-radius: 5px; text-decoration: none; display: inline-block; transition: all 0.3s ease; margin-top: 15px;"
-                           onmouseover="this.style.backgroundColor='#d65a4a'; this.style.borderColor='#d65a4a'; this.style.transform='scale(1.05)'"
-                           onmouseout="this.style.backgroundColor='#EA715E'; this.style.borderColor='#EA715E'; this.style.transform='scale(1)'">
+                           class="deliverable-btn">
                             View in YouTube
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="row" style="margin-top: 60px;">
+            <div class="row section-spacing-top">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Project Overview</h2>
                     <p class="section-subheading">A comprehensive web application that helps users track job applications, interviews, and offers in one centralized platform.</p>
@@ -60,7 +58,7 @@ title: Job Hunt Manager - Andrea Folgado
             </div>
 
             <!-- At a Glance -->
-            <div class="row" style="margin-top: 60px; margin-bottom: 60px;">
+            <div class="row section-spacing">
                 <div class="col-lg-12">
                     <h2 class="section-subheading">At a Glance</h2>
             <ul>
@@ -73,7 +71,7 @@ title: Job Hunt Manager - Andrea Folgado
             </div>
 
             <!-- Deliverable Features -->
-            <div class="row" style="margin-top: 60px; margin-bottom: 60px;">
+            <div class="row section-spacing">
                 <div class="col-lg-12">
                     <h2 class="section-subheading">Deliverable Features</h2>
                     <p>Key features developed for Job Hunt Manager that help users stay organized, motivated, and in control of their job hunt.</p>
@@ -87,14 +85,14 @@ title: Job Hunt Manager - Andrea Folgado
                              tabindex="0"
                              aria-label="View Add a new job application - Allows users to quickly log new job applications, capturing key info like role, company, and notes in a single form. Press Enter or Space to open."
                              onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openDeliverableModal(this.getAttribute('data-title'), this.getAttribute('data-description'), this.getAttribute('data-image')); }">
-                            <div style="position: relative; display: inline-block; width: 100%;">
+                            <div class="overlay-container">
                                 <img src="img/portfolio/job_hunt_manager/add_job_application.jpg" alt="Add a new job application form"
-                                     style="width: 100%; height: 250px; object-fit: cover; cursor: pointer; transition: all 0.3s ease;"
+                                     class="img-hover-effect deliverable-img"
                                      onmouseover="this.nextElementSibling.style.opacity='1'"
                                      onmouseout="this.nextElementSibling.style.opacity='0'"
                                      onclick="openDeliverableModal('Add a new job application', 'Allows users to quickly log new job applications, capturing key info like role, company, and notes in a single form.', 'img/portfolio/job_hunt_manager/add_job_application.jpg')">
                                 <!-- Semi-transparent overlay with "Click to view" text -->
-                                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); color: white; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; font-size: clamp(12px, 2.5vw, 18px); font-weight: bold; text-align: center; pointer-events: none; padding: 10px; line-height: 1.2;">
+                                <div class="overlay-text">
                                     <br>Click to view
                                 </div>
                             </div>
@@ -102,9 +100,8 @@ title: Job Hunt Manager - Andrea Folgado
                             <a href="img/portfolio/job_hunt_manager/add_job_application.jpg" 
                                target="_blank" 
                                rel="noopener noreferrer"
-                               style="background-color: #EA715E; border-color: #EA715E; color: white; font-weight: bold; padding: 8px 16px; font-size: 14px; border-radius: 5px; text-decoration: none; display: inline-block; transition: all 0.3s ease; margin-top: 15px;"
-                               onmouseover="this.style.backgroundColor='#d65a4a'; this.style.borderColor='#d65a4a'; this.style.transform='scale(1.05)'"
-                               onmouseout="this.style.backgroundColor='#EA715E'; this.style.borderColor='#EA715E'; this.style.transform='scale(1)'">
+                               class="deliverable-btn"
+                               onclick="event.stopPropagation();">
                                 View larger version
                             </a>
                         </div>
@@ -119,7 +116,7 @@ title: Job Hunt Manager - Andrea Folgado
                              onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openDeliverableModal(this.getAttribute('data-title'), this.getAttribute('data-description'), this.getAttribute('data-image')); }">
                             <div style="position: relative; display: inline-block; width: 100%;">
                                 <img src="img/portfolio/job_hunt_manager/dashboard.jpg" alt="Dashboard overview"
-                                     style="width: 100%; height: 250px; object-fit: cover; cursor: pointer; transition: all 0.3s ease;"
+                                     class="img-hover-effect deliverable-img"
                                      onmouseover="this.nextElementSibling.style.opacity='1'"
                                      onmouseout="this.nextElementSibling.style.opacity='0'"
                                      onclick="openDeliverableModal('Dashboard overview', 'Gives users a clear summary of all job applications and progress, helping them feel more in control and focused.', 'img/portfolio/job_hunt_manager/dashboard.jpg')">
@@ -132,9 +129,8 @@ title: Job Hunt Manager - Andrea Folgado
                             <a href="img/portfolio/job_hunt_manager/dashboard.jpg" 
                                target="_blank" 
                                rel="noopener noreferrer"
-                               style="background-color: #EA715E; border-color: #EA715E; color: white; font-weight: bold; padding: 8px 16px; font-size: 14px; border-radius: 5px; text-decoration: none; display: inline-block; transition: all 0.3s ease; margin-top: 15px;"
-                               onmouseover="this.style.backgroundColor='#d65a4a'; this.style.borderColor='#d65a4a'; this.style.transform='scale(1.05)'"
-                               onmouseout="this.style.backgroundColor='#EA715E'; this.style.borderColor='#EA715E'; this.style.transform='scale(1)'">
+                               class="deliverable-btn"
+                               onclick="event.stopPropagation();">
                                 View larger version
                             </a>
                         </div>
@@ -149,7 +145,7 @@ title: Job Hunt Manager - Andrea Folgado
                              onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openDeliverableModal(this.getAttribute('data-title'), this.getAttribute('data-description'), this.getAttribute('data-image')); }">
                             <div style="position: relative; display: inline-block; width: 100%;">
                                 <img src="img/portfolio/job_hunt_manager/address-book-indiv-contacts.jpg" alt="Individual Contacts Directory"
-                                     style="width: 100%; height: 250px; object-fit: cover; cursor: pointer; transition: all 0.3s ease;"
+                                     class="img-hover-effect deliverable-img"
                                      onmouseover="this.nextElementSibling.style.opacity='1'"
                                      onmouseout="this.nextElementSibling.style.opacity='0'"
                                      onclick="openDeliverableModal('Individual Contacts Directory', 'Gives users a dedicated place to save professional contact details, so everything they need for job hunting lives in one place. Makes it easy to find and reach out to contacts quickly when needed.', 'img/portfolio/job_hunt_manager/address-book-indiv-contacts.jpg')">
@@ -159,12 +155,11 @@ title: Job Hunt Manager - Andrea Folgado
                                 </div>
                             </div>
                             <h4 class="text-center">Individual Contacts Directory</h4>
-                            <a href="img/portfolio/job_hunt_manager/address-book-indiv-contacts.jpg" 
+                            <a href="img/portfolio/junt_manager/address-book-indiv-contacts.jpg" 
                                target="_blank" 
                                rel="noopener noreferrer"
-                               style="background-color: #EA715E; border-color: #EA715E; color: white; font-weight: bold; padding: 8px 16px; font-size: 14px; border-radius: 5px; text-decoration: none; display: inline-block; transition: all 0.3s ease; margin-top: 15px;"
-                               onmouseover="this.style.backgroundColor='#d65a4a'; this.style.borderColor='#d65a4a'; this.style.transform='scale(1.05)'"
-                               onmouseout="this.style.backgroundColor='#EA715E'; this.style.borderColor='#EA715E'; this.style.transform='scale(1)'">
+                               class="deliverable-btn"
+                               onclick="event.stopPropagation();">
                                 View larger version
                             </a>
                         </div>
@@ -179,7 +174,7 @@ title: Job Hunt Manager - Andrea Folgado
                              onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openDeliverableModal(this.getAttribute('data-title'), this.getAttribute('data-description'), this.getAttribute('data-image')); }">
                             <div style="position: relative; display: inline-block; width: 100%;">
                                 <img src="img/portfolio/job_hunt_manager/company_directory.jpg" alt="Company Contact Directory"
-                                     style="width: 100%; height: 250px; object-fit: cover; cursor: pointer; transition: all 0.3s ease;"
+                                     class="img-hover-effect deliverable-img"
                                      onmouseover="this.nextElementSibling.style.opacity='1'"
                                      onmouseout="this.nextElementSibling.style.opacity='0'"
                                      onclick="openDeliverableModal('Company Contact Directory', 'All your business contacts stored within 1 view.', 'img/portfolio/job_hunt_manager/company_directory.jpg')">
@@ -192,9 +187,8 @@ title: Job Hunt Manager - Andrea Folgado
                             <a href="img/portfolio/job_hunt_manager/company_directory.jpg" 
                                target="_blank" 
                                rel="noopener noreferrer"
-                               style="background-color: #EA715E; border-color: #EA715E; color: white; font-weight: bold; padding: 8px 16px; font-size: 14px; border-radius: 5px; text-decoration: none; display: inline-block; transition: all 0.3s ease; margin-top: 15px;"
-                               onmouseover="this.style.backgroundColor='#d65a4a'; this.style.borderColor='#d65a4a'; this.style.transform='scale(1.05)'"
-                               onmouseout="this.style.backgroundColor='#EA715E'; this.style.borderColor='#EA715E'; this.style.transform='scale(1)'">
+                               class="deliverable-btn"
+                               onclick="event.stopPropagation();">
                                 View larger version
                             </a>
                         </div>
@@ -209,7 +203,7 @@ title: Job Hunt Manager - Andrea Folgado
                              onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openDeliverableModal(this.getAttribute('data-title'), this.getAttribute('data-description'), this.getAttribute('data-image')); }">
                             <div style="position: relative; display: inline-block; width: 100%;">
                                 <img src="img/portfolio/job_hunt_manager/add_application_notes.jpg" alt="Application Notes"
-                                     style="width: 100%; height: 250px; object-fit: cover; cursor: pointer; transition: all 0.3s ease;"
+                                     class="img-hover-effect deliverable-img"
                                      onmouseover="this.nextElementSibling.style.opacity='1'"
                                      onmouseout="this.nextElementSibling.style.opacity='0'"
                                      onclick="openDeliverableModal('Application Notes', 'Add notes for a specific Job application you\'ve submitted.', 'img/portfolio/job_hunt_manager/add_application_notes.jpg')">
@@ -222,9 +216,8 @@ title: Job Hunt Manager - Andrea Folgado
                             <a href="img/portfolio/job_hunt_manager/add_application_notes.jpg" 
                                target="_blank" 
                                rel="noopener noreferrer"
-                               style="background-color: #EA715E; border-color: #EA715E; color: white; font-weight: bold; padding: 8px 16px; font-size: 14px; border-radius: 5px; text-decoration: none; display: inline-block; transition: all 0.3s ease; margin-top: 15px;"
-                               onmouseover="this.style.backgroundColor='#d65a4a'; this.style.borderColor='#d65a4a'; this.style.transform='scale(1.05)'"
-                               onmouseout="this.style.backgroundColor='#EA715E'; this.style.borderColor='#EA715E'; this.style.transform='scale(1)'">
+                               class="deliverable-btn"
+                               onclick="event.stopPropagation();">
                                 View larger version
                             </a>
                         </div>
@@ -239,7 +232,7 @@ title: Job Hunt Manager - Andrea Folgado
                              onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openDeliverableModal(this.getAttribute('data-title'), this.getAttribute('data-description'), this.getAttribute('data-image')); }">
                             <div style="position: relative; display: inline-block; width: 100%;">
                                 <img src="img/portfolio/job_hunt_manager/add_interview_form.jpg" alt="Interview Details"
-                                     style="width: 100%; height: 250px; object-fit: cover; cursor: pointer; transition: all 0.3s ease;"
+                                     class="img-hover-effect deliverable-img"
                                      onmouseover="this.nextElementSibling.style.opacity='1'"
                                      onmouseout="this.nextElementSibling.style.opacity='0'"
                                      onclick="openDeliverableModal('Interview Details', 'Got a scheduled Interview lined up? Save it on your dashboard.', 'img/portfolio/job_hunt_manager/add_interview_form.jpg')">
@@ -252,9 +245,8 @@ title: Job Hunt Manager - Andrea Folgado
                             <a href="img/portfolio/job_hunt_manager/add_interview_form.jpg" 
                                target="_blank" 
                                rel="noopener noreferrer"
-                               style="background-color: #EA715E; border-color: #EA715E; color: white; font-weight: bold; padding: 8px 16px; font-size: 14px; border-radius: 5px; text-decoration: none; display: inline-block; transition: all 0.3s ease; margin-top: 15px;"
-                               onmouseover="this.style.backgroundColor='#d65a4a'; this.style.borderColor='#d65a4a'; this.style.transform='scale(1.05)'"
-                               onmouseout="this.style.backgroundColor='#EA715E'; this.style.borderColor='#EA715E'; this.style.transform='scale(1)'">
+                               class="deliverable-btn"
+                               onclick="event.stopPropagation();">
                                 View larger version
                             </a>
                         </div>
@@ -269,7 +261,7 @@ title: Job Hunt Manager - Andrea Folgado
                              onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openDeliverableModal(this.getAttribute('data-title'), this.getAttribute('data-description'), this.getAttribute('data-image')); }">
                             <div style="position: relative; display: inline-block; width: 100%;">
                                 <img src="img/portfolio/job_hunt_manager/dashboard_notifications.jpg" alt="Dashboard Notifications"
-                                     style="width: 100%; height: 250px; object-fit: cover; cursor: pointer; transition: all 0.3s ease;"
+                                     class="img-hover-effect deliverable-img"
                                      onmouseover="this.nextElementSibling.style.opacity='1'"
                                      onmouseout="this.nextElementSibling.style.opacity='0'"
                                      onclick="openDeliverableModal('Dashboard Notifications', 'See details of all the job applications you\'ve submitted, all job offers you\'ve received and all upcoming interviews.', 'img/portfolio/job_hunt_manager/dashboard_notifications.jpg')">
@@ -282,9 +274,8 @@ title: Job Hunt Manager - Andrea Folgado
                             <a href="img/portfolio/job_hunt_manager/dashboard_notifications.jpg" 
                                target="_blank" 
                                rel="noopener noreferrer"
-                               style="background-color: #EA715E; border-color: #EA715E; color: white; font-weight: bold; padding: 8px 16px; font-size: 14px; border-radius: 5px; text-decoration: none; display: inline-block; transition: all 0.3s ease; margin-top: 15px;"
-                               onmouseover="this.style.backgroundColor='#d65a4a'; this.style.borderColor='#d65a4a'; this.style.transform='scale(1.05)'"
-                               onmouseout="this.style.backgroundColor='#EA715E'; this.style.borderColor='#EA715E'; this.style.transform='scale(1)'">
+                               class="deliverable-btn"
+                               onclick="event.stopPropagation();">
                                 View larger version
                             </a>
                         </div>
@@ -299,7 +290,7 @@ title: Job Hunt Manager - Andrea Folgado
                              onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openDeliverableModal(this.getAttribute('data-title'), this.getAttribute('data-description'), this.getAttribute('data-image')); }">
                             <div style="position: relative; display: inline-block; width: 100%;">
                                 <img src="img/portfolio/job_hunt_manager/job_application_details.png" alt="Job Application Details"
-                                     style="width: 100%; height: 250px; object-fit: cover; cursor: pointer; transition: all 0.3s ease;"
+                                     class="img-hover-effect deliverable-img"
                                      onmouseover="this.nextElementSibling.style.opacity='1'"
                                      onmouseout="this.nextElementSibling.style.opacity='0'"
                                      onclick="openDeliverableModal('Job Application Details', 'See all the details you\'ve provided for a job application. You\'ll have the option to update the details and to see the company details.', 'img/portfolio/job_hunt_manager/job_application_details.png')">
@@ -312,9 +303,8 @@ title: Job Hunt Manager - Andrea Folgado
                             <a href="img/portfolio/job_hunt_manager/job_application_details.png" 
                                target="_blank" 
                                rel="noopener noreferrer"
-                               style="background-color: #EA715E; border-color: #EA715E; color: white; font-weight: bold; padding: 8px 16px; font-size: 14px; border-radius: 5px; text-decoration: none; display: inline-block; transition: all 0.3s ease; margin-top: 15px;"
-                               onmouseover="this.style.backgroundColor='#d65a4a'; this.style.borderColor='#d65a4a'; this.style.transform='scale(1.05)'"
-                               onmouseout="this.style.backgroundColor='#EA715E'; this.style.borderColor='#EA715E'; this.style.transform='scale(1)'">
+                               class="deliverable-btn"
+                               onclick="event.stopPropagation();">
                                 View larger version
                             </a>
                         </div>
@@ -329,7 +319,7 @@ title: Job Hunt Manager - Andrea Folgado
                              onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openDeliverableModal(this.getAttribute('data-title'), this.getAttribute('data-description'), this.getAttribute('data-image')); }">
                             <div style="position: relative; display: inline-block; width: 100%;">
                                 <img src="img/portfolio/job_hunt_manager/change_password.jpg" alt="Change Account Password"
-                                     style="width: 100%; height: 250px; object-fit: cover; cursor: pointer; transition: all 0.3s ease;"
+                                     class="img-hover-effect deliverable-img"
                                      onmouseover="this.nextElementSibling.style.opacity='1'"
                                      onmouseout="this.nextElementSibling.style.opacity='0'"
                                      onclick="openDeliverableModal('Change Account Password', 'Changing your account password is quick and easy.', 'img/portfolio/job_hunt_manager/change_password.jpg')">
@@ -342,9 +332,8 @@ title: Job Hunt Manager - Andrea Folgado
                             <a href="img/portfolio/job_hunt_manager/change_password.jpg" 
                                target="_blank" 
                                rel="noopener noreferrer"
-                               style="background-color: #EA715E; border-color: #EA715E; color: white; font-weight: bold; padding: 8px 16px; font-size: 14px; border-radius: 5px; text-decoration: none; display: inline-block; transition: all 0.3s ease; margin-top: 15px;"
-                               onmouseover="this.style.backgroundColor='#d65a4a'; this.style.borderColor='#d65a4a'; this.style.transform='scale(1.05)'"
-                               onmouseout="this.style.backgroundColor='#EA715E'; this.style.borderColor='#EA715E'; this.style.transform='scale(1)'">
+                               class="deliverable-btn"
+                               onclick="event.stopPropagation();">
                                 View larger version
                             </a>
                         </div>
@@ -353,7 +342,7 @@ title: Job Hunt Manager - Andrea Folgado
             </div>
 
             <!-- Problem -->
-            <div class="row" style="margin-top: 60px; margin-bottom: 60px;">
+            <div class="row section-spacing">
                 <div class="col-lg-12">
                     <h2 class="section-subheading">Problem</h2>
                     <p>Job hunting can be overwhelming when information is scattered across different tools. Applications may be logged in spreadsheets, interview dates kept in calendars, and notes stored elsewhere. Without a single place to bring everything together, it becomes difficult to stay organized and maintain a clear picture of progress.</p>
@@ -369,7 +358,7 @@ title: Job Hunt Manager - Andrea Folgado
             </div>
 
             <!-- Solution -->
-            <div class="row" style="margin-top: 60px; margin-bottom: 60px;">
+            <div class="row section-spacing">
                 <div class="col-lg-12">
                     <h2 class="section-subheading">Solution</h2>
                     <p>I started by validating the idea with LinkedIn polls. From there, I built the backend, created forms with WTForms, styled the frontend, and deployed the app to Heroku. The project was managed entirely by myself, with occasional technical guidance.</p>

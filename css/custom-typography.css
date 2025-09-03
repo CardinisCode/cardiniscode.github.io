@@ -533,3 +533,205 @@ section .deliverables-grid,
     text-align: left;
     margin-bottom: 30px;
 }
+
+/* ===================================
+   UTILITY CLASSES FOR INLINE STYLES
+   ===================================
+   These classes replace common inline styles
+   found across project pages
+   =================================== */
+
+/* Section Spacing */
+.section-spacing {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.section-spacing-top {
+    margin-top: 60px;
+}
+
+.section-spacing-bottom {
+    margin-bottom: 60px;
+}
+
+/* Project Subtitle */
+.project-subtitle {
+    font-style: italic;
+}
+
+/* Image Sizing */
+.img-size-35 {
+    max-width: 35%;
+    height: auto;
+}
+
+.img-size-40 {
+    max-width: 40%;
+    height: auto;
+}
+
+.img-size-50 {
+    max-width: 50%;
+    height: auto;
+}
+
+/* Image with Hover Effects */
+.img-hover-effect {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.img-hover-effect:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Deliverable Image Styling */
+.deliverable-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* List Item Spacing */
+.list-item-spacing {
+    margin-bottom: 10px;
+}
+
+/* Text Styling */
+.text-body {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.text-body-large {
+    color: #000;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Container Spacing */
+.container-spacing {
+    margin-bottom: 40px;
+}
+
+.container-spacing-small {
+    margin-bottom: 30px;
+}
+
+.container-spacing-large {
+    margin-bottom: 60px;
+}
+
+/* Padding and Margins */
+.padding-top-30 {
+    padding-top: 30px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+.margin-bottom-50 {
+    margin-bottom: 50px;
+}
+
+/* Custom Button for Deliverable Tiles */
+.deliverable-btn {
+    background-color: #EA715E;
+    border-color: #EA715E;
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+.deliverable-btn:hover {
+    background-color: #d65a4a;
+    border-color: #d65a4a;
+    transform: scale(1.05);
+    color: white;
+    text-decoration: none;
+}
+
+/* Overlay and Modal Utilities */
+.overlay-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: clamp(12px, 2.5vw, 18px);
+    font-weight: bold;
+    text-align: center;
+    pointer-events: none;
+    padding: 10px;
+    line-height: 1.2;
+}
+
+.modal-container {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.modal-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+.modal-title {
+    color: #EA715E !important;
+    margin-bottom: 15px;
+    text-align: center !important;
+}
+
+.modal-description {
+    color: #333;
+    line-height: 1.6;
+}
+
+.modal-close-btn {
+    background-color: #EA715E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* ===================================
+   END OF UTILITY CLASSES
+   =================================== */
