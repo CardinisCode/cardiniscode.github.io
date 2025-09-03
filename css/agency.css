@@ -487,6 +487,15 @@ section h3.section-subheading {
     right: auto;
 }
 
+/* ===================================
+   PROJECTS PAGE
+   =================================== */
+
+#projects .portfolio-item {
+    margin: 0 0 15px;
+    right: auto;
+}
+
 #portfolio .portfolio-item .portfolio-link {
     display: block;
     position: relative;
@@ -553,7 +562,8 @@ section h3.section-subheading {
 /* Force 3-column layout with maximum specificity */
 @media (min-width: 768px) {
     #portfolio .row > .col-md-4,
-    #skills .row > .col-md-4 {
+    #skills .row > .col-md-4,
+    #projects .row > .col-md-4 {
         float: left !important;
         width: 33.33333333% !important;
         padding: 0 15px !important;
@@ -561,7 +571,8 @@ section h3.section-subheading {
     }
     
     #portfolio .row::after,
-    #skills .row::after {
+    #skills .row::after,
+    #projects .row::after {
         content: "" !important;
         display: table !important;
         clear: both !important;

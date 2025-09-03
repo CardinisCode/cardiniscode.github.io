@@ -1,0 +1,101 @@
+---
+layout: project-directory
+title: Projects - Andrea Folgado
+---
+
+<!-- Projects Section -->
+<section id="projects" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Projects</h2>
+                <p class="section-subheading text-muted">Explore the projects I've created, from web development to product design.</p>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Job Hunt Manager Project -->
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="portfolio-tile">
+                    <div class="portfolio-image-wrapper portfolio-image-job-hunt-manager">
+                        <img src="img/portfolio/job_hunt_manager/dashboard.jpg" class="img-fluid" alt="Job Hunt Manager Dashboard">
+                        <div class="portfolio-overlay">
+                            <i class="fa fa-external-link fa-2x"></i>
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <h4 class="portfolio-title">Job Hunt Manager</h4>
+                    <p class="portfolio-subtitle">Full Stack Developer</p>
+                </div>
+                <a href="job-hunt-manager.html" class="portfolio-cta-link">
+                    <div class="portfolio-cta">
+                        <span class="cta-text">View Project</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Gas Safety Assessment Project -->
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="portfolio-tile">
+                    <div class="portfolio-image-wrapper portfolio-image-gas-safety-assessment">
+                        <img src="img/portfolio/GasSafetyAssessment/GSR_MainImage.png" class="img-fluid" alt="Gas Safety Assessment System">
+                        <div class="portfolio-overlay">
+                            <i class="fa fa-external-link fa-2x"></i>
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <h4 class="portfolio-title">Gas Safety Assessment</h4>
+                    <p class="portfolio-subtitle">Digital Product Designer</p>
+                </div>
+                <a href="gas-safety-assessment.html" class="portfolio-cta-link">
+                    <div class="portfolio-cta">
+                        <span class="cta-text">View Project</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Client Onboarding Project -->
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="portfolio-tile">
+                    <div class="portfolio-image-wrapper portfolio-image-client-onboarding">
+                        <img src="img/portfolio/ClientOnboarding/CO_projectimage_Email.png" class="img-fluid" alt="Client Onboarding Project">
+                        <div class="portfolio-overlay">
+                            <i class="fa fa-external-link fa-2x"></i>
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <h4 class="portfolio-title">Client Onboarding</h4>
+                    <p class="portfolio-subtitle">Digital Product Designer</p>
+                </div>
+                <a href="client-onboarding.html" class="portfolio-cta-link">
+                    <div class="portfolio-cta">
+                        <span class="cta-text">View Project</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+// Make portfolio tiles clickable while keeping CTA separate
+document.addEventListener('DOMContentLoaded', function() {
+    const portfolioTiles = document.querySelectorAll('.portfolio-item .portfolio-tile');
+    
+    portfolioTiles.forEach(function(tile) {
+        tile.addEventListener('click', function(e) {
+            // Don't trigger if clicking on the CTA (which is outside the tile)
+            if (e.target.closest('.portfolio-cta-link')) {
+                return;
+            }
+            
+            // Find the corresponding CTA link and trigger it
+            const portfolioItem = this.closest('.portfolio-item');
+            const ctaLink = portfolioItem.querySelector('.portfolio-cta-link');
+            
+            if (ctaLink) {
+                ctaLink.click();
+            }
+        });
+    });
+});
+</script>

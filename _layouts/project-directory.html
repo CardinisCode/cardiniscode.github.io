@@ -1,4 +1,8 @@
-<!-- Navigation -->
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body id="page-top" class="page">
+    <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -40,20 +44,10 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">Hi, I'm Andrea Folgado</div>
-                <div class="intro-heading">Software Engineer & UX Designer</div>
-                <div class="intro-subheading">Creating user-centered solutions that bridge design and technology</div>
-                <a href="#about" class="page-scroll btn btn-xl">Learn More</a>
-            </div>
-        </div>
-    </header>
-<!--
-        {% for page in site.pages %}
-          {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
-        {% endfor %}
- -->
+    <!-- Page Content -->
+    {{ content }}
 
+    {% include footer.html %}
+    {% include js.html %}
+  </body>
+</html>
