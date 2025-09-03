@@ -716,12 +716,36 @@ section .deliverables-grid,
                 transition: none !important;
             }
             
-            /* Ensure mobile navigation is clickable */
-            .navbar-nav > li > a {
-                cursor: pointer !important;
-                pointer-events: auto !important;
-            }
+                    /* Ensure mobile navigation is clickable */
+        .navbar-nav > li > a {
+            cursor: pointer !important;
+            pointer-events: auto !important;
         }
+    }
+
+    /* Fix navbar overlap with page content */
+    body {
+        padding-top: 60px; /* Adjust based on your navbar height */
+    }
+
+    /* Alternative: Add margin to main content sections */
+    section:first-of-type,
+    .container:first-of-type {
+        margin-top: 60px;
+    }
+
+    /* Specific fix for H1 headings */
+    h1, .h1 {
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+
+    /* Fix for project pages specifically */
+    .project-page h1,
+    .project-page .h1 {
+        margin-top: 40px;
+        padding-top: 20px;
+    }
 
         /* Mobile responsive */
         @media (max-width: 768px) {
