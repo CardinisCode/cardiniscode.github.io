@@ -1157,6 +1157,14 @@ section .deliverables-grid,
 }
 
 /* ===================================
+   CLIENT ONBOARDING DELIVERABLE IMAGES
+   =================================== */
+.deliverable-img-co {
+    height: 320px !important;
+    object-fit: contain !important;
+}
+
+/* ===================================
    JOB HUNT MANAGER DELIVERABLE IMAGES
    =================================== */
 .deliverable-img.deliverable-img-application-notes {
