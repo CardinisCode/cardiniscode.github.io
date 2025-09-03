@@ -1121,5 +1121,12 @@ section .deliverables-grid,
 }
 
 /* ===================================
+   VIDEO MODAL CONTENT STYLES
+   =================================== */
+.video-modal-content {
+    margin-bottom: 20px;
+}
+
+/* ===================================
    END OF UTILITY CLASSES
    =================================== */
