@@ -1210,6 +1210,8 @@ section .deliverables-grid,
     border: 2px solid #2c2787;
     border-radius: 8px;
     margin-bottom: 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .legacy-caption {
@@ -1218,6 +1220,12 @@ section .deliverables-grid,
     color: #333;
     margin-bottom: 15px;
     font-style: italic;
+}
+
+.legacy-image:hover {
+    transform: translateY(-5px);
+    border-color: #EA715E;
+    box-shadow: 0 8px 25px rgba(234,113,94,0.2);
 }
 
 /* ===================================
@@ -1263,6 +1271,8 @@ section .deliverables-grid,
     border: 2px solid #2c2787;
     border-radius: 8px;
     margin-bottom: 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .user-flow-caption {
@@ -1271,6 +1281,12 @@ section .deliverables-grid,
     color: #333;
     margin-bottom: 15px;
     font-style: italic;
+}
+
+.user-flow-image:hover {
+    transform: translateY(-5px);
+    border-color: #EA715E;
+    box-shadow: 0 8px 25px rgba(234,113,94,0.2);
 }
 
 /* ===================================
