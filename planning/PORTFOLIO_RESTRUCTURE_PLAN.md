@@ -665,7 +665,7 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 - Keep all existing `_includes/` files intact until content migration is complete
 - Maintain professional, clean styling for resume page
 - Blog navigation will be temporarily hidden during redesign
-- Portfolio navigation will be updated once dedicated page is ready
+- ✅ Portfolio navigation will be updated once dedicated page is ready
 - SEO optimization will be applied to all main pages
 - Contact section redesign can be done independently
 - **PERMANENT SOLUTION**: Moved `education_journey.html` and `work_experience.html` out of `_includes` directory to prevent them from being automatically included by Jekyll layouts
