@@ -741,6 +741,20 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 ### **Estimated Effort**: 3-4 hours including form investigation and fixes
 ### **Dependencies**: Contact form backend investigation and fixes
 
+## Resume PDF Download Issue 📋 **TO INVESTIGATE**
+**Status**: 📋 **TO INVESTIGATE** - Resume PDF download not working properly
+**Priority**: Medium - Important for user experience
+**Issue**: The CTA "Download resume (pdf)" on the Resume page does not open up the resume pdf in a separate document nor does it automatically download the file for the user
+**Action Required**: Investigate and fix PDF download functionality
+**Files to Check**: `resume.html`, `assets/Resume/resume.pdf`, file paths and links
+
+## Skills Section Layout Update 📋 **TO UPDATE**
+**Status**: 📋 **TO UPDATE** - Skills section layout needs to be changed from 3 columns to vertical layout
+**Priority**: Low - Visual preference improvement
+**Issue**: The "Skills" section on the landing page displays skills in 3 columns of listed info. User prefers to remove the 3 columns and lay the content out vertically for both desktop and mobile
+**Action Required**: Update skills section layout from horizontal columns to vertical list
+**Files to Update**: `_includes/skills.html`, `css/agency.css` (if needed for styling)
+
 ## Notes
 - Keep all existing `_includes/` files intact until content migration is complete
 - Maintain professional, clean styling for resume page
