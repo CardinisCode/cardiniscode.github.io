@@ -47,23 +47,23 @@ title: Contact - Andrea Folgado
                 <h3 class="text-center text-dark mb-4 pb-2 section-heading" style="border-bottom: 2px solid #2c2787;">Send Me a Message</h3>
                 <div class="row">
                     <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
-                        <form name="sentMessage" id="contactForm" novalidate>
+                        <form id="contactForm">
                             <div class="row">
                                 <div class="col-xs-12">
                                     <div class="control-group form-group">
-                                        <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                        <input type="text" class="form-control" placeholder="Your Name *" name="from_name" id="from_name" required>
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div class="control-group form-group">
-                                        <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                        <input type="email" class="form-control" placeholder="Your Email *" name="from_email" id="from_email" required>
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div class="control-group form-group">
-                                        <input type="tel" class="form-control" placeholder="Your Phone (Optional)" id="phone">
+                                        <input type="tel" class="form-control" placeholder="Your Phone (Optional)" name="from_phone" id="from_phone">
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div class="control-group form-group">
-                                        <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                        <textarea class="form-control" placeholder="Your Message *" name="message" id="message" required></textarea>
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div class="text-center">
@@ -79,3 +79,52 @@ title: Contact - Andrea Folgado
         </div>
     </div>
 </section>
+
+<!-- EmailJS Integration -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        // Initialize EmailJS with your public key
+        emailjs.init("st6WNgdLiHflsSxHh");
+    })();
+
+    // Handle form submission
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        // Get form data
+        const formData = {
+            from_name: document.getElementById('from_name').value,
+            from_email: document.getElementById('from_email').value,
+            from_phone: document.getElementById('from_phone').value,
+            message: document.getElementById('message').value,
+            time: new Date().toLocaleString()
+        };
+
+        // Send email using EmailJS
+        emailjs.send('service_jy2djkl', 'template_v9abssj', formData)
+            .then(function(response) {
+                // Success message
+                document.getElementById('success').innerHTML = 
+                    '<div class="alert alert-success">' +
+                    '<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' +
+                    '<strong>Your message has been sent successfully!</strong>' +
+                    '</div>';
+                
+                // Clear form
+                document.getElementById('contactForm').reset();
+            }, function(error) {
+                // Error message
+                document.getElementById('success').innerHTML = 
+                    '<div class="alert alert-danger">' +
+                    '<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' +
+                    '<strong>Sorry, there was an error sending your message. Please try again later.</strong>' +
+                    '</div>';
+            });
+    });
+
+    // Clear messages when user starts typing
+    document.getElementById('from_name').addEventListener('focus', function() {
+        document.getElementById('success').innerHTML = '';
+    });
+</script>
