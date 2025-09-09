@@ -1,6 +1,12 @@
 /* Custom Typography Styles */
 /* This file overrides Bootstrap and Agency theme typography */
 
+/* Section Heading Styles */
+.section-heading {
+    font-size: 28px !important;
+    border-bottom: 2px solid #333 !important;
+}
+
 /* H1 Styles */
 h1 {
     color: #EA715E !important;
@@ -28,7 +34,7 @@ h3 {
     color: #2c2787 !important;
     font-family: 'Caudex', serif !important;
     font-size: 30px !important;
-    text-align: left !important;
+    text-align: center !important;
     font-weight: 700 !important;
     margin-bottom: 30px !important;
 }
