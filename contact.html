@@ -93,10 +93,11 @@ title: Contact - Andrea Folgado
         event.preventDefault();
         
         // Get form data
+        const phoneValue = document.getElementById('from_phone').value;
         const formData = {
             from_name: document.getElementById('from_name').value,
             from_email: document.getElementById('from_email').value,
-            from_phone: document.getElementById('from_phone').value,
+            from_phone: phoneValue || "No phone number provided",
             message: document.getElementById('message').value,
             time: new Date().toLocaleString()
         };
