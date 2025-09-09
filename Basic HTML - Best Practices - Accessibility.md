@@ -90,3 +90,40 @@
 
 * Used to define a keyboard shortcut for an element. 
 * VALUE: This can help users with mobility impairments navigate the website more easily.
+
+## WAI-ARIA, Roles, and Attributes
+
+### WAI-ARIA
+
+* stands for Web Accessibility Initiative - Accessible Rich Internet Applications
+* a set of attributes that can be added to HTML elements to improve accessibility
+* provides additional information to assistive technologies about the purpose and structure of the content.
+
+### ARIA roles
+
+* A set of predefined roles that can be added to HTML elements to define their purpose. 
+* VALUE: This helps assistive technologies understand the content of the website.
+* Examples include: 
+	* `role="tab"`
+	* `role="menu"`
+	* `role="alert"`
+
+### `aria-label` and `aria-labelledby` attributes
+
+* used to give an element a programmatic (or accessible) name
+	* helps assistive technology (such as screen readers) understand the purpose of the element.
+* VALUE: often used when the visual label for an element is an image or symbol rather than text.
+* `aria-label`: 
+	* allows you to define the name directly in the attribute
+* `aria-labelledby`:
+	* allows you to reference existing text on the page
+
+### `aria-hidden` attribute
+
+* Used to hide an element from assistive technologies such as screen readers. 
+* For example, this can be used to hide decorative images that do not provide any meaningful content.
+
+### `aria-describedby` attribute
+
+* Used to provide additional information about an element by associating it with another element that contains the information
+* VALUE: This helps assistive technologies understand the purpose of the element.
