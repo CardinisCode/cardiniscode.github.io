@@ -740,12 +740,12 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 ### **Estimated Effort**: 3-4 hours including form investigation and fixes
 ### **Dependencies**: Contact form backend investigation and fixes
 
-## Resume PDF Download Issue 📋 **TO INVESTIGATE**
-**Status**: 📋 **TO INVESTIGATE** - Resume PDF download not working properly
-**Priority**: Medium - Important for user experience
-**Issue**: The CTA "Download resume (pdf)" on the Resume page does not open up the resume pdf in a separate document nor does it automatically download the file for the user
-**Action Required**: Investigate and fix PDF download functionality
-**Files to Check**: `resume.html`, `assets/Resume/resume.pdf`, file paths and links
+## Resume PDF Download Issue ✅ **RESOLVED**
+**Status**: ✅ **RESOLVED** - Resume PDF download now working properly
+**Priority**: ✅ **COMPLETED** - Important for user experience
+**Issue**: ✅ **FIXED** - The CTA "Download resume (pdf)" now properly opens the resume PDF in a separate document
+**Action Required**: ✅ **COMPLETED** - PDF download functionality fixed
+**Files Updated**: `resume.html`, `_includes/about.html` - Updated file paths from `Resume/resume.pdf` to `assets/Resume/resume.pdf`
 
 ## Skills Section Layout Update 📋 **TO UPDATE**
 **Status**: 📋 **TO UPDATE** - Skills section layout needs to be changed from 3 columns to vertical layout
