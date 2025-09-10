@@ -28,6 +28,15 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  CardinisCode
 linkedin_username: acfolgado
 
+# Social media links for footer
+social:
+  - title: envelope
+    url: mailto:ac.folgado@gmail.com
+  - title: github
+    url: https://github.com/CardinisCode
+  - title: linkedin
+    url: https://linkedin.com/in/acfolgado
+
 # Build settings
 plugins:
   - jekyll-feed
