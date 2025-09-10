@@ -812,12 +812,10 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 **Domain**: andreafolgado.com
 **Action Required**: Complete custom domain setup for GitHub Pages portfolio
 **Tasks**:
-- [ ] **Add Custom Domain to GitHub Pages** - Configure andreafolgado.com in GitHub Pages settings
-- [ ] **Update DNS in Wix** - Configure DNS records in Wix domain management (user will handle)
-- [ ] **Update DNS in GitHub** - Configure DNS settings in GitHub Pages configuration
-- [ ] **Create CNAME File** - Add CNAME file to repository root with "andreafolgado.com" content
+- ✅ **Create CNAME File** - Add CNAME file to repository root with "andreafolgado.com" content (COMPLETED - automatically updated GitHub Pages settings)
+- ✅  **Update DNS in Wix** - Configure DNS records in Wix domain management (user will handle)
 - [ ] **Wait for DNS Propagation** - Allow time for DNS changes to propagate globally
-- [ ] **Enable HTTPS Enforcement** - Check "Enforce HTTPS" in GitHub Pages settings after DNS propagation
+- [ ] **Enable HTTPS Enforcement** - Check "Enforce HTTPS" in GitHub Pages settings after DNS propagation (check Tuesday 16 September 2025)
 - [ ] **Test Custom Domain** - Verify andreafolgado.com loads correctly with HTTPS
 - [ ] **Update Any Hardcoded URLs** - Ensure all internal links work with custom domain
 
@@ -842,12 +840,11 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 **Estimated Effort**: 2-3 hours including investigation and testing
 
 ## Notes
-- Keep all existing `_includes/` files intact until content migration is complete
+- ✅ Keep all existing `_includes/` files intact until content migration is complete
 - Maintain professional, clean styling for resume page
 - Blog navigation will be temporarily hidden during redesign
 - ✅ Portfolio navigation will be updated once dedicated page is ready
 - SEO optimization will be applied to all main pages
-- Contact section redesign can be done independently
 - **PERMANENT SOLUTION**: Moved `education_journey.html` and `work_experience.html` out of `_includes` directory to prevent them from being automatically included by Jekyll layouts
 
 ---
