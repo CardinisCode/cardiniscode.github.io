@@ -173,18 +173,70 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 - 📋 `blog.html` - Redesigned blog page
 - ✅ `_layouts/` - Created `resume.html` layout for dedicated resume page
 
-## SEO Optimization
+## SEO Optimization 📋 **PLANNED**
+**Status**: 📋 **PLANNED** - Comprehensive SEO optimization for portfolio site
+**Priority**: Medium - Important for search engine visibility and professional presence
+**Action Required**: Implement comprehensive SEO optimization across all pages
 **Pages to be SEO-optimized:**
-- ✅ Home page
-- ✅ Resume page  
-- ✅ Portfolio page (once created)
+- [ ] Home page (`index.html`)
+- [ ] Resume page (`resume.html`)
+- [ ] Projects page (`projects.html`)
+- [ ] Job Hunt Manager project page (`job-hunt-manager.html`)
+- [ ] Gas Safety Assessment project page (`gas-safety-assessment.html`)
+- [ ] Client Onboarding project page (`client-onboarding.html`)
+- [ ] Contact page (`contact.html`)
 
-**SEO Requirements:**
-- Meta titles and descriptions
-- Proper heading structure
-- Alt text for images
-- Schema markup where appropriate
-- Page load optimization
+**SEO Implementation Tasks:**
+- [ ] **Meta Titles and Descriptions** - Add unique, descriptive meta titles and descriptions for each page
+- [ ] **Open Graph Tags** - Implement Open Graph meta tags for social media sharing
+- [ ] **Twitter Card Tags** - Add Twitter Card meta tags for better Twitter sharing
+- [ ] **Canonical URLs** - Ensure proper canonical URL structure
+- [ ] **Heading Structure Optimization** - Verify proper H1, H2, H3 hierarchy across all pages
+- [ ] **Alt Text for Images** - Add descriptive alt text to all images for accessibility and SEO
+- [ ] **Schema Markup Implementation** - Add structured data markup (Person, Organization, Project schemas)
+- [ ] **Sitemap Generation** - Create and configure XML sitemap for search engines
+- [ ] **Robots.txt Configuration** - Set up proper robots.txt file
+- [ ] **Page Load Optimization** - Optimize images, CSS, and JavaScript for faster loading
+- [ ] **Mobile SEO Optimization** - Ensure mobile-friendly design and responsive meta tags
+- [ ] **Internal Linking Strategy** - Optimize internal linking between pages
+- [ ] **URL Structure Review** - Ensure clean, SEO-friendly URLs
+- [ ] **Content Optimization** - Review and optimize content for target keywords
+- [ ] **Local SEO (if applicable)** - Add location-based SEO elements if relevant
+
+**Technical SEO Requirements:**
+- [ ] **Jekyll SEO Plugin** - Install and configure Jekyll SEO plugin
+- [ ] **Google Analytics Integration** - Set up Google Analytics tracking
+- [ ] **Google Search Console** - Configure Google Search Console for monitoring
+- [ ] **SSL Certificate Verification** - Ensure HTTPS is properly configured
+- [ ] **Page Speed Optimization** - Optimize for Core Web Vitals
+- [ ] **404 Error Page** - Create custom 404 error page
+- [ ] **Breadcrumb Navigation** - Implement breadcrumb navigation for better UX and SEO
+
+**Content SEO Tasks:**
+- [ ] **Keyword Research** - Identify target keywords for portfolio and projects
+- [ ] **Content Audit** - Review all content for SEO optimization opportunities
+- [ ] **Project Descriptions** - Optimize project descriptions with relevant keywords
+- [ ] **Skills and Experience** - Optimize skills and experience sections
+- [ ] **Contact Information** - Ensure contact information is properly structured
+- [ ] **Professional Summary** - Optimize professional summary for search visibility
+
+**Files to Update:**
+- [ ] `_config.yml` - Add SEO configuration and site metadata
+- [ ] `_includes/head.html` - Add meta tags and SEO elements
+- [ ] `index.html` - Home page SEO optimization
+- [ ] `resume.html` - Resume page SEO optimization
+- [ ] `projects.html` - Projects page SEO optimization
+- [ ] `job-hunt-manager.html` - Project page SEO optimization
+- [ ] `gas-safety-assessment.html` - Project page SEO optimization
+- [ ] `client-onboarding.html` - Project page SEO optimization
+- [ ] `contact.html` - Contact page SEO optimization
+- [ ] `sitemap.xml` - Create XML sitemap
+- [ ] `robots.txt` - Create robots.txt file
+- [ ] `404.html` - Create custom 404 page
+
+**Dependencies**: Custom domain setup completion, all pages finalized
+**Estimated Effort**: 4-6 hours including research, implementation, and testing
+**Notes**: SEO optimization should be completed after custom domain is live and all content is finalized
 
 ## Contact Section Redesign ✅ **COMPLETED**
 **Issues Fixed:**
@@ -242,9 +294,9 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 **Action**: Updated portfolio grid display and image sizing
 
 **Changes Required:**
-- [x] **Mobile**: Only display 2 project tiles
-- [x] **Desktop**: Only display 3 project tiles  
-- [x] **Tile "Job hunt manager"**: Resize image to match other project tiles
+- ✅ **Mobile**: Only display 2 project tiles
+- ✅ **Desktop**: Only display 3 project tiles  
+- ✅ **Tile "Job hunt manager"**: Resize image to match other project tiles
 
 **Image Sizing Issue:**
 - The "Job hunt manager" tile image is not the same size as other images in the portfolio section
@@ -697,7 +749,7 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 **File**: `_includes/footer.html` �� **TO BE UPDATED**
 **Action**: Simplify footer with basic social links
 **Changes Required**:
-- [ ] **Keep Social Media Links** - Email, LinkedIn, GitHub icons maintained
+- ✅ **Keep Social Media Links** - Email, LinkedIn, GitHub icons maintained
 - ✅ **Add Contact Link** - "Contact" link added pointing to `contact.html`
 - ✅ **Add Resume Link** - "Resume" link added pointing to `resume.html`
 - ✅ **Remove Contact Details** - Detailed contact info moved to dedicated page
@@ -729,7 +781,7 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 **Action**: Test contact page functionality thoroughly
 **Tasks**:
 - ✅ **Test Form Submission** - Emails successfully sent via EmailJS to iCloud
-- [ ] **Test All Contact Links** - Email, LinkedIn, GitHub links work correctly
+- ✅ **Test All Contact Links** - Email, LinkedIn, GitHub links work correctly
 - ✅ **Test Mobile Responsiveness** - Form works on all devices
 - ✅ **Test Navigation** - Contact CTA works from all pages
 - ✅ **Review Content Accuracy** - All contact information is correct
@@ -754,6 +806,41 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 **Action Required**: ✅ **COMPLETED** - Skills section layout updated from horizontal columns to vertical list
 **Files Updated**: `_includes/skills.html` - Changed from `col-md-4` (3 columns) to `col-lg-12` (vertical layout) with proper spacing
 
+## Custom Domain Setup and Configuration 📋 **IN PROGRESS**
+**Status**: 📋 **IN PROGRESS** - Currently working on custom domain implementation
+**Priority**: High - Required for custom domain functionality and professional branding
+**Domain**: andreafolgado.com
+**Action Required**: Complete custom domain setup for GitHub Pages portfolio
+**Tasks**:
+- [ ] **Add Custom Domain to GitHub Pages** - Configure andreafolgado.com in GitHub Pages settings
+- [ ] **Update DNS in Wix** - Configure DNS records in Wix domain management (user will handle)
+- [ ] **Update DNS in GitHub** - Configure DNS settings in GitHub Pages configuration
+- [ ] **Create CNAME File** - Add CNAME file to repository root with "andreafolgado.com" content
+- [ ] **Wait for DNS Propagation** - Allow time for DNS changes to propagate globally
+- [ ] **Enable HTTPS Enforcement** - Check "Enforce HTTPS" in GitHub Pages settings after DNS propagation
+- [ ] **Test Custom Domain** - Verify andreafolgado.com loads correctly with HTTPS
+- [ ] **Update Any Hardcoded URLs** - Ensure all internal links work with custom domain
+
+**Dependencies**: Wix DNS configuration, GitHub Pages settings access
+**Estimated Effort**: 1-2 hours (excluding DNS propagation time)
+**Notes**: GitHub will auto-apply HTTPS once DNS propagates; if not, manually enable "Enforce HTTPS" in Settings → Pages
+
+## Custom Domain HTTPS Configuration 📋 **PLANNED**
+**Status**: 📋 **PLANNED** - Ticket item added to address HTTPS configuration issue
+**Priority**: High - Required for custom domain functionality and security
+**Issue**: "Unavailable for your site because your domain is not properly configured to support HTTPS"
+**Action Required**: Configure custom domain to support HTTPS for GitHub Pages
+**Tasks**:
+- [ ] **Investigate Domain Configuration** - Check current DNS settings and domain provider configuration
+- [ ] **Configure HTTPS Support** - Set up proper SSL/TLS configuration for custom domain
+- [ ] **Update DNS Records** - Ensure proper A/CNAME records are configured for GitHub Pages
+- [ ] **Test HTTPS Functionality** - Verify that HTTPS works correctly across all pages
+- [ ] **Update Site Configuration** - Ensure Jekyll configuration supports HTTPS
+- [ ] **Document Configuration** - Record the final configuration for future reference
+
+**Dependencies**: Custom domain setup and DNS access
+**Estimated Effort**: 2-3 hours including investigation and testing
+
 ## Notes
 - Keep all existing `_includes/` files intact until content migration is complete
 - Maintain professional, clean styling for resume page
@@ -766,7 +853,7 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 ---
 **Last Updated**: September 3, 2025
 **Status**: Implementation Phase - Job Hunt Manager Project Implementation (COMPLETED)
-**Progress**: 19/19 main tasks completed (100% complete)
+**Progress**: 19/23 main tasks completed (83% complete)
 
 **Recently Completed:**
 - ✅ **Projects page fully implemented** with all 3 project tiles and responsive design
