@@ -1459,6 +1459,29 @@ section .deliverables-grid,
 }
 
 /* ===================================
+   FOOTER STYLES
+   =================================== */
+
+/* Footer Quicklinks Styling */
+footer ul.quicklinks li a {
+    font-weight: bold !important;
+    color: #007acc !important;
+}
+
+footer ul.quicklinks li a:hover,
+footer ul.quicklinks li a:focus {
+    color: #EA715E !important;
+    text-decoration: none;
+}
+
+/* Enhanced Social Media Icons Hover */
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+    background-color: #EA715E !important;
+}
+
+/* ===================================
    END OF UTILITY CLASSES
    =================================== */
 
