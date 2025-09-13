@@ -40,6 +40,66 @@ permalink: /404.html
     <link rel="apple-touch-icon" sizes="180x180" href="/img/logos/personalised_logo/favicon-180x180.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/logos/personalised_logo/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/logos/personalised_logo/favicon-16x16.png">
+    
+    <!-- Custom 404 CSS - Loaded last to override all other styles -->
+    <style>
+        /* Reset address element default styling - only for 404 page */
+        section#404 address {
+            font-style: normal !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        
+        /* 404 page CTA styling - ULTRA HIGH SPECIFICITY */
+        section#404 div.col-md-3 .portfolio-cta-link {
+            text-decoration: none !important;
+            display: block !important;
+        }
+        
+        section#404 div.col-md-3 .portfolio-cta {
+            text-align: center !important;
+            margin: 15px 0 10px 0 !important;
+        }
+        
+        /* Target cta-text with MAXIMUM specificity - using ID and multiple classes */
+        body section#404 div.col-md-3 div.portfolio-cta span.cta-text,
+        section#404 div.col-md-3 div.portfolio-cta span.cta-text,
+        section#404 div.portfolio-cta span.cta-text,
+        section#404 span.cta-text,
+        .cta-text {
+            background-color: #EA715E !important;
+            color: white !important;
+            font-weight: bold !important;
+            padding: 8px 16px !important;
+            font-size: 14px !important;
+            border-radius: 3px !important;
+            display: inline-block !important;
+            transition: all 0.3s ease !important;
+            text-decoration: none !important;
+            border: none !important;
+        }
+        
+        /* Hover effects with multiple selectors */
+        section#404 .portfolio-cta-link:hover .cta-text,
+        section#404 div.col-md-3 .portfolio-cta-link:hover .cta-text,
+        .portfolio-cta-link:hover .cta-text {
+            background-color: white !important;
+            color: #EA715E !important;
+            border: 2px solid #EA715E !important;
+            transform: scale(1.05) !important;
+        }
+        
+        /* Contact me link styling */
+        section#404 a[href="/contact.html"] {
+            color: #2c2787 !important;
+            text-decoration: none !important;
+            transition: color 0.3s ease !important;
+        }
+        
+        section#404 a[href="/contact.html"]:hover {
+            color: #EA715E !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -91,30 +151,46 @@ permalink: /404.html
                     <!-- Navigation Links -->
                     <div class="row" style="margin-bottom: 40px;">
                         <div class="col-md-3 col-sm-6">
-                            <a href="/" class="btn btn-primary btn-lg" style="width: 100%; margin-bottom: 15px;">
-                                <i class="fa fa-home"></i> Home
+                            <a href="/" class="portfolio-cta-link" style="display: block; margin-bottom: 15px;">
+                                <div class="portfolio-cta">
+                                    <span class="cta-text" style="background-color: #EA715E !important; color: white !important; padding: 8px 16px !important; border-radius: 3px !important; display: inline-block !important; font-weight: bold !important; text-decoration: none !important;">
+                                        <i class="fa fa-home"></i> Home
+                                    </span>
+                                </div>
                             </a>
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <a href="/projects.html" class="btn btn-primary btn-lg" style="width: 100%; margin-bottom: 15px;">
-                                <i class="fa fa-folder-open"></i> Projects
+                            <a href="/projects.html" class="portfolio-cta-link" style="display: block; margin-bottom: 15px;">
+                                <div class="portfolio-cta">
+                                    <span class="cta-text" style="background-color: #EA715E !important; color: white !important; padding: 8px 16px !important; border-radius: 3px !important; display: inline-block !important; font-weight: bold !important; text-decoration: none !important;">
+                                        <i class="fa fa-folder-open"></i> Projects
+                                    </span>
+                                </div>
                             </a>
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <a href="/about.html" class="btn btn-primary btn-lg" style="width: 100%; margin-bottom: 15px;">
-                                <i class="fa fa-user"></i> About
+                            <a href="/about.html" class="portfolio-cta-link" style="display: block; margin-bottom: 15px;">
+                                <div class="portfolio-cta">
+                                    <span class="cta-text" style="background-color: #EA715E !important; color: white !important; padding: 8px 16px !important; border-radius: 3px !important; display: inline-block !important; font-weight: bold !important; text-decoration: none !important;">
+                                        <i class="fa fa-user"></i> About
+                                    </span>
+                                </div>
                             </a>
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <a href="/contact.html" class="btn btn-primary btn-lg" style="width: 100%; margin-bottom: 15px;">
-                                <i class="fa fa-envelope"></i> Contact
+                            <a href="/contact.html" class="portfolio-cta-link" style="display: block; margin-bottom: 15px;">
+                                <div class="portfolio-cta">
+                                    <span class="cta-text" style="background-color: #EA715E !important; color: white !important; padding: 8px 16px !important; border-radius: 3px !important; display: inline-block !important; font-weight: bold !important; text-decoration: none !important;">
+                                        <i class="fa fa-envelope"></i> Contact
+                                    </span>
+                                </div>
                             </a>
                         </div>
                     </div>
                     
                     <p style="font-size: 16px; color: #666;">
                         Still can't find what you're looking for? 
-                        <a href="/contact.html" style="color: #EA715E; text-decoration: none;">Contact me!</a>
+                        <a href="/contact.html">Contact me!</a>
                     </p>
                 </div>
             </div>
