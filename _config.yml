@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Andrea Folgado - Software Engineer & UX Designer
+title: Andrea van Onselen (nee Folgado) - Software Engineer & UX Designer
 email: andrea.vanonselen@icloud.com
 description: >- # this means to ignore newlines until "baseurl:"
   Software Engineer & UX Designer creating user-centered solutions that bridge design and technology. Explore my portfolio showcasing web development, UX design, and problem-solving expertise.

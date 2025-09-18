@@ -1,10 +1,10 @@
-# Andrea Folgado
+# Andrea van Onselen (nee Folgado)
 
 **Junior Software Developer**  
 
-[GitHub](https://github.com/CardinisCode) | [LinkedIn](https://www.linkedin.com/in/acfolgado/) | [Portfolio](https://www.andreafolgado.com/) | [Email](mailto:ac.folgado@gmail.com)  
+[GitHub](https://github.com/CardinisCode) | [LinkedIn](https://www.linkedin.com/in/acfolgado/) | [Portfolio](https://www.andreafolgado.com/) | [Email](mailto:andrea.vanonselen@icloud.com)  
 
-[Download Resume (PDF)](CV_JuniorSoftwareDev_AndreaFolgado.pdf)
+[Download Resume (PDF)](Resume_AndreavanOnselen.pdf)
 
 ---
 
@@ -63,17 +63,21 @@
 
 ## Projects
 
-- **[Gas Safety Record](https://www.andreafolgado.com/project-template/gas-safety-assessment)**  
+- **[Gas Safety Assessment](https://www.andreafolgado.com/gas-safety-assessment.html)**  
   Salesforce-integrated tool improving engineer workflows, reducing legal risk, and cutting costs.  
   *Tools: Figma, Miro, HTML, CSS, Salesforce Apex*  
 
-- **[Job Hunt Manager](https://github.com/CardinisCode/jobhuntmanager)**  
+- **[Job Hunt Manager](https://www.andreafolgado.com/job-hunt-manager.html)**  
   Full-stack web app to track job applications and interviews.  
   *Tools: Python, Flask, SQLite, HTML, CSS*  
 
 - **Dynamic Invoice Template**  
   Custom Salesforce invoice system with multiple layouts for finance team.  
   *Tools: Apex, HTML, CSS*  
+
+- **[Client Onboarding](https://www.andreafolgado.com/client-onboarding.html)**
+  Set of tools and email templates, within Salesforce, to optimise client onboarding of new business clients.
+  *Tools: Salesforce (Visualforce, Flows), Figma, Gravity Forms, Zapier* 
 
 ---
 
