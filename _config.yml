@@ -54,6 +54,9 @@ seo:
   image: /img/logos/personalised_logo/andi_logo_favicon.png
   google_site_verification: # Add your Google Search Console verification code
 
+# Analytics (add your tracking ID when available)
+google_analytics: # Add your Google Analytics tracking ID (e.g., GA_MEASUREMENT_ID)
+
 # Build settings
 plugins:
   - jekyll-feed
