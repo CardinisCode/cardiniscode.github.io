@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.andreafolgado.com/sitemap.xml
+
+# Disallow admin and private areas (if any)
+Disallow: /_site/
+Disallow: /_includes/
+Disallow: /_layouts/
+Disallow: /_posts/
+Disallow: /_plugins/
+Disallow: /_data/
+Disallow: /planning/
+Disallow: /mail/
+
+# Allow all public content
+Allow: /css/
+Allow: /js/
+Allow: /img/
+Allow: /*.html
+Allow: /*.xml
+Allow: /*.css
+Allow: /*.js

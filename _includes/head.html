@@ -1,10 +1,56 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="{{ site.description }}">
+    <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}Software Engineer, UX Designer, Web Development, Portfolio, Andrea Folgado, Python, Flask, HTML, CSS, Bootstrap, User Experience{% endif %}">
+    <meta name="author" content="{{ site.author.name }}">
+    <meta name="robots" content="index, follow">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#EA715E">
+    <meta name="msapplication-TileColor" content="#2c2787">
+    <meta name="application-name" content="{{ site.title }}">
+    <meta name="apple-mobile-web-app-title" content="{{ site.title }}">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Andrea Folgado",
+      "url": "https://www.andreafolgado.com",
+      "image": "https://www.andreafolgado.com/img/logos/personalised_logo/andi_logo_favicon.png",
+      "description": "Software Engineer & UX Designer creating user-centered solutions that bridge design and technology",
+      "jobTitle": "Software Engineer & UX Designer",
+      "email": "andrea.vanonselen@icloud.com",
+      "sameAs": [
+        "https://github.com/CardinisCode",
+        "https://linkedin.com/in/acfolgado"
+      ],
+      "knowsAbout": [
+        "Software Engineering",
+        "UX Design",
+        "Web Development",
+        "Python",
+        "Flask",
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "User Experience Design",
+        "Problem Solving"
+      ],
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Software Engineer",
+        "description": "Creating user-centered solutions that bridge design and technology"
+      }
+    }
+    </script>
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ '/img/logos/personalised_logo/andi_logo_favicon.png' | prepend: site.baseurl }}">

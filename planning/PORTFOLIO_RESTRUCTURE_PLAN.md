@@ -120,30 +120,36 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
     - Jekyll SEO plugin, Google Analytics
     - **Estimated Time**: 4-6 hours
 
+20. 📋 **Google Search Console Setup & Site Verification** - Essential for SEO monitoring
+    - Create Google Search Console account
+    - Add site verification meta tag
+    - Submit sitemap and monitor indexing
+    - **Estimated Time**: 30 minutes
+
 #### **MEDIUM PRIORITY - Enhanced Features**
-20. 📋 **Simple Client-Side Search Implementation** - Search functionality for portfolio
+21. 📋 **Simple Client-Side Search Implementation** - Search functionality for portfolio
     - Search box component, JavaScript logic
     - Content indexing, results display
     - **Estimated Time**: 45 minutes
 
 #### **LOW PRIORITY - Optional Enhancements**
-21. 📋 **404 Page Enhancements** (Optional)
+22. 📋 **404 Page Enhancements** (Optional)
     - Add analytics tracking for 404 visits
     - Create sitemap link for site structure
     - **Estimated Time**: 30 minutes
 
 #### **BLOG ITEMS** (As Requested - Bottom Priority)
-22. 📋 **Blog Page Redesign** - Update blog page design and content
+23. 📋 **Blog Page Redesign** - Update blog page design and content
     - Redesign blog page layout
     - Create engaging blog content
     - **Estimated Time**: 2-4 hours
 
-23. 📋 **Re-enable Blog Navigation** - Point "Blog" CTA to updated blog page
+24. 📋 **Re-enable Blog Navigation** - Point "Blog" CTA to updated blog page
     - Update navigation to point to redesigned blog
     - **Estimated Time**: 15 minutes
 
-### **TOTAL REMAINING EFFORT**: ~7-11 hours
-- **High Priority**: 4-6 hours (SEO)
+### **TOTAL REMAINING EFFORT**: ~7-12 hours
+- **High Priority**: 4-6.5 hours (SEO + Google Search Console)
 - **Medium Priority**: 45 minutes (Search)
 - **Low Priority**: 30 minutes (404 enhancements)
 - **Blog Items**: 2-4 hours (Blog redesign)
@@ -220,7 +226,8 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 **Technical SEO Requirements:**
 - [ ] **Jekyll SEO Plugin** - Install and configure Jekyll SEO plugin
 - [ ] **Google Analytics Integration** - Set up Google Analytics tracking
-- [ ] **Google Search Console** - Configure Google Search Console for monitoring
+- [ ] **Google Search Console Setup** - Configure Google Search Console for monitoring
+- [ ] **Google Site Verification** - Add Google Search Console verification meta tag to site
 - [ ] **SSL Certificate Verification** - Ensure HTTPS is properly configured
 - [ ] **Page Speed Optimization** - Optimize for Core Web Vitals
 - ✅ **404 Error Page** - Create custom 404 error page (COMPLETED)
@@ -251,6 +258,36 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 **Dependencies**: Custom domain setup completion, all pages finalized
 **Estimated Effort**: 4-6 hours including research, implementation, and testing
 **Notes**: SEO optimization should be completed after custom domain is live and all content is finalized
+
+## Google Search Console Setup & Site Verification 📋 **PLANNED**
+**Status**: 📋 **PLANNED** - Google Search Console setup and site verification
+**Priority**: High - Essential for SEO monitoring and search engine visibility
+**Action Required**: Set up Google Search Console and verify site ownership
+**Estimated Timeline**: 30 minutes setup + verification process
+
+**Google Search Console Setup Tasks:**
+- [ ] **Create Google Search Console Account** - Set up Google Search Console account for andreafolgado.com
+- [ ] **Add Property** - Add https://www.andreafolgado.com as a property in Google Search Console
+- [ ] **Choose Verification Method** - Select HTML meta tag verification method
+- [ ] **Get Verification Code** - Copy the verification meta tag from Google Search Console
+- [ ] **Add Verification Meta Tag** - Insert verification code into `_config.yml` under `seo.google_site_verification`
+- [ ] **Deploy and Verify** - Push changes to GitHub Pages and verify site ownership
+- [ ] **Submit Sitemap** - Submit sitemap.xml to Google Search Console
+- [ ] **Test Search Console Features** - Verify indexing status and search performance data
+
+**Technical Implementation:**
+- [ ] **Update `_config.yml`** - Add Google Search Console verification meta tag
+- [ ] **Update `_includes/head.html`** - Ensure verification meta tag is properly rendered
+- [ ] **Test Verification** - Confirm site ownership verification in Google Search Console
+- [ ] **Monitor Indexing** - Check that pages are being indexed by Google
+
+**Files to Update:**
+- [ ] `_config.yml` - Add `google_site_verification` code
+- [ ] `_includes/head.html` - Ensure meta tag rendering (if needed)
+
+**Dependencies**: Live site deployment, SEO optimization completion
+**Estimated Effort**: 30 minutes (excluding Google account setup time)
+**Notes**: Google Search Console verification is required for monitoring search performance and ensuring proper indexing
 
 ## Simple Client-Side Search Implementation 📋 **PLANNED**
 **Status**: 📋 **PLANNED** - Simple search functionality for portfolio site

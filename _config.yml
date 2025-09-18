@@ -18,12 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Andrea Folgado
-email: ac.folgado@gmail.com
+title: Andrea Folgado - Software Engineer & UX Designer
+email: andrea.vanonselen@icloud.com
 description: >- # this means to ignore newlines until "baseurl:"
-  My tag line / pitch goes here...
+  Software Engineer & UX Designer creating user-centered solutions that bridge design and technology. Explore my portfolio showcasing web development, UX design, and problem-solving expertise.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.andreafolgado.com" # the base hostname & protocol for your site
 
 github_username:  CardinisCode
 linkedin_username: acfolgado
@@ -37,9 +37,28 @@ social:
   - title: linkedin
     url: https://linkedin.com/in/acfolgado
 
+# SEO Configuration
+author:
+  name: Andrea van Onselen (nee Folgado)
+  email: andrea.vanonselen@icloud.com
+  twitter: # Add your Twitter handle if you have one
+  github: CardinisCode
+  linkedin: acfolgado
+
+# SEO Settings
+seo:
+  type: Person
+  name: Andrea van Onselen (nee Folgado)
+  description: Software Engineer & UX Designer
+  url: https://www.andreafolgado.com
+  image: /img/logos/personalised_logo/andi_logo_favicon.png
+  google_site_verification: # Add your Google Search Console verification code
+
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
