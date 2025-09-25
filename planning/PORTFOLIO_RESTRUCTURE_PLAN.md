@@ -257,8 +257,9 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 **Actual Effort**: ✅ Completed - Comprehensive SEO implementation across all pages
 **Notes**: ✅ SEO optimization successfully completed with Jekyll SEO plugin, structured data, and comprehensive meta tag implementation. Site is fully optimized for search engines and social media sharing.
 
-## Google Search Console Setup & Site Verification 📋 **PLANNED**
-**Status**: 📋 **PLANNED** - Google Search Console setup and site verification
+## Google Search Console Setup & Site Verification 
+✅  **COMPLETED**
+**Status**: ✅ **COMPLETED** - Google Search Console setup and site verification
 **Priority**: High - Essential for SEO monitoring and search engine visibility
 **Action Required**: Set up Google Search Console and verify site ownership
 **Estimated Timeline**: 30 minutes setup + verification process
@@ -268,20 +269,28 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 - ✅  **Add Property** - Add https://www.andreafolgado.com as a property in Google Search Console
 - ✅  **Choose Verification Method** - Select HTML meta tag verification method
 - ✅  **Get Verification Code** - Copy the verification meta tag from Google Search Console
-- [ ] **Add Verification Meta Tag** - Insert verification code into `_config.yml` under `seo.google_site_verification`
-- [ ] **Deploy and Verify** - Push changes to GitHub Pages and verify site ownership
+- ✅ **Add Verification Meta Tag** - Insert verification code into `_config.yml` under `seo.google_site_verification`
+- ✅ **Deploy and Verify** - Push changes to GitHub Pages and verify site ownership
+    - ✅ My CNAME file contains www.andreafolgado.com, which means my custom domain is properly configured
+    - ✅ Site is live: live site www.andreafolgado.com is referenced through out SEO work. 
+    - ✅ Google Search Console verified
+    - ✅ Custom domain working (verified 25 September '25)
 - ✅  **Submit Sitemap** - Submit sitemap.xml to Google Search Console
-- [ ] **Test Search Console Features** - Verify indexing status and search performance data
+- ✅ **Test Search Console Features** - Verify indexing status and search performance data
+    - ✅ Indexing Status Verified
+    - ✅ Search Performance Data Analyzed
+    - ✅ Search Console Features Tested
+    - ✅ Issues Identified and Resolved
 
 **Technical Implementation:**
-- [ ] **Update `_config.yml`** - Add Google Search Console verification meta tag
-- [ ] **Update `_includes/head.html`** - Ensure verification meta tag is properly rendered
-- [ ] **Test Verification** - Confirm site ownership verification in Google Search Console
-- [ ] **Monitor Indexing** - Check that pages are being indexed by Google
+- ✅ **Update `_config.yml`** - Add Google Search Console verification meta tag ✅
+- ✅ **Update `_includes/head.html`** - Ensure verification meta tag is properly rendered ✅
+- ✅ **Test Verification** - Confirm site ownership verification in Google Search Console ✅
+- ✅ **Monitor Indexing** - Check that pages are being indexed by Google ✅
 
 **Files to Update:**
-- [ ] `_config.yml` - Add `google_site_verification` code
-- [ ] `_includes/head.html` - Ensure meta tag rendering (if needed)
+- ✅ `_config.yml` - Add `google_site_verification` code
+- ✅ `_includes/head.html` - Ensure meta tag rendering (if needed)
 
 **Dependencies**: Live site deployment, SEO optimization completion
 **Estimated Effort**: 30 minutes (excluding Google account setup time)
@@ -986,6 +995,46 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 - SEO optimization will be applied to all main pages
 - **PERMANENT SOLUTION**: Moved `education_journey.html` and `work_experience.html` out of `_includes` directory to prevent them from being automatically included by Jekyll layouts
 
+## 📋 **TODO - Internal Linking Enhancement**
+
+### **Task**: Add Cross-Project Navigation Links
+**Priority**: High | **Status**: 🔄 **IN PROGRESS** | **Target**: Next week
+
+**Objective**: Improve SEO and user experience by adding internal links between project pages
+
+**Implementation Details**:
+- Add links to each of the 3 project pages (Job Hunt Manager, Gas Safety Assessment, Client Onboarding)
+- Include links to the other 2 projects on each project page
+- Add link to the main "Projects" page on each project page
+- Links should be placed at the bottom of each project page
+
+**Display Options**:
+1. **Stacked Links** (Recommended): Links displayed vertically underneath each other with "Projects" page at the bottom
+   - Style: Large text (not CTA buttons)
+   - Clean, minimal design
+   - Easy to scan and navigate
+
+2. **Tile Display**: Links displayed as tiles similar to Projects page and index page
+   - More visual approach
+   - Consistent with existing design patterns
+
+**Files to Update**:
+- `job-hunt-manager.html`
+- `gas-safety-assessment.html` 
+- `client-onboarding.html`
+
+**SEO Benefits**:
+- Improved internal linking structure
+- Better user navigation experience
+- Enhanced page authority distribution
+- Reduced bounce rate through better site exploration
+
+**Next Steps**:
+1. Choose display option (stacked vs tiles)
+2. Implement on all 3 project pages
+3. Test navigation flow
+4. Monitor SEO impact in Google Search Console
+
 ---
 **Last Updated**: September 3, 2025
 **Status**: Implementation Phase - Job Hunt Manager Project Implementation (COMPLETED)
@@ -1018,3 +1067,5 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 - ✅ Contact section redesign (white background, simplified social media)
 - ✅ Home page restructuring
 - ✅ Blog CTA temporarily hidden
+
+
