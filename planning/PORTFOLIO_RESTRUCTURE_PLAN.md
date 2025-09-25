@@ -264,13 +264,13 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 **Estimated Timeline**: 30 minutes setup + verification process
 
 **Google Search Console Setup Tasks:**
-- [ ] **Create Google Search Console Account** - Set up Google Search Console account for andreafolgado.com
-- [ ] **Add Property** - Add https://www.andreafolgado.com as a property in Google Search Console
-- [ ] **Choose Verification Method** - Select HTML meta tag verification method
-- [ ] **Get Verification Code** - Copy the verification meta tag from Google Search Console
+- ✅  **Create Google Search Console Account** - Set up Google Search Console account for andreafolgado.com
+- ✅  **Add Property** - Add https://www.andreafolgado.com as a property in Google Search Console
+- ✅  **Choose Verification Method** - Select HTML meta tag verification method
+- ✅  **Get Verification Code** - Copy the verification meta tag from Google Search Console
 - [ ] **Add Verification Meta Tag** - Insert verification code into `_config.yml` under `seo.google_site_verification`
 - [ ] **Deploy and Verify** - Push changes to GitHub Pages and verify site ownership
-- [ ] **Submit Sitemap** - Submit sitemap.xml to Google Search Console
+- ✅  **Submit Sitemap** - Submit sitemap.xml to Google Search Console
 - [ ] **Test Search Console Features** - Verify indexing status and search performance data
 
 **Technical Implementation:**
