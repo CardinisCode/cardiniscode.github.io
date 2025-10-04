@@ -7,22 +7,8 @@ title: Blog
 <div class="row">
     <div class="col-lg-12 text-center">
         <h1 class="page-title">Blog & Articles</h1>
-        <p class="blog-description">Thoughts on technology, design, development and my use of AI models. Sharing insights from my journey in software development, exploring new technologies, and documenting my learning process. Subscribe to stay updated with my latest posts.</p>
-        <div class="blog-subscribe">
-            <a href="{{ '/feed.xml' | prepend: site.baseurl }}" target="_blank" style="
-                background-color: #D45A47;
-                color: white;
-                font-weight: bold;
-                padding: 8px 16px;
-                font-size: 14px;
-                border-radius: 5px;
-                display: inline-block;
-                text-decoration: none;
-                transition: all 0.3s ease;
-            " onmouseover="this.style.backgroundColor='white'; this.style.color='#D45A47'; this.style.border='2px solid #D45A47'; this.style.transform='scale(1.05)'" onmouseout="this.style.backgroundColor='#D45A47'; this.style.color='white'; this.style.border='none'; this.style.transform='scale(1)'">
-                <i class="fa fa-rss"></i> Subscribe via RSS
-            </a>
-        </div>
+        <p class="blog-description">Thoughts on technology, design, development and my use of AI models. Sharing insights from my journey in software development, exploring new technologies, and documenting my learning process. </p>
+
         
         <!-- Blog Posts Section -->
         <div style="margin-top: 60px !important;">
@@ -33,7 +19,7 @@ title: Blog
 </div>
 
 <div class="row">
-            {% if site.posts.size > 0 %}
+    {% if site.posts.size > 0 %}
         {% for post in site.posts %}
         <div class="col-md-4 col-sm-6 blog-item">
             <div class="blog-tile">
@@ -78,12 +64,17 @@ title: Blog
                 <p class="empty-state-description text-muted">
                     I'm working on some exciting content to share with you. Check back soon for articles about technology, development, and my learning journey!
                 </p>
-                <div class="empty-state-cta">
-                    <a href="{{ '/#contact' | prepend: site.baseurl }}" class="btn btn-primary">
-                        <i class="fa fa-envelope"></i> Get in Touch
-                    </a>
-                </div>
+                
             </div>
         </div>
     {% endif %}
-</div> 
+</div>
+<div class="text-center">
+    <h2>Subscribe & Keep in Touch</h2>
+    <p>Subscribe to my RSS feed to stay updated with my latest posts.</p>
+    <div class="blog-subscribe">
+        <a href="{{ '/feed.xml' | prepend: site.baseurl }}" target="_blank" class="btn btn-xl">
+            <i class="fa fa-rss"></i> Subscribe via RSS
+        </a>
+    </div>
+</div>
