@@ -12,6 +12,11 @@ I've carried out my first accessibility assessment, using Lighthouse, as of toda
 - ✅ Best Practices: 100% 
 - ✅ SEO: 100%
 
+Date - accessibility report was performed: 
+- 04 October '25
+
+Tool: Lighthouse (Chrome DevTools)
+
 See full report: 
 planning/Personal Portfolio - Accessibility Report.md
 
