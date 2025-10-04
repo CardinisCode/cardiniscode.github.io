@@ -6,21 +6,84 @@ title: Blog
 <!-- Blog Section -->
 <div class="row">
     <div class="col-lg-12 text-center">
-        <h2 class="section-heading">Blog & Articles</h2>
-        <h3 class="section-subheading text-muted">Thoughts on technology, design, development and my use of AI models</h3>
+        <h1 class="page-title">Blog & Articles</h1>
+        <p class="blog-description">Thoughts on technology, design, development and my use of AI models. Sharing insights from my journey in software development, exploring new technologies, and documenting my learning process. Subscribe to stay updated with my latest posts.</p>
+        <div class="blog-subscribe">
+            <a href="{{ '/feed.xml' | prepend: site.baseurl }}" target="_blank" style="
+                background-color: #D45A47;
+                color: white;
+                font-weight: bold;
+                padding: 8px 16px;
+                font-size: 14px;
+                border-radius: 5px;
+                display: inline-block;
+                text-decoration: none;
+                transition: all 0.3s ease;
+            " onmouseover="this.style.backgroundColor='white'; this.style.color='#D45A47'; this.style.border='2px solid #D45A47'; this.style.transform='scale(1.05)'" onmouseout="this.style.backgroundColor='#D45A47'; this.style.color='white'; this.style.border='none'; this.style.transform='scale(1)'">
+                <i class="fa fa-rss"></i> Subscribe via RSS
+            </a>
+        </div>
+        
+        <!-- Blog Posts Section -->
+        <div style="margin-top: 60px !important;">
+            <h2 class="section-heading">Latest Posts</h2>
+            <p class="section-subheading text-muted">Explore my thoughts on technology, development, and design</p>
+        </div>
     </div>
 </div>
+
 <div class="row">
-    <div class="col-lg-8 col-lg-offset-2">
+            {% if site.posts.size > 0 %}
         {% for post in site.posts %}
-        <div class="blog-post">
-            <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-            <p class="text-muted">{{ post.date | date: "%B %-d, %Y" }}</p>
-            {% if post.description %}
-            <p>{{ post.description }}</p>
-            {% endif %}
-            <hr>
+        <div class="col-md-4 col-sm-6 blog-item">
+            <div class="blog-tile">
+                <div class="blog-image-wrapper">
+                    {% if post.featured_image %}
+                        <img src="{{ post.featured_image | prepend: site.baseurl }}" class="img-fluid" alt="{{ post.title }}">
+                    {% else %}
+                        <img src="img/blog/default-blog-image.jpg" class="img-fluid" alt="{{ post.title }}">
+                    {% endif %}
+                    <div class="blog-overlay">
+                        <i class="fa fa-external-link fa-2x"></i>
+                        <span>Read Post</span>
+                    </div>
+                </div>
+                <h4 class="blog-title">{{ post.title }}</h4>
+                <p class="blog-date">
+                    <i class="fa fa-calendar"></i> {{ post.date | date: "%B %-d, %Y" }}
+                </p>
+                {% if post.category %}
+                <p class="blog-category">
+                    <i class="fa fa-tag"></i> {{ post.category }}
+                </p>
+                {% endif %}
+                {% if post.description %}
+                <p class="blog-excerpt">{{ post.description }}</p>
+                {% endif %}
+            </div>
+            <a href="{{ post.url | prepend: site.baseurl }}" class="blog-cta-link">
+                <div class="blog-cta">
+                    <span class="cta-text">Read Post</span>
+                </div>
+            </a>
         </div>
         {% endfor %}
-    </div>
+    {% else %}
+        <div class="col-lg-12">
+            <div class="blog-empty-state text-center">
+                <div class="empty-state-icon">
+                    <i class="fa fa-pencil-square-o fa-4x text-muted"></i>
+                </div>
+                <h3 class="empty-state-title">No posts yet</h3>
+                <p class="empty-state-description text-muted">
+                    I'm working on some exciting content to share with you. Check back soon for articles about technology, development, and my learning journey!
+                </p>
+                <div class="empty-state-cta">
+                    <a href="{{ '/#contact' | prepend: site.baseurl }}" class="btn btn-primary">
+                        <i class="fa fa-envelope"></i> Get in Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    {% endif %}
 </div> 
