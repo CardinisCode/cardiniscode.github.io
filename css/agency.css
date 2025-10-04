@@ -232,7 +232,7 @@ img.img-responsive.about-image {
     letter-spacing: 0.25em !important;
     line-height: 1.2em !important;
     color: white !important;
-    background-color: #EA715E !important;
+    background-color: #D45A47 !important;
     transition: all 0.3s ease !important;
 }
 
@@ -242,10 +242,10 @@ img.img-responsive.about-image {
 .btn.btn-xl.active,
 .open .dropdown-toggle.btn.btn-xl {
     background-color: white !important;
-    color: #EA715E !important;
-    border: 1px solid #EA715E !important;
+    color: #D45A47 !important;
+    border: 1px solid #D45A47 !important;
     box-shadow: 
-        4px 4px 2px 0px rgba(234, 113, 94, 1),
+        4px 4px 2px 0px rgba(212, 90, 71, 1),
         4px 4px 2px 0px rgba(255, 255, 255, 0) !important;
 }
 
