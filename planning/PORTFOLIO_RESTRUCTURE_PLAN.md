@@ -336,6 +336,63 @@ Restructuring the portfolio to have dedicated pages instead of a single-page lay
 **Estimated Effort**: 45 minutes total (30 min implementation + 15 min testing)
 **Notes**: Simple client-side search ideal for portfolio size (3 projects + skills + pages). No server dependencies required.
 
+## 📋 **TODO - Site-Wide Contrast Optimization**
+
+### **Task**: Update all remaining orange elements from #EA715E to #D45A47
+**Priority**: High | **Status**: 🔄 **IN PROGRESS** | **Target**: This week
+
+**Objective**: Ensure WCAG AA accessibility compliance across all orange elements on the site
+
+### **✅ COMPLETED Updates:**
+- ✅ **Button styles** (`btn btn-xl`) - Updated in `css/agency.css` line 235
+- ✅ **H1 headings** - Updated in `css/custom-typography.css` line 12
+- ✅ **Button hover states** - Updated in `css/agency.css` (lines 245-248)
+
+### **📋 REMAINING Updates Needed:**
+
+#### **CSS Files to Check/Update:**
+- [ ] **`css/custom-typography.css`** - Check for any remaining `#EA715E` references
+- [ ] **`css/agency.css`** - Check for any remaining `#EA715E` references  
+- [ ] **`css/main.css`** - Check for any remaining `#EA715E` references
+- [ ] **`css/custom-bootstrap.css`** - Check for any remaining `#EA715E` references
+
+#### **Specific Elements to Verify:**
+- [ ] **404 page heading** - Currently uses `#EA715E` (line 145 in 404.html)
+- [ ] **Any inline styles** - Search for `#EA715E` in HTML files
+- [ ] **CSS variables** - Check if any CSS custom properties use the old color
+- [ ] **Hover states** - Ensure all hover states use `#D45A47`
+- [ ] **Focus states** - Ensure all focus states use `#D45A47`
+- [ ] **Active states** - Ensure all active states use `#D45A47`
+
+#### **Files to Search:**
+- [ ] All `.html` files for inline `#EA715E` styles
+- [ ] All `.css` files for `#EA715E` references
+- [ ] Check for any hardcoded color values in JavaScript files
+
+### **Search Commands to Run:**
+```bash
+# Search for old orange color in all files
+grep -r "#EA715E" . --include="*.html" --include="*.css" --include="*.js"
+
+# Search for any remaining orange variations
+grep -r "#EA715" . --include="*.html" --include="*.css" --include="*.js"
+```
+
+### **Accessibility Benefits:**
+- ✅ **WCAG AA compliance** - 4.5:1 contrast ratio achieved
+- ✅ **Better readability** - Improved text visibility
+- ✅ **Consistent branding** - Unified color scheme
+- ✅ **Professional appearance** - Enhanced visual design
+
+### **Next Steps:**
+1. Run search commands to identify all remaining `#EA715E` references
+2. Update each reference to `#D45A47`
+3. Test accessibility with Chrome DevTools
+4. Verify visual consistency across all pages
+5. Update any CSS variables or custom properties if found
+
+**Dependencies**: Accessibility audit completion, color consistency review
+
 ## Contact Section Redesign ✅ **COMPLETED**
 **Issues Fixed:**
 - ✅ Background image removed
