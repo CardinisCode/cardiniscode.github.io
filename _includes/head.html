@@ -7,7 +7,7 @@
     <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}Software Engineer, UX Designer, Web Development, Portfolio, Andrea van Onselen (nee Folgado), Python, Flask, HTML, CSS, Bootstrap, User Experience{% endif %}">
     <meta name="author" content="{{ site.author.name }}">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="canonical" href="{% if page.canonical %}{{ page.canonical }}{% else %}{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}{% endif %}">
     
     <!-- Additional SEO Meta Tags -->
     <meta name="theme-color" content="#EA715E">
