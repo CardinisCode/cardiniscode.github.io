@@ -6,7 +6,7 @@ My plan is to optimise my portfolio site to be accessibility friendly, as access
 
 ## Accessibility Report - Lighthouse 
 
-I've carried out my first accessibility assessment, using Lighthouse, as of today (04 Oct '25) and there were some wins and some things to work on
+I've carried out my first accessibility assessment, and there were some wins and some things to work on:
 - 📋 Performance: 60%
 - 📋 Accessibility: 74%
 - ✅ Best Practices: 100% 
@@ -147,6 +147,66 @@ grep -r "#EA715" . --include="*.html" --include="*.css" --include="*.js"
 - [ ] **Reduced motion** - Respect prefers-reduced-motion media query
 - [ ] **Focus management** - Implement proper focus management for modals
 - [ ] **Error announcements** - Ensure form errors are announced to screen readers
+
+## 📋 **TODO - Semantic HTML Elements Audit & Optimization**
+
+### **Task**: Comprehensive audit and optimization of non-semantic elements across the portfolio
+**Priority**: Medium | **Status**: 📋 **PLANNED** | **Target**: Future (after current tasks)
+
+**Objective**: Identify which non-semantic elements should be replaced with semantic HTML (which automatically meet accessibility standards) and which should remain non-semantic with added ARIA attributes
+
+### **Audit Process:**
+1. **Site-wide scan** - Identify all non-semantic elements (`<div>`, `<span>`, generic elements)
+2. **Categorization** - Split findings into two categories:
+   - **Category 1**: Elements that can be replaced one-for-one with semantic elements
+   - **Category 2**: Elements that would benenfit most from the required customisation, which non-semantic elements + ARIA attributes can offer. 
+3. **Implementation plan** - Create prioritized list of replacements
+4. **Testing** - Verify accessibility improvements after each change
+
+### **Category 1: Direct Semantic Replacements**
+- [ ] **Navigation elements** - Replace `<div>` with `<nav>`, `<header>`, `<main>`, `<footer>`
+- [ ] **Content sections** - Replace generic divs with `<section>`, `<article>`, `<aside>`
+- [ ] **Lists** - Replace div-based lists with proper `<ul>`, `<ol>`, `<li>` structures
+- [ ] **Interactive elements** - Replace clickable divs with `<button>`, `<a>` where appropriate
+- [ ] **Form elements** - Ensure proper `<form>`, `<fieldset>`, `<legend>` structure
+- [ ] **Text elements** - Replace generic spans with `<strong>`, `<em>`, `<mark>`, `<time>`
+
+### **Category 2: Non-semantic + ARIA Required**
+- [ ] **Complex widgets** - Modal dialogs, dropdowns, tabs requiring ARIA roles
+- [ ] **Dynamic content** - Live regions, status updates requiring ARIA live regions
+- [ ] **Custom controls** - Sliders, progress bars requiring ARIA properties
+- [ ] **Layout containers** - Grid/flexbox containers requiring ARIA landmarks
+- [ ] **Interactive regions** - Custom clickable areas requiring ARIA roles
+
+### **ARIA Attributes to Implement:**
+- [ ] **ARIA roles** - `role="button"`, `role="dialog"`, `role="tablist"`, etc.
+- [ ] **ARIA properties** - `aria-label`, `aria-describedby`, `aria-expanded`
+- [ ] **ARIA states** - `aria-hidden`, `aria-disabled`, `aria-selected`
+- [ ] **ARIA landmarks** - `role="banner"`, `role="main"`, `role="complementary"`
+- [ ] **Live regions** - `aria-live="polite"`, `aria-live="assertive"`
+
+### **Benefits:**
+- ✅ **Improved screen reader experience** - Better content understanding
+- ✅ **Enhanced SEO** - Semantic HTML improves search engine understanding
+- ✅ **Better keyboard navigation** - Proper focus management
+- ✅ **Future-proof code** - Standards-compliant markup
+- ✅ **Reduced maintenance** - Less custom ARIA when semantic elements work
+
+### **Files to Audit:**
+- [ ] All `.html` files in root directory
+- [ ] All files in `_includes/` directory
+- [ ] All files in `_layouts/` directory
+- [ ] Portfolio modal content
+- [ ] Contact form structure
+- [ ] Navigation components
+
+### **Tools for Audit:**
+- [ ] **WAVE Web Accessibility Evaluator** - Identify semantic issues
+- [ ] **axe DevTools** - Comprehensive accessibility testing
+- [ ] **Screen reader testing** - Verify improvements
+- [ ] **Keyboard navigation testing** - Ensure proper focus flow
+
+**Dependencies**: Manual accessibility testing completion, performance optimization
 
 ## 🎯 **New Accessibility Ticket Items to Add:**
 
