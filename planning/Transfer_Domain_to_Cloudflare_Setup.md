@@ -63,19 +63,19 @@ I received this message from Wix (within the web app):
 
 If it’s enabled, that means your domain is currently locked — this is normal and helps prevent unauthorized transfers.
 
-2. ✅ Double-check the lock status via WHOIS
+2. Double-check the lock status via WHOIS - Completed ✅
 
 You can also verify externally by checking your domain’s public WHOIS record:
 - Visit 🔗 
     - https://whois.domaintools.com/
     - Enter your domain name (e.g. yourdomain.com)
     - Look for the line: "Domain Status"
-        -> Domain Status: Registered And No Website (Mine)
+        -> Domain Status: Registered And No Website (Mine) ✅
 
     - https://lookup.icann.org/
     - Enter your domain name (e.g. yourdomain.com)
     - Look for the line:
-        - Domain Status: Active 
+        - Domain Status: Active ✅
 
 If you see this
     Domain Status: clientTransferProhibited
@@ -103,15 +103,32 @@ You can then request your EPP (authorization) code from the same area.
 
 📋 2. Add Your Domain to Cloudflare - To be done 📋:
 
-    📋 1. Log in to your Cloudflare account:
+    ✅ 1. Log in to your Cloudflare account:
 🔗 https://dash.cloudflare.com
-    📋 2. Click Add a Site.
-    📋 3. Enter your domain (example: yourdomain.com).
-    📋 4. Select the Free Plan (you can upgrade later if needed).
-    📋 5. Cloudflare will scan your current DNS records 
-        — 📋 review and ensure they match your GitHub Pages configuration
+    ✅ 2. Enter your domain (example: yourdomain.com) -> I selected the following options:
+        ✅ 1. Enter an existing domain or register a new domain
+        ✅ 2. Quick scan for DNS records (recommended)
+        3. Control how AI crawlers access your site
+        Prevent AI crawlers from scraping content for training without your permission
+        4. Block AI training bots -> block all pages
+        5. Instruct AI bot traffic with robots.txt
 
----
+    ✅ 3. Select the Free Plan (you can upgrade later if needed).
+    📋 4. Cloudflare will scan your current DNS records 
+        — 📋 review and ensure they match your GitHub Pages configuration
+        -> Need to update Nameservers to activate Cloudflare OR even to check my DNS scan results
+
+Note to ourselves: 
+    📋 Update our robots.txt file to also provide instructions re AI bots.
+
+Since Wix does not allow account holders to update the nameservers, Gemini has recommended I use an intermediate service, like Google Domains: 
+Wix -> Intermediate Domain -> Cloudflare 
+
+    📋 5. Find an intermediate Domain provider
+    📋 6. Complete transfer from Wix -> Intermediate provider 
+    📋 7. Perform a DNS Scan again
+    
+-- 
 
 3. Update DNS to Point to GitHub Pages - To be done 📋:
 
