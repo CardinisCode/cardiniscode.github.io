@@ -5,12 +5,11 @@
 
 **Goal:** Move registrar/billing from Wix to Cloudflare Registrar, keep hosting on GitHub Pages.
 
-**Important:** 
-* Cloudflare Registrar *requires* Cloudflare to be your authoritative DNS first — 
-	* you must onboard the domain to Cloudflare 
-	* by changing the domain's nameservers to Cloudflare's assigned nameservers. 
-* You cannot use another DNS provider while the domain is registered with Cloudflare Registrar. 
-
+**Important - Requirements:** 
+- Cloudflare Registrar *requires* Cloudflare to be your authoritative DNS first — 
+	- you must onboard the domain to Cloudflare 
+	    - by changing the domain's nameservers to Cloudflare's assigned nameservers. 
+- You cannot use another DNS provider while the domain is registered with Cloudflare Registrar. 
 
 **Overview:**
 You’ll be transferring your domain registration from Wix → Cloudflare Registrar, while keeping your website hosted on GitHub Pages.
@@ -21,26 +20,84 @@ This setup lets you:
 
 ---
 
-**Step-by-Step Guide:**
-1. Prepare for the Transfer
+## Step-by-Step Guide
+
+### 1. Prepare for the Transfer - Completed ✅:
 
 Before transferring, make sure your domain meets Cloudflare’s requirements.
 
 Cloudflare Docs
     https://developers.cloudflare.com/registrar/get-started/transfer-domain-to-cloudflare/?utm_source=chatgpt.com
 
-✅ Prerequisites - To be done 📋:
+**Prerequisites** - Completed ✅:
 
 ✅ Your domain is older than 60 days.
-📋 The domain is not locked.
+✅ The domain is not locked.
 ✅ You have access to your Wix account (current registrar).
-📋 You have the authorization (EPP) code from Wix.
-📋 Your domain’s WHOIS info is accurate and public (or privacy unlocked temporarily).
+✅ You have the authorization (EPP) code from Wix.
+✅ Your domain’s WHOIS info is accurate and public (or privacy unlocked temporarily).
 
-To get your EPP code in Wix:
-1. Go to your Wix Domains dashboard.
-2. Select your domain → Advanced tab.
-3. Click Transfer away from Wix → copy the EPP code.
+From Gemini
+    According to a lot of documentation from registrars who receive Wix transfers, **Wix automatically unlocks the domain for you** when you request the EPP/authorization code.
+
+- ✅ 1. To get your EPP code in Wix
+    - ✅ 1. Log in to your Wix account
+    - ✅ 2. Go to Settings → Domains.
+    - ✅ 3. Select the domain you want to transfer.
+    - ✅ 4. Click the three dots -> to the right.
+    - ✅ 5. Select "Transfer away from Wix" 
+    - ✅ 6. Confirm that you want to transfer away from Wix
+    - ✅ 7. Check email for authorization code
+
+I received this message from Wix (within the web app): 
+
+"Transfer your domain away from Wix
+    If you still want to transfer andreafolgado.com, here’s what you need to know:
+    As soon as you click “I Still Want to Transfer”, we’ll send a transfer authorization code to ac.folgado@gmail.com
+    Once you get the code, follow the instructions from your new domain provider to transfer your domain
+    It can take up to 7 days to complete the transfer.
+    Transferring will lock your domain and you won’t be able to transfer it again for 60 days." 
+
+    "A transfer authorization code for {email} was sent to {email}"  
+
+
+If it’s enabled, that means your domain is currently locked — this is normal and helps prevent unauthorized transfers.
+
+2. ✅ Double-check the lock status via WHOIS
+
+You can also verify externally by checking your domain’s public WHOIS record:
+- Visit 🔗 
+    - https://whois.domaintools.com/
+    - Enter your domain name (e.g. yourdomain.com)
+    - Look for the line: "Domain Status"
+        -> Domain Status: Registered And No Website (Mine)
+
+    - https://lookup.icann.org/
+    - Enter your domain name (e.g. yourdomain.com)
+    - Look for the line:
+        - Domain Status: Active 
+
+If you see this
+    Domain Status: clientTransferProhibited
+-> it means the domain is locked
+
+Once you unlock it in Wix, this line should disappear (it may take a few minutes to update).
+
+Verification
+    - ✅ DomainTools:
+        - ✅ Registrar Status: ok
+        - ✅ Domain Status: Registered And No Website
+
+    - ✅ ICANN Lookup
+        - ✅ Domain Status: Active
+
+##### To Unlock Your Domain -> Not necessary:
+
+- 1. Turn Domain Lock off (toggle the switch or uncheck the box)
+- 2. Save the changes
+
+Once unlocked, Wix will usually show a confirmation message saying your domain is now eligible for transfer.
+You can then request your EPP (authorization) code from the same area.
 
 ---
 
@@ -160,11 +217,19 @@ To verify:
 
 ✅ Summary
 
-| Component | Platform | Purpose |
-| - | - | - |
+- Domain Registrar: 
+    - Platform: Cloudflare Registrar
+    - Purpose: Own & renew your domain
 
+- DNS Management
+    - Platform: Cloudflare
+    - Purpose: Manage DNS records (mandatory)
 
-Domain Registrar	Cloudflare Registrar	Own & renew your domain
-DNS Management	Cloudflare	Manage DNS records (mandatory)
-Hosting	GitHub Pages	Store & serve your site files
-SSL / HTTPS	GitHub (Let’s Encrypt)	Secure your site
+- Hosting
+    - Platform: GitHub Pages
+    - Purpose: Store & serve your site files
+
+- SSL / HTTPS
+    - Platform: GitHub (Let’s Encrypt)
+    - Purpose: Secure your site
+
