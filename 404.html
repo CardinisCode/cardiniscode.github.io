@@ -10,11 +10,15 @@ permalink: /404.html
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       // Set default consent state first (before CookieYes loads)
+      // CookieYes requires all 7 consent types to be set
       gtag('consent', 'default', {
         'analytics_storage': 'denied',
         'ad_storage': 'denied',
         'ad_user_data': 'denied',
         'ad_personalization': 'denied',
+        'functionality_storage': 'denied',
+        'personalization_storage': 'denied',
+        'security_storage': 'denied',
         'wait_for_update': 2000
       });
     </script>
