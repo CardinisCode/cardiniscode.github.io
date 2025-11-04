@@ -96,7 +96,7 @@ Relevant to "how you intend to use Google Analytics":
 	* Stream name: My Professional Portfolio
 	* Enhanced measurement: On
 3. [x] Create and continue ✅ 2025-11-04
-4. [ ] Set up a Google tag
+4. [x] Set up a Google tag ✅ 2025-01-27
 * Choose how to set up a #GoogleTag
 
 [Enhanced measurement](https://support.google.com/analytics/answer/9216061?hl=en_ZA&utm_id=ad): 
@@ -111,7 +111,7 @@ Relevant to "how you intend to use Google Analytics":
 **Install manually (Recommended)**
 
 - ✅ Update Cursor app
-- [ ] Ask Cursor to complete the following action:
+- ✅ Ask Cursor to complete the following action: ✅ 2025-01-27
 
 ```
 Below is the Google tag for this account. Copy and paste it in the code of every page of your website, immediately after the <head> element. Don’t add more than one Google tag to each page.
