@@ -121,6 +121,39 @@ Below is the Google tag for this account. Copy and paste it in the code of every
 <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-H7TF1SFW4W"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-H7TF1SFW4W'); </script>
 ```
 
+My code in Cursor / Github:
+``` html
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', '{{ site.google_analytics }}');
+</script>
+
+- [ ] Set up consent mode
+	* Important if I'm expecting users from the European Economic Area (EEA)
+	* "so that you can continue to benefit from ads personalisation and measurement"
+
+##### Consent mode
+
+* Check if your website is using a third-party platform
+-> I don't have a consent banner
+
+- ✅ Set up a third-party banner ✅ 2025-01-27
+	- ✅ Install a banner and consent mode ✅ 2025-01-27
+
+- ✅ Sign up for a CMP at cookieyes.com (Me)
+- ✅ Add the code to your website ✅ 2025-01-27
+	- ✅ Step 1: Copy this banner installation code (see below). ✅ 2025-01-27
+	- ✅ Step 2: Paste the code right after the opening <head> tag in your site's source code. ✅ 2025-01-27
+
+``` html
+<!-- Start cookieyes banner --> 
+<script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/624d850d690a75a929fbba7f/script.js"></script> <!-- End cookieyes banner -->
+```
+
 
 ### Step 2: Access your reports
 
