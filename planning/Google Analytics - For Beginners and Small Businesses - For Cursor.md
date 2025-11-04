@@ -87,7 +87,7 @@ Relevant to "how you intend to use Google Analytics":
 	* you will see a collection of reports to help you measure lead generation. 
 * [Learn more about the business objectives reports collection.](https://support.google.com/analytics/answer/12924488)
 
-##### Add a data stream
+##### Add a data stream - complete ✅
 
 1. [x] Click **iOS app**, **Android app**, or **Web**. ✅ 2025-11-04
 * -> Web
@@ -105,6 +105,13 @@ Relevant to "how you intend to use Google Analytics":
 * Data from on-page elements such as links and embedded videos may be collected with relevant events. 
 * You must ensure that no personally identifiable information will be sent to Google.
 * [Learn more](https://support.google.com/analytics/answer/9216061?hl=en_ZA&utm_id=ad)
+
+##### Web Stream Details
+
+* Stream name: My Professional Portfolio
+* Stream URL: https://www.andreafolgado.com/
+* Stream ID: 12849146381
+* Measurement ID: G-H7TF1SFW4W
 
 #####  Choose how to set up a Google tag: 
 
@@ -132,11 +139,11 @@ My code in Cursor / Github:
 	gtag('config', '{{ site.google_analytics }}');
 </script>
 
-- [ ] Set up consent mode
+- ✅ Set up consent mode
 	* Important if I'm expecting users from the European Economic Area (EEA)
 	* "so that you can continue to benefit from ads personalisation and measurement"
 
-##### Consent mode
+##### Consent mode - Complete ✅
 
 * Check if your website is using a third-party platform
 -> I don't have a consent banner
@@ -153,6 +160,19 @@ My code in Cursor / Github:
 <!-- Start cookieyes banner --> 
 <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/624d850d690a75a929fbba7f/script.js"></script> <!-- End cookieyes banner -->
 ```
+Cookie banner status: Active
+	"success You have successfully implemented a cookie banner on your site!"
+
+##### Connect Tag Assistant to your site - Complete ✅
+
+Google Tag Debug Mode
+- Tag Assistant connected
+- ✅ Debug information for this page is viewable in the Tag Assistant window
+
+##### Updating Google consent mode (GCM) - In CookieYes: 
+
+- ✅ Support GCM -> should be true
+- ✅ Update "Allow Google tags to fire before consent" -> to True / Selected
 
 
 ### Step 2: Access your reports
@@ -176,7 +196,6 @@ In this section, you will learn how to link your Google Ads account to your Anal
 
 1. [Part 1 - Link a Google Ads account](https://support.google.com/analytics/answer/9379420)
 2. [Part 2 - Import conversions into Google Ads](https://support.google.com/analytics/answer/10632359)
-
 
 
 ## References & Links 
