@@ -1,5 +1,4 @@
-#GoogleAnalytics 
-# Analytics for beginners and small businesses
+# Google Analytics - for beginners and small businesses
 
 [Analytics for beginners and small businesses](https://developers.google.com/analytics/learn/beginners)
 
@@ -173,6 +172,11 @@ Google Tag Debug Mode
 
 - ✅ Support GCM -> should be true
 - ✅ Update "Allow Google tags to fire before consent" -> to True / Selected
+- "Check now", for Google consent mode (GCM) in CookieYes, keeps failing -> Resolved
+	- ✅ Investigate and Resolve (Me)
+		
+		"No error detected
+		Good job! Google Consent Mode is configured correctly on your website"
 
 
 ### Step 2: Access your reports
