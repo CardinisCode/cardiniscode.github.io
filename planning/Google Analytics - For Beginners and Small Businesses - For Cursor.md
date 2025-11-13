@@ -201,6 +201,10 @@ In this section, you will learn how to link your Google Ads account to your Anal
 1. [Part 1 - Link a Google Ads account](https://support.google.com/analytics/answer/9379420)
 2. [Part 2 - Import conversions into Google Ads](https://support.google.com/analytics/answer/10632359)
 
+## Additional things I've done
+
+✅ Linked "Search Console links" to Analytics Account
+
 
 ## References & Links 
 
