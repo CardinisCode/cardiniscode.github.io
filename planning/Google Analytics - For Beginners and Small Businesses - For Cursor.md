@@ -183,21 +183,22 @@ Google Tag Debug Mode
 
 Google Analytics collects data from your websites and apps to create reports that provide insights into your business. In this section, you will learn to see the data you've collected in the available reports and how to customize reports for your specific use cases.
 
-1. [Part 1 - Get familiar with the Home page](https://support.google.com/analytics/answer/11197963)
-2. [Part 2 - Install the Analytics mobile app](https://support.google.com/analytics/topic/12677004)
-3. [Part 3 - Browse reports](https://support.google.com/analytics/answer/9212670)
+1. [Part 1 - Get familiar with the Home page](https://support.google.com/analytics/answer/11197963) - Complete ✅
+2. [Part 2 - Install the Analytics mobile app](https://support.google.com/analytics/topic/12677004) - Complete ✅
+3. [Part 3 - Browse reports](https://support.google.com/analytics/answer/9212670) -> no reports yet
 
 ### Step 3: Manage user access
 
 In Google Analytics, you can invite others to access your features and information. Choose from a few options to manage user access and data restrictions at the account and property level.
 
-1. [Part 1 - Add collaborators to Analytics](https://support.google.com/analytics/answer/9305587#google-analytics&zippy=%2Cgoogle-analytics)
-2. [Part 2 - Grant access](https://support.google.com/analytics/answer/9305587#google-analytics&zippy=%2Cgoogle-analytics)
+1. [Part 1 - Add collaborators to Analytics](https://support.google.com/analytics/answer/9305587#google-analytics&zippy=%2Cgoogle-analytics) -> Not needed right now
+2. [Part 2 - Grant access](https://support.google.com/analytics/answer/9305587#google-analytics&zippy=%2Cgoogle-analytics) -> Not needed right now
 
 ### Step 4: Enhance your advertising
 
 In this section, you will learn how to link your Google Ads account to your Analytics property to see the full customer cycle, from how users interact with your marketing to how they finally complete the goals you’ve set for them on your site or app.
 
+-> Not needed right now
 1. [Part 1 - Link a Google Ads account](https://support.google.com/analytics/answer/9379420)
 2. [Part 2 - Import conversions into Google Ads](https://support.google.com/analytics/answer/10632359)
 
@@ -213,4 +214,3 @@ In this section, you will learn how to link your Google Ads account to your Anal
 * [Google Analytics Terms of Service](https://marketingplatform.google.com/about/analytics/terms/gb/)
 * [Google Analytics Terms of Service Language Index](https://www.google.com/analytics/terms/)
 * [Analytics policies](https://support.google.com/analytics/answer/4597324)
-* 
