@@ -212,30 +212,55 @@ bundle exec jekyll serve
 
 ### 📋 **REMAINING TASKS** (Priority Order)
 
+#### **HIGH PRIORITY - Current Issues**
+20. 🔄 **Portfolio Grid Display Issue - Landing Page** - Projects section not displaying 3 project tiles
+    - **Status**: 🔄 **IN PROGRESS** - Issue reported
+    - **Priority**: High - Affects landing page user experience
+    - **Issue**: The projects section/grid on the landing page no longer displays the 3 project tiles
+    - **Files to Check**: `_includes/portfolio_grid.html`, `index.html`, related CSS files
+    - **Action Required**: 
+      - Investigate why project tiles are not displaying
+      - Verify portfolio grid HTML structure
+      - Check CSS display properties
+      - Ensure all 3 project tiles are properly configured
+    - **Estimated Time**: 30-45 minutes
+
+21. 🔄 **Skills & Expertise Section Layout Redesign** - Current layout not satisfactory
+    - **Status**: 🔄 **IN PROGRESS** - User feedback received
+    - **Priority**: High - Affects landing page visual design
+    - **Issue**: User doesn't like the way the skills are being laid out on the landing page
+    - **Current State**: Skills section changed from 3 columns to vertical layout (marked as completed)
+    - **Files to Check**: `_includes/skills.html`, related CSS files
+    - **Action Required**:
+      - Review current skills section layout
+      - Discuss/design alternative layout options
+      - Implement improved layout based on user preferences
+    - **Estimated Time**: 45-60 minutes
+
 #### **MEDIUM PRIORITY - Enhanced Features**
-21. 📋 **Simple Client-Side Search Implementation** - Search functionality for portfolio
+22. 📋 **Simple Client-Side Search Implementation** - Search functionality for portfolio
     - Search box component, JavaScript logic
     - Content indexing, results display
     - **Estimated Time**: 45 minutes
 
 #### **LOW PRIORITY - Optional Enhancements**
-22. 📋 **404 Page Enhancements** (Optional)
+23. 📋 **404 Page Enhancements** (Optional)
     - Add analytics tracking for 404 visits
     - Create sitemap link for site structure
     - **Estimated Time**: 30 minutes
 
 #### **BLOG ITEMS** (As Requested - Bottom Priority)
-23. 📋 **Blog Page Redesign** - Update blog page design and content
+24. 📋 **Blog Page Redesign** - Update blog page design and content
     - Redesign blog page layout
     - Create engaging blog content
     - **Estimated Time**: 2-4 hours
 
-24. 📋 **Re-enable Blog Navigation** - Point "Blog" CTA to updated blog page
+25. 📋 **Re-enable Blog Navigation** - Point "Blog" CTA to updated blog page
     - Update navigation to point to redesigned blog
     - **Estimated Time**: 15 minutes
 
-### **TOTAL REMAINING EFFORT**: ~7-12 hours
-- **High Priority**: 4-6.5 hours (SEO + Google Search Console)
+### **TOTAL REMAINING EFFORT**: ~9-14 hours
+- **High Priority**: 5.5-8 hours (Current Issues: Portfolio Grid + Skills Layout + SEO + Google Search Console)
 - **Medium Priority**: 45 minutes (Search)
 - **Low Priority**: 30 minutes (404 enhancements)
 - **Blog Items**: 2-4 hours (Blog redesign)
