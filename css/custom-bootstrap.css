@@ -105,14 +105,14 @@ p {
 
 /* Focus indicators for keyboard navigation */
 .deliverable-tile:focus {
-    outline: 3px solid #EA715E !important;
+    outline: 3px solid #D45A47 !important;
     outline-offset: 2px !important;
     transform: scale(1.02) !important;
     box-shadow: 0 4px 15px rgba(234, 113, 94, 0.3) !important;
 }
 
 .deliverable-tile:focus-visible {
-    outline: 3px solid #EA715E !important;
+    outline: 3px solid #D45A47 !important;
     outline-offset: 2px !important;
 }
 
@@ -216,7 +216,7 @@ div[style*="top: -5px"]:hover {
     position: absolute;
     top: 5px;
     right: 5px;
-    background: #EA715E;
+    background: #D45A47;
     color: white;
     border-radius: 50%;
     width: 25px;

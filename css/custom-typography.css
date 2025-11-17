@@ -155,7 +155,7 @@ section .deliverables-grid,
 
 .deliverable-tile:hover {
     transform: translateY(-5px);
-    border-color: #EA715E;
+    border-color: #D45A47;
     box-shadow: 0 8px 25px rgba(234,113,94,0.2);
 }
 
@@ -197,7 +197,7 @@ section .deliverables-grid,
         }
 
         .background-image:hover {
-            border-color: #EA715E;
+            border-color: #D45A47;
             box-shadow: 0 8px 25px rgba(234,113,94,0.2);
         }
 
@@ -293,7 +293,7 @@ section .deliverables-grid,
         }
 
         #portfolio .portfolio-item .portfolio-tile:hover {
-            border-color: #EA715E;
+            border-color: #D45A47;
             transform: translateY(-5px);
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
         }
@@ -389,7 +389,7 @@ section .deliverables-grid,
 
         #portfolio .portfolio-item .portfolio-tile .portfolio-image-wrapper .portfolio-overlay i {
             margin-bottom: 8px;
-            color: #EA715E;
+            color: #D45A47;
         }
 
         #portfolio .portfolio-item .portfolio-tile .portfolio-image-wrapper .portfolio-overlay span {
@@ -428,7 +428,7 @@ section .deliverables-grid,
         }
 
         #portfolio .portfolio-item .portfolio-cta .cta-text {
-            background-color: #EA715E;
+            background-color: #D45A47;
             color: white;
             font-weight: bold;
             padding: 8px 16px;
@@ -441,8 +441,8 @@ section .deliverables-grid,
 
         #portfolio .portfolio-item .portfolio-cta-link:hover .cta-text {
             background-color: white;
-            color: #EA715E;
-            border: 2px solid #EA715E;
+            color: #D45A47;
+            border: 2px solid #D45A47;
             transform: scale(1.05);
         }
 
@@ -479,7 +479,7 @@ section .deliverables-grid,
         }
 
         #projects .portfolio-item .portfolio-tile:hover {
-            border-color: #EA715E;
+            border-color: #D45A47;
             transform: translateY(-5px);
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
         }
@@ -565,7 +565,7 @@ section .deliverables-grid,
 
         #projects .portfolio-item .portfolio-tile .portfolio-image-wrapper .portfolio-overlay i {
             margin-bottom: 8px;
-            color: #EA715E;
+            color: #D45A47;
         }
 
         #projects .portfolio-item .portfolio-tile .portfolio-image-wrapper .portfolio-overlay span {
@@ -603,7 +603,7 @@ section .deliverables-grid,
         }
 
         #projects .portfolio-item .portfolio-cta .cta-text {
-            background-color: #EA715E;
+            background-color: #D45A47;
             color: white;
             font-weight: bold;
             padding: 8px 16px;
@@ -616,8 +616,8 @@ section .deliverables-grid,
 
         #projects .portfolio-item .portfolio-cta-link:hover .cta-text {
             background-color: white;
-            color: #EA715E;
-            border: 2px solid #EA715E;
+            color: #D45A47;
+            border: 2px solid #D45A47;
             transform: scale(1.05);
         }
 
@@ -820,7 +820,7 @@ section .deliverables-grid,
 }
 
 .deliverable-modal h3 {
-    color: #EA715E !important;
+    color: #D45A47 !important;
     margin-bottom: 15px;
     border-bottom: none !important;
     padding-bottom: 0 !important;
@@ -959,8 +959,8 @@ section .deliverables-grid,
 
 /* Custom Button for Deliverable Tiles */
 .deliverable-btn {
-    background-color: #EA715E;
-    border-color: #EA715E;
+    background-color: #D45A47;
+    border-color: #D45A47;
     color: white;
     font-weight: bold;
     padding: 8px 16px;
@@ -1027,7 +1027,7 @@ section .deliverables-grid,
 }
 
 .modal-title {
-    color: #EA715E !important;
+    color: #D45A47 !important;
     margin-bottom: 15px;
     text-align: center !important;
 }
@@ -1038,7 +1038,7 @@ section .deliverables-grid,
 }
 
 .modal-close-btn {
-    background-color: #EA715E;
+    background-color: #D45A47;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -1066,7 +1066,7 @@ section .deliverables-grid,
 }
 
 .video-tile:hover {
-    border-color: #EA715E;
+    border-color: #D45A47;
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
@@ -1103,7 +1103,7 @@ section .deliverables-grid,
 }
 
 .deliverable-tile:hover {
-    border-color: #EA715E;
+    border-color: #D45A47;
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
@@ -1230,7 +1230,7 @@ section .deliverables-grid,
 
 .legacy-image:hover {
     transform: translateY(-5px);
-    border-color: #EA715E;
+    border-color: #D45A47;
     box-shadow: 0 8px 25px rgba(234,113,94,0.2);
 }
 
@@ -1291,7 +1291,7 @@ section .deliverables-grid,
 
 .user-flow-image:hover {
     transform: translateY(-5px);
-    border-color: #EA715E;
+    border-color: #D45A47;
     box-shadow: 0 8px 25px rgba(234,113,94,0.2);
 }
 
@@ -1348,8 +1348,8 @@ section .deliverables-grid,
    CTA BUTTON STYLES
    =================================== */
 .cta-button {
-    background-color: #EA715E;
-    border-color: #EA715E;
+    background-color: #D45A47;
+    border-color: #D45A47;
     color: white;
     font-weight: bold;
     padding: 15px 30px;
@@ -1408,7 +1408,7 @@ section .deliverables-grid,
 }
 
 .modal-close-button:hover .modal-close-icon {
-    color: #EA715E;
+    color: #D45A47;
 }
 
 .modal-close-icon {
@@ -1435,7 +1435,7 @@ section .deliverables-grid,
 }
 
 .modal-title {
-    color: #EA715E !important;
+    color: #D45A47 !important;
     margin-bottom: 15px;
     border-bottom: none !important;
     padding-bottom: 0 !important;
@@ -1470,7 +1470,7 @@ footer ul.quicklinks li a {
 
 footer ul.quicklinks li a:hover,
 footer ul.quicklinks li a:focus {
-    color: #EA715E !important;
+    color: #D45A47 !important;
     text-decoration: none;
 }
 
@@ -1478,7 +1478,7 @@ footer ul.quicklinks li a:focus {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    background-color: #EA715E !important;
+    background-color: #D45A47 !important;
 }
 
 /* ===================================
@@ -1522,7 +1522,7 @@ ul.social-buttons li a:active {
 }
 
 .deliverable-modal-content h3 {
-    color: #EA715E !important;
+    color: #D45A47 !important;
     margin-bottom: 15px;
     text-align: center;
 }

@@ -309,8 +309,8 @@ footer ul.quicklinks {
 
 .navbar-custom .navbar-nav > li > a:hover,
 .navbar-custom .navbar-nav > li > a:focus {
-    color: #EA715E !important;
-    background-color: #EA715E !important;
+    color: #D45A47 !important;
+    background-color: #D45A47 !important;
     color: white !important;
     transform: none;
     box-shadow: none;
@@ -328,7 +328,7 @@ footer ul.quicklinks {
 
 /* Form Overrides */
 .form-control:focus {
-    border-color: #EA715E;
+    border-color: #D45A47;
     box-shadow: 0 0 0 0.2rem rgba(234, 113, 94, 0.25);
 }
 
@@ -428,8 +428,8 @@ footer ul.quicklinks {
 }
 
 .return-home-cta .btn {
-    background-color: #EA715E;
-    border-color: #EA715E;
+    background-color: #D45A47;
+    border-color: #D45A47;
     color: white;
     font-weight: bold;
     padding: 12px 30px;
@@ -541,7 +541,7 @@ footer ul.quicklinks {
 }
 
 #blog .blog-item .blog-tile:hover {
-    border-color: #EA715E;
+    border-color: #D45A47;
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }

@@ -23,7 +23,7 @@ planning/Personal Portfolio - Accessibility Report.md
 ## 📋 **TODO - Site-Wide Contrast Optimization**
 
 ### **Task**: Update all remaining orange elements from #EA715E to #D45A47
-**Priority**: High | **Status**: 🔄 **IN PROGRESS** | **Target**: This week
+**Priority**: High | **Status**: ✅ **COMPLETED** | **Target**: This week
 
 **Objective**: Ensure WCAG AA accessibility compliance across all orange elements on the site
 
@@ -35,23 +35,25 @@ planning/Personal Portfolio - Accessibility Report.md
 ### **📋 REMAINING Updates Needed:**
 
 #### **CSS Files to Check/Update:**
-- [ ] **`css/custom-typography.css`** - Check for any remaining `#EA715E` references
-- [ ] **`css/agency.css`** - Check for any remaining `#EA715E` references  
-- [ ] **`css/main.css`** - Check for any remaining `#EA715E` references
-- [ ] **`css/custom-bootstrap.css`** - Check for any remaining `#EA715E` references
+- ✅ **`css/custom-typography.css`** - Updated all `#EA715E` references to `#D45A47`
+- ✅ **`css/agency.css`** - Updated all `#EA715E` references to `#D45A47`
+- ✅ **`css/main.css`** - Updated all `#EA715E` references to `#D45A47`
+- ✅ **`css/custom-bootstrap.css`** - Updated all `#EA715E` references to `#D45A47`
 
 #### **Specific Elements to Verify:**
-- [ ] **404 page heading** - Currently uses `#EA715E` (line 145 in 404.html)
-- [ ] **Any inline styles** - Search for `#EA715E` in HTML files
-- [ ] **CSS variables** - Check if any CSS custom properties use the old color
-- [ ] **Hover states** - Ensure all hover states use `#D45A47`
-- [ ] **Focus states** - Ensure all focus states use `#D45A47`
-- [ ] **Active states** - Ensure all active states use `#D45A47`
+- ✅ **404 page heading** - Updated all inline styles from `#EA715E` to `#D45A47`
+- ✅ **Any inline styles** - Updated all `#EA715E` references in HTML files (404.html, client-onboarding.html, job-hunt-manager.html)
+- ✅ **CSS variables** - All CSS custom properties updated
+- ✅ **Hover states** - All hover states now use `#D45A47`
+- ✅ **Focus states** - All focus states now use `#D45A47`
+- ✅ **Active states** - All active states now use `#D45A47`
+- ✅ **Theme color** - Updated `_includes/head.html` theme-color meta tag
+- ✅ **Modal titles** - Updated `_includes/modals.html` modal title colors
 
 #### **Files to Search:**
-- [ ] All `.html` files for inline `#EA715E` styles
-- [ ] All `.css` files for `#EA715E` references
-- [ ] Check for any hardcoded color values in JavaScript files
+- ✅ All `.html` files for inline `#EA715E` styles - All updated
+- ✅ All `.css` files for `#EA715E` references - All updated
+- ✅ Check for any hardcoded color values in JavaScript files - No instances found
 
 ### **Search Commands to Run:**
 ```bash
