@@ -8,45 +8,65 @@
                 </div>
             </div>
             <div class="row">
-            {% for post in site.posts limit:3 %}
+                <!-- Job Hunt Manager Project -->
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    {% if post.demo-link and post.demo-link != "" %}
-                        <div class="portfolio-tile">
-                            <div class="portfolio-image-wrapper portfolio-image-{{ post.title | downcase | replace: ' ', '-' }}">
-                                <img src="img/portfolio/{{ post.thumbnail }}" class="img-fluid" alt="{{ post.title }} - {{ post.subtitle }} project thumbnail">
-                                <div class="portfolio-overlay">
-                                    <i class="fa fa-external-link fa-2x"></i>
-                                    <span>View Project</span>
-                                </div>
+                    <div class="portfolio-tile">
+                        <div class="portfolio-image-wrapper portfolio-image-job-hunt-manager">
+                            <img src="img/portfolio/job_hunt_manager/dashboard.jpg" class="img-fluid" alt="Job Hunt Manager Dashboard">
+                            <div class="portfolio-overlay">
+                                <i class="fa fa-external-link fa-2x"></i>
+                                <span>View Project</span>
                             </div>
-                            <h4 class="portfolio-title">{{ post.title }}</h4>
-                            <p class="portfolio-subtitle">{{ post.subtitle }}</p>
                         </div>
-                        <a href="{{ post.demo-link }}" class="portfolio-cta-link">
-                            <div class="portfolio-cta">
-                                <span class="cta-text">View Project</span>
-                            </div>
-                        </a>
-                    {% else %}
-                        <div class="portfolio-tile">
-                            <div class="portfolio-image-wrapper portfolio-image-{{ post.title | downcase | replace: ' ', '-' }}">
-                                <img src="img/portfolio/{{ post.thumbnail }}" class="img-fluid" alt="{{ post.title }} - {{ post.subtitle }} project thumbnail">
-                                <div class="portfolio-overlay">
-                                    <i class="fa fa-plus fa-2x"></i>
-                                    <span>View Details</span>
-                                </div>
-                            </div>
-                            <h4 class="portfolio-title">{{ post.title }}</h4>
-                            <p class="portfolio-subtitle">{{ post.subtitle }}</p>
+                        <h4 class="portfolio-title">Job Hunt Manager</h4>
+                        <p class="portfolio-subtitle">Full Stack Developer</p>
+                    </div>
+                    <a href="job-hunt-manager.html" class="portfolio-cta-link">
+                        <div class="portfolio-cta">
+                            <span class="cta-text">View Project</span>
                         </div>
-                        <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-cta-link" data-toggle="modal">
-                            <div class="portfolio-cta">
-                                <span class="cta-text">View Details</span>
-                            </div>
-                        </a>
-                    {% endif %}
+                    </a>
                 </div>
-            {% endfor %}
+
+                <!-- Gas Safety Assessment Project -->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <div class="portfolio-tile">
+                        <div class="portfolio-image-wrapper portfolio-image-gas-safety-assessment">
+                            <img src="img/portfolio/GasSafetyAssessment/GSR_MainImage.png" class="img-fluid" alt="Gas Safety Assessment System">
+                            <div class="portfolio-overlay">
+                                <i class="fa fa-external-link fa-2x"></i>
+                                <span>View Project</span>
+                            </div>
+                        </div>
+                        <h4 class="portfolio-title">Gas Safety Assessment</h4>
+                        <p class="portfolio-subtitle">Digital Product Designer</p>
+                    </div>
+                    <a href="gas-safety-assessment.html" class="portfolio-cta-link">
+                        <div class="portfolio-cta">
+                            <span class="cta-text">View Project</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Client Onboarding Project -->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <div class="portfolio-tile">
+                        <div class="portfolio-image-wrapper portfolio-image-client-onboarding">
+                            <img src="img/portfolio/ClientOnboarding/CO_projectimage_Email.png" class="img-fluid" alt="Client Onboarding Project">
+                            <div class="portfolio-overlay">
+                                <i class="fa fa-external-link fa-2x"></i>
+                                <span>View Project</span>
+                            </div>
+                        </div>
+                        <h4 class="portfolio-title">Client Onboarding</h4>
+                        <p class="portfolio-subtitle">Digital Product Designer</p>
+                    </div>
+                    <a href="client-onboarding.html" class="portfolio-cta-link">
+                        <div class="portfolio-cta">
+                            <span class="cta-text">View Project</span>
+                        </div>
+                    </a>
+                </div>
             </div>
             
             <!-- CTA to Projects Page -->

@@ -213,17 +213,19 @@ bundle exec jekyll serve
 ### 📋 **REMAINING TASKS** (Priority Order)
 
 #### **HIGH PRIORITY - Current Issues**
-20. 🔄 **Portfolio Grid Display Issue - Landing Page** - Projects section not displaying 3 project tiles
-    - **Status**: 🔄 **IN PROGRESS** - Issue reported
+20. ✅ **Portfolio Grid Display Issue - Landing Page** - Projects section not displaying 3 project tiles
+    - **Status**: ✅ **COMPLETED** - Issue resolved
     - **Priority**: High - Affects landing page user experience
     - **Issue**: The projects section/grid on the landing page no longer displays the 3 project tiles
-    - **Files to Check**: `_includes/portfolio_grid.html`, `index.html`, related CSS files
-    - **Action Required**: 
-      - Investigate why project tiles are not displaying
-      - Verify portfolio grid HTML structure
-      - Check CSS display properties
-      - Ensure all 3 project tiles are properly configured
-    - **Estimated Time**: 30-45 minutes
+    - **Root Cause**: `_posts` directory was empty, so `site.posts` had no items to loop through
+    - **Solution**: Updated `_includes/portfolio_grid.html` to hardcode the 3 projects (matching `projects.html` structure)
+    - **Files Updated**: 
+      - ✅ `_includes/portfolio_grid.html` - Replaced Jekyll loop with hardcoded project tiles
+    - **Projects Displayed**:
+      - ✅ Job Hunt Manager (Full Stack Developer)
+      - ✅ Gas Safety Assessment (Digital Product Designer)
+      - ✅ Client Onboarding (Digital Product Designer)
+    - **Actual Time**: ~15 minutes
 
 21. 🔄 **Skills & Expertise Section Layout Redesign** - Current layout not satisfactory
     - **Status**: 🔄 **IN PROGRESS** - User feedback received
