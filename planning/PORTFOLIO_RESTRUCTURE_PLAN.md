@@ -67,27 +67,12 @@ bundle exec jekyll serve
 - Status: 📋 **PLANNED** 
 - **Status**: 📋 **PLANNED**
 - **Priority**: Medium - Optional feature to enhance user experience
-- **Search Functionality Requirements**:
-    - Search box component, JavaScript logic
-    - Content indexing, results display
-    - Search filtering by content type
-    - Responsive design
-- **Files to Create/Modify**:
-    - `_includes/search.html` - Search component template
-    - `js/search.js` - Client-side search functionality
-    - `css/search.css` - Search-specific styling (or add to existing CSS)
-    - `_includes/header.html` - Add search to navigation
-- **Estimated Time**: 45 minutes
+- **Action Required**: Implement client-side search functionality for projects and site content
+- **Dependencies**: Portfolio structure finalized, all content in place
+- **Estimated Effort**: 45 minutes total (30 min implementation + 15 min testing)
+- **Notes**: Simple client-side search ideal for portfolio size (3 projects + skills + pages). No server dependencies required.
 
-### **5. Simple Client-Side Search Implementation**
-- Simple search functionality for portfolio site 
-- Status: 📋 **PLANNED**
-
-**Priority**: Low - Optional feature to enhance user experience
-**Action Required**: Implement client-side search functionality for projects and site content
-**Estimated Timeline**: 30 minutes implementation + 15 minutes testing = **45 minutes total**
-
-**Search Functionality Requirements:**
+**4.1 Search Functionality Requirements:**
 - [ ] **Search Box Component** - Add search input field to navigation or 404 page
 - [ ] **Search JavaScript** - Create client-side search logic for instant results
 - [ ] **Content Indexing** - Index projects, skills, and page content for searching
@@ -96,7 +81,7 @@ bundle exec jekyll serve
 - [ ] **Responsive Design** - Ensure search works on mobile and desktop
 - [ ] **No Results Handling** - Display helpful message when no results found
 
-**Technical Implementation Tasks:**
+**4.2 Technical Implementation Tasks:**
 - [ ] **Create Search Component** - Build reusable search input and results components
 - [ ] **Index Site Content** - Create searchable content array with projects, skills, pages
 - [ ] **Implement Search Logic** - JavaScript function to filter content based on query
@@ -105,37 +90,38 @@ bundle exec jekyll serve
 - [ ] **Test Search Functionality** - Verify search works across all content types
 - [ ] **Mobile Optimization** - Ensure search is usable on mobile devices
 
-**Searchable Content Types:**
+**4.3 Searchable Content Types:**
 - [ ] **Projects** - Job Hunt Manager, Gas Safety Assessment, Client Onboarding (names, descriptions, technologies)
 - [ ] **Skills** - Software Engineering, Design & UX, Problem Solving (categories, specific skills)
 - [ ] **Pages** - Home, Projects, Resume, Contact (page titles, descriptions)
 - [ ] **Technologies** - Python, Flask, HTML, CSS, Bootstrap, SQLite, Git, etc.
 
-**Files to Create/Modify:**
+**4.4 Files to Create/Modify:**
 - [ ] `_includes/search.html` - Search component template
 - [ ] `js/search.js` - Client-side search functionality
 - [ ] `css/search.css` - Search-specific styling (or add to existing CSS)
 - [ ] `_includes/header.html` - Add search to navigation
 
-**Dependencies**: Portfolio structure finalized, all content in place
-**Estimated Effort**: 45 minutes total (30 min implementation + 15 min testing)
-**Notes**: Simple client-side search ideal for portfolio size (3 projects + skills + pages). No server dependencies required.
-
-### **6 Contact Page** 
+### **5 Contact Page** 
 - Status: 📋 **PLANNED**
 - Technical Implementation 
     - [ ] **Implement Error Handling** - Graceful error messages with Bootstrap alerts (Move to line #882 when done)
 
-### **7 Custom 404 Error Page Implementation**
+### **6 Custom 404 Error Page Implementation**
 - Status: 📋 **PLANNED**
 - [ ] **Add Analytics Tracking** - Track 404 page visits for monitoring broken links (OPTIONAL - can be added later)
 - [ ] **Create Sitemap Link** - Provide easy access to site structure (OPTIONAL - can be added later)
 
-### **TOTAL REMAINING EFFORT**: ~5-8 hours
-- **High Priority**: 2-3 hours (Skills Layout + Internal Linking)
-- **Medium Priority**: 45 minutes (Search)
-- **Low Priority**: 30 minutes (404 enhancements)
-- **Blog Items**: 2-4 hours (Blog redesign)
+### **TOTAL REMAINING EFFORT**: ~4-5 hours
+- **High Priority**: 1.75-2.5 hours
+  - Skills & Expertise Layout Redesign: 45-60 minutes
+  - Internal Linking Enhancement: 1-2 hours
+- **Medium Priority**: ~1 hour
+  - Portfolio Styling Consistency Review: 20 minutes
+  - Simple Client-Side Search Implementation: 45 minutes
+- **Low Priority**: ~1 hour
+  - Contact Page Error Handling: 15-30 minutes
+  - 404 Page Enhancements (Optional): 30 minutes
 
 ## Notes
 - ✅ Keep all existing `_includes/` files intact until content migration is complete
