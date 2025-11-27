@@ -1,0 +1,19 @@
+# Cursor ignore file
+# Files and directories to exclude from linting and analysis
+
+# Minified CSS files (false positives from linters)
+css/bootstrap.min.css
+css/*.min.css
+
+# Minified JavaScript files
+js/*.min.js
+
+# Build output
+_site/
+.jekyll-cache/
+.sass-cache/
+
+# Dependencies
+vendor/
+node_modules/
+

@@ -1,0 +1,6 @@
+# Stylelint ignore file
+# Minified CSS files cause false positive linting errors
+
+css/bootstrap.min.css
+css/*.min.css
+
