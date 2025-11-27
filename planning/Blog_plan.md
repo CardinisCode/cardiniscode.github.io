@@ -7,63 +7,62 @@
 - **Status**: 📋 Planned
 - **Action**: Update blog page design and content
 
-## 📋 **TODO - Blog Infrastructure Setup**
+## 📋 **TODO - 📋 **REMAINING TASKS**
 
-### **Task**: Complete blog infrastructure for content creation
-**Priority**: High | **Status**: 🔄 **IN PROGRESS** | **Target**: This week
-
+### **1. Complete blog infrastructure for content creation**
+**Priority**: High
+**Status**: 🔄 **IN PROGRESS**
 **Objective**: Set up complete blog infrastructure to start publishing articles
 
-### **Files to Update:**
+#### **Files to Update:**
 - `_includes/header.html` - Add Blog navigation
 - `blog.html` - Enhance styling and content
 - `_layouts/post.html` - Add SEO and metadata
 - `_posts/` - Create sample posts
 
-#### **1. Post Template Setup (10 minutes)**
+### **2. Post Template Setup (10 minutes)**
 - [ ] **Create sample blog post** - `_posts/YYYY-MM-DD-welcome-to-my-blog.md`
 - [ ] **Test post rendering** - Verify post displays correctly
 - [ ] **Add post metadata** - Ensure proper SEO tags in post layout
 - [ ] **Add reading time** - Optional: Add estimated reading time
 
-#### **2. Navigation Integration (5 minutes)**
+### **3. Navigation Integration (5 minutes)**
 - [ ] **Add Blog link to main navigation** - Update `_includes/header.html` to include Blog link
 - [ ] **Update main site navigation** - Ensure Blog appears in homepage navigation
 - [ ] **Test navigation flow** - Verify Blog link works from all pages
 
-#### **3. 📋 Content Structure (10 minutes)**
+### **4. 📋 Content Structure (10 minutes)**
 - [ ] **Create blog categories** - Set up category system (optional)
 - [ ] **Add post excerpts** - Ensure description field works
 - [ ] **Set up post URLs** - Verify clean URLs for posts
 - [ ] **Add social sharing** - Optional: Add share buttons
 
-#### **4. 📋 SEO & Accessibility (10 minutes)** 
+### **5. 📋 SEO & Accessibility (10 minutes)** 
 - [ ] **Add blog to sitemap** - Ensure blog posts appear in sitemap
 - [ ] **Update robots.txt** - Ensure blog posts are crawlable
 - [ ] **Add meta descriptions** - Ensure each post has proper SEO
 - [ ] **Test accessibility** - Run accessibility audit on blog pages
 
-#### **5. 📋 Content Planning (15 minutes)**
+### **6. 📋 Content Planning (15 minutes)**
 - [ ] **Plan first 3 blog posts** - Topics, titles, outlines
 - [ ] **Create content calendar** - Schedule for regular posting
 - [ ] **Set up writing workflow** - Process for creating posts
 - [ ] **Prepare blog post templates** - Standard format for posts
 
-#### **6. 📋 **404 Page Enhancements** (Optional)
+### **7. 📋 **404 Page Enhancements** (Optional)
 - [ ] **Add analytics tracking for 404 visits**
 - [ ] **Create sitemap link for site structure**
     - **Estimated Time**: 30 minutes
 
-#### 📋 **BLOG ITEMS**
-7. 📋 **Blog Page Redesign** - Update blog page design and content
+### **8. 📋 Blog Page Redesign** - Update blog page design and content
     - Redesign blog page layout
     - Create engaging blog content
     - **Estimated Time**: 2-4 hours
 
-8. 📋 **Re-enable Blog Navigation** - Point "Blog" CTA to updated blog page
+### **9. 📋 Re-enable Blog Navigation** 
+    - Point "Blog" CTA to updated blog page
     - Update navigation to point to redesigned blog
     - **Estimated Time**: 15 minutes
-
 
 **Dependencies**: None - can start immediately
 **Estimated Time**: 1-2 hours total
@@ -73,7 +72,6 @@
 - ✅ Ready to publish first blog post
 - ✅ SEO-optimized blog structure
 - ✅ Accessible and responsive design
-
 
 ## **✅ ALREADY COMPLETED:**
 - ✅ **Blog page exists** - `blog.html` with basic layout
